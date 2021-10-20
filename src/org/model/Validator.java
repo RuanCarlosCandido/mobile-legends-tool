@@ -1,8 +1,8 @@
-package com.model;
+package org.model;
 
-import static com.Bean.HeroesName.*;
+import static org.bean.HeroesName.*;
 
-import com.Bean.HeroesName;
+import org.bean.HeroesName;
 
 public class Validator {
 

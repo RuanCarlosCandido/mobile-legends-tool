@@ -1,4 +1,4 @@
-package com.Bean;
+package org.bean;
 
 import java.util.HashMap;
 import java.util.Map;

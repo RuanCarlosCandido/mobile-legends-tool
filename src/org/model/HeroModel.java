@@ -1,4 +1,4 @@
-package com.model;
+package org.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,11 +8,11 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-import com.Bean.Equipment;
-import com.Bean.Hero;
-import com.Bean.HeroesName;
-import com.Bean.Spell;
-import static com.Bean.HeroesName.*;
+import org.bean.Equipment;
+import org.bean.Hero;
+import org.bean.HeroesName;
+import org.bean.Spell;
+import static org.bean.HeroesName.*;
 
 public class HeroModel {
 

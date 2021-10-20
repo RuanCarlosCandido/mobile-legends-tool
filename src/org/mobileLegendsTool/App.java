@@ -1,6 +1,6 @@
-package com.ruan.MobileLegends;
+package org.mobileLegendsTool;
 
-import com.model.HeroModel;
+import org.model.HeroModel;
 
 public class App {
 

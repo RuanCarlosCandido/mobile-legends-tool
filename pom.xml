@@ -4,17 +4,16 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ruan</groupId>
-	<artifactId>MobileLegends</artifactId>
+	<artifactId>mobileLegendsTool</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>MobileLegends</name>
+	<name>mobileLegendsTool</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
 
 	<dependencies>
 		<dependency>
@@ -25,7 +24,6 @@
 		</dependency>
 	</dependencies>
 
-
 	<build>
 		<plugins>
 			<plugin>
@@ -35,18 +33,12 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>com.ruan.MobileLegends.App</mainClass>
+							<mainClass>org.mobileLegendsTool.App</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
-
-
+	
 </project>
-
-
-
-

@@ -1,4 +1,4 @@
-package com.Bean;
+package org.bean;
 
 public enum Equipment {
 

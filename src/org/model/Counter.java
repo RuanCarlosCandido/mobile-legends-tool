@@ -1,11 +1,11 @@
-package com.model;
+package org.model;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import com.Bean.HeroesName;
-import static com.Bean.HeroesName.*;
+import org.bean.HeroesName;
+import static org.bean.HeroesName.*;
 
 public class Counter {
 
