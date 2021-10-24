@@ -1115,7 +1115,7 @@ public class Counter {
 			allCountersFromThisHero.add(HANZO);
 			allCountersFromThisHero.add(YISUNSHIN);
 			
-		} else if (name.equals(FANNY)) {
+		} else if (name.equals(FANNY)) {//ok
 			allCountersFromThisHero.add(AKAI);
 			allCountersFromThisHero.add(FRANCO);
 			allCountersFromThisHero.add(ATLAS);
@@ -1124,62 +1124,114 @@ public class Counter {
 			allCountersFromThisHero.add(KAJA);
 			allCountersFromThisHero.add(CYCLOPS);
 			allCountersFromThisHero.add(EUDORA);
-
+			allCountersFromThisHero.add(ODETTE);
+			allCountersFromThisHero.add(GUSION);
+			allCountersFromThisHero.add(HARLEY);
+			allCountersFromThisHero.add(VEXANA);
+			
 			allCountersFromThisHero.add(MATHILDA);
+			allCountersFromThisHero.add(ANGELA);			
 			allCountersFromThisHero.add(MINSITTHAR);
 
-			allCountersFromThisHero.add(ODETTE);
+			allCountersFromThisHero.add(BADANG);
+			allCountersFromThisHero.add(BANE);
+			allCountersFromThisHero.add(PHOVEUS);
+			allCountersFromThisHero.add(POPOL);
+			allCountersFromThisHero.add(SILVANNA);
+			
+			
 			allCountersFromThisHero.add(JAWHEAD);
 
-		} else if (name.equals(FARAMIS)) {
+		} else if (name.equals(FARAMIS)) {//ok
 			allCountersFromThisHero.add(HYLOS);
 			allCountersFromThisHero.add(RUBY);
 			allCountersFromThisHero.add(YUZHONG);
 			allCountersFromThisHero.add(URANUS);
 			
+			allCountersFromThisHero.add(GUINEVERE);
+			allCountersFromThisHero.add(XBORG);
+			allCountersFromThisHero.add(BANE);
+			allCountersFromThisHero.add(ZHASK);
+			
 			allCountersFromThisHero.add(ODETTE);
 			allCountersFromThisHero.add(VALE);
-			allCountersFromThisHero.add(BANE);
-
-		} else if (name.equals(FRANCO)) {
+			allCountersFromThisHero.add(AURORA);
+			allCountersFromThisHero.add(KADITA);
+			allCountersFromThisHero.add(VEXANA);
+			
+			allCountersFromThisHero.add(CHOU);
+			allCountersFromThisHero.add(GRANGER);
+			allCountersFromThisHero.add(MOSKOV);
+			allCountersFromThisHero.add(NATAN);
+			
+		} else if (name.equals(FRANCO)) {//ok
 			allCountersFromThisHero.add(FARAMIS);
 			allCountersFromThisHero.add(MINOTAUR);
 			allCountersFromThisHero.add(LOLITA);
 			allCountersFromThisHero.add(RAFAELA);
-			
-			allCountersFromThisHero.add(ARGUS);
-			allCountersFromThisHero.add(CHOU);
-			allCountersFromThisHero.add(GLOO);
-			allCountersFromThisHero.add(GROCK);
-			allCountersFromThisHero.add(PAQUITO);
+			allCountersFromThisHero.add(DIGGIE);
+	
+			allCountersFromThisHero.add(AULUS);
+			allCountersFromThisHero.add(BANE);
+			allCountersFromThisHero.add(BELERICK);
 			allCountersFromThisHero.add(SUN);
+			allCountersFromThisHero.add(XBORG);
+
+			allCountersFromThisHero.add(ALICE);
+			allCountersFromThisHero.add(KAGURA);
+			allCountersFromThisHero.add(LUNOX);
 			allCountersFromThisHero.add(NANA);
+			allCountersFromThisHero.add(BANE);
+
+			allCountersFromThisHero.add(CHOU);
+			allCountersFromThisHero.add(PAQUITO);
+			allCountersFromThisHero.add(ALDOUS);
+			allCountersFromThisHero.add(HANABI);
+			allCountersFromThisHero.add(MYA);
+			allCountersFromThisHero.add(YISUNSHIN);
 			
-		} else if (name.equals(FREYA)) {
+		} else if (name.equals(FREYA)) {//ok
 			allCountersFromThisHero.add(ATLAS);
 			allCountersFromThisHero.add(BARATS);
 			allCountersFromThisHero.add(ESMERALDA);
-			allCountersFromThisHero.add(FRANCO);
 			allCountersFromThisHero.add(GATOTKACA);
 			allCountersFromThisHero.add(GLOO);
-			
+			allCountersFromThisHero.add(HYLOS);
+
 			allCountersFromThisHero.add(ANGELA);
-			allCountersFromThisHero.add(FRANCO);
-			allCountersFromThisHero.add(DIGGIE);
-			allCountersFromThisHero.add(CYCLOPS);
-			
 			allCountersFromThisHero.add(MINOTAUR);
 
-		} else if (name.equals(GATOTKACA)) {
+			allCountersFromThisHero.add(CYCLOPS);
+			allCountersFromThisHero.add(GORD);
+			allCountersFromThisHero.add(KADITA);
+			allCountersFromThisHero.add(KARINA);
+			allCountersFromThisHero.add(LUNOX);
+
+			allCountersFromThisHero.add(KARRIE);
+			allCountersFromThisHero.add(CLINT);
+			allCountersFromThisHero.add(GRANGER);
+			
+		} else if (name.equals(GATOTKACA)) {//ok
 			allCountersFromThisHero.add(DIGGIE);
 			allCountersFromThisHero.add(MATHILDA);
 			allCountersFromThisHero.add(LOUYI);
 			allCountersFromThisHero.add(MINSITTHAR);
 		
-			allCountersFromThisHero.add(CYCLOPS);
-			allCountersFromThisHero.add(XBORG);
+			allCountersFromThisHero.add(GORD);
+			allCountersFromThisHero.add(KADITA);
+			allCountersFromThisHero.add(LUNOX);
 
-		} else if (name.equals(GLOO)) {
+			allCountersFromThisHero.add(XBORG);
+			allCountersFromThisHero.add(ALPHA);
+			allCountersFromThisHero.add(GUINEVERE);
+			allCountersFromThisHero.add(MARTIS);
+			allCountersFromThisHero.add(THAMUZ);
+			allCountersFromThisHero.add(ZHASK);
+
+			allCountersFromThisHero.add(KARRIE);
+			allCountersFromThisHero.add(CLINT);
+			
+		} else if (name.equals(GLOO)) {//ok
 			allCountersFromThisHero.add(DIGGIE);
 			allCountersFromThisHero.add(LOUYI);
 			allCountersFromThisHero.add(FARAMIS);
@@ -1205,38 +1257,77 @@ public class Counter {
 			allCountersFromThisHero.add(VALE);
 			allCountersFromThisHero.add(NANA);
 	
-		} else if (name.equals(GORD)) {
+		} else if (name.equals(GORD)) {//ok
 			allCountersFromThisHero.add(BAXIA);
 			allCountersFromThisHero.add(HYLOS);
 			allCountersFromThisHero.add(RUBY);
 			allCountersFromThisHero.add(YUZHONG);
-			allCountersFromThisHero.add(URANUS);
 			
-			allCountersFromThisHero.add(ALUCARD);
+			allCountersFromThisHero.add(GRANGER);
 			allCountersFromThisHero.add(MYA);
+			allCountersFromThisHero.add(HANABI);
+			allCountersFromThisHero.add(LANCELOT);
+			allCountersFromThisHero.add(LING);
+			allCountersFromThisHero.add(BENEDETA);
+			allCountersFromThisHero.add(PAQUITO);
+			allCountersFromThisHero.add(CHOU);
+			allCountersFromThisHero.add(WANWAN);
+			allCountersFromThisHero.add(YISUNSHIN);
+
 			allCountersFromThisHero.add(JAWHEAD);
-	
-		} else if (name.equals(GROCK)) {
+			allCountersFromThisHero.add(BELERICK);
+			allCountersFromThisHero.add(MARTIS);
+			allCountersFromThisHero.add(XBORG);
+
+			allCountersFromThisHero.add(DIGGIE);
+			allCountersFromThisHero.add(ESTES);
+			allCountersFromThisHero.add(FARAMIS);
+
+		} else if (name.equals(GROCK)) {//ok
 			allCountersFromThisHero.add(LOLITA);
 			allCountersFromThisHero.add(MATHILDA);
 			allCountersFromThisHero.add(MINOTAUR);
 			
 			allCountersFromThisHero.add(ALUCARD);
-			allCountersFromThisHero.add(BALMOND);
 			allCountersFromThisHero.add(GRANGER);
-			allCountersFromThisHero.add(BENEDETA);
+			allCountersFromThisHero.add(BEATRIX);
+			allCountersFromThisHero.add(BRUNO);
+			allCountersFromThisHero.add(CLAUDE);
+			allCountersFromThisHero.add(HAYABUSA);
+			allCountersFromThisHero.add(PAQUITO);
+			allCountersFromThisHero.add(SABER);
+			allCountersFromThisHero.add(YISUNSHIN);
 
-		} else if (name.equals(HANABI)) {
+			allCountersFromThisHero.add(BALMOND);
+			allCountersFromThisHero.add(LAPULAPU);
+
+			allCountersFromThisHero.add(GUSION);
+			allCountersFromThisHero.add(HARLEY);
+			allCountersFromThisHero.add(KADITA);
+			allCountersFromThisHero.add(KAGURA);
+			allCountersFromThisHero.add(KAJA);
+			allCountersFromThisHero.add(KIMMY);
+			allCountersFromThisHero.add(PHARSA);
+			
+		} else if (name.equals(HANABI)) {//ok
 			allCountersFromThisHero.add(ATLAS);
 			allCountersFromThisHero.add(BAXIA);
 			allCountersFromThisHero.add(BARATS);
 			allCountersFromThisHero.add(HYLOS);
 			allCountersFromThisHero.add(GATOTKACA);
 
-			
 			allCountersFromThisHero.add(DIGGIE);
-			allCountersFromThisHero.add(KAJA);
 			allCountersFromThisHero.add(LOLITA);
+			allCountersFromThisHero.add(FARAMIS);
+
+			allCountersFromThisHero.add(BANE);
+			allCountersFromThisHero.add(BELERICK);
+			allCountersFromThisHero.add(XBORG);
+
+			allCountersFromThisHero.add(GORD);
+			allCountersFromThisHero.add(KAGURA);
+			allCountersFromThisHero.add(KADITA);
+			allCountersFromThisHero.add(NANA);
 
 		} else if (name.equals(HARITH)) {
 			allCountersFromThisHero.add(FRANCO);
@@ -1246,10 +1337,13 @@ public class Counter {
 			allCountersFromThisHero.add(URANUS);
 			
 			allCountersFromThisHero.add(ALUCARD);
+			
 			allCountersFromThisHero.add(DIGGIE);
 			allCountersFromThisHero.add(SILVANNA);
 			allCountersFromThisHero.add(JAWHEAD);
 
+			
+			
 		} else if (name.equals(HARLEY)) {
 			allCountersFromThisHero.add(ATLAS);
 			allCountersFromThisHero.add(HYLOS);
