@@ -191,8 +191,8 @@ public class Counter {
 
 		else if (name.equals(YUZHONG)) {// ok
 			allCountersFromThisHero.add(MATHILDA);
-			allCountersFromThisHero.add(LOUYI);
-
+			allCountersFromThisHero.add(ANGELA);
+			
 			allCountersFromThisHero.add(CHANGE);
 			allCountersFromThisHero.add(HARITH);
 			allCountersFromThisHero.add(HARLEY);
@@ -201,7 +201,6 @@ public class Counter {
 			allCountersFromThisHero.add(PHOVEUS);
 
 			allCountersFromThisHero.add(BENEDETA);
-			allCountersFromThisHero.add(GRANGER);
 			allCountersFromThisHero.add(PHOVEUS);
 			allCountersFromThisHero.add(SUN);
 			allCountersFromThisHero.add(WANWAN);
@@ -241,7 +240,8 @@ public class Counter {
 			allCountersFromThisHero.add(GLOO);
 			allCountersFromThisHero.add(HYLOS);
 			allCountersFromThisHero.add(JOHNSON);
-
+			allCountersFromThisHero.add(YUZHONG);
+			
 			allCountersFromThisHero.add(LOLITA);
 			allCountersFromThisHero.add(MATHILDA);
 			allCountersFromThisHero.add(MINSITTHAR);
@@ -261,6 +261,8 @@ public class Counter {
 			allCountersFromThisHero.add(GUINEVERE);
 			allCountersFromThisHero.add(BELERICK);
 			allCountersFromThisHero.add(SILVANNA);
+			allCountersFromThisHero.add(FREYA);
+			
 		}
 
 		else if (name.equals(VALE)) {// ok
@@ -1209,7 +1211,6 @@ public class Counter {
 
 			allCountersFromThisHero.add(KARRIE);
 			allCountersFromThisHero.add(CLINT);
-			allCountersFromThisHero.add(GRANGER);
 			
 		} else if (name.equals(GATOTKACA)) {//ok
 			allCountersFromThisHero.add(DIGGIE);
