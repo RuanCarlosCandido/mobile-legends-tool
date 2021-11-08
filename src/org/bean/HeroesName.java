@@ -32,4 +32,51 @@ public enum HeroesName {
 		return heroesNameMap;
 	}
 
+	public boolean isTank() {
+		if (this == AKAI || this == ATLAS || this == BARATS || this == BAXIA || this == CARMILLA || this == ESMERALDA
+				|| this == FRANCO || this == GATOTKACA || this == GLOO || this == GROCK || this == HYLOS || this == RUBY
+				|| this == JOHNSON || this == KHUFRA || this == TIGREAL || this == YUZHONG || this == URANUS)
+			return true;
+
+		return false;
+	}
+
+	public boolean isSupport() {
+		// 11 heroes
+		if (this == ANGELA || this == DIGGIE || this == ESTES || this == FARAMIS || this == FLORYN || this == LOUYI
+				|| this == LOLITA || this == MATHILDA || this == MINOTAUR || this == MINSITTHAR || this == RAFAELA)
+			return true;
+
+		return false;
+	}
+
+	public boolean isSoldier() {
+		// 11 heroes
+		if (this == ALPHA || this == AULUS || this == ARGUS || this == BADANG || this == BALMOND
+				|| this == BANE || this == BELERICK || this == FREYA || this == GUINEVERE || this == HILDA
+				|| this == JAWHEAD || this == KHALEED || this == LAPULAPU || this == MARTIS || this == PHOVEUS
+				|| this == ROGER || this == POPOL || this == TERIZLA | this == THAMUZ || this == SILVANNA || this == SUN
+				|| this == XBORG || this == ZHASK)
+			return true;
+
+		return false;
+	}
+
+	public boolean isMage() {
+		// 11 heroes
+		if (this == ALICE || this == AURORA || this == CECILION || this == CHANGE || this == CYCLOPS || this == EUDORA
+				|| this == GORD || this == GUSION || this == HARITH || this == HARLEY || this == KADITA
+				|| this == KAGURA || this == KAJA || this == KARINA || this == KIMMY || this == ODETTE || this == PHARSA
+				|| this == LUNOX || this == LYLIA || this == NANA || this == SELENA || this == VALE || this == VALIR
+				|| this == VEXANA || this == YVE)
+			return true;
+
+		return false;
+	}
+
+	
+	
+	
+	
+	
 }

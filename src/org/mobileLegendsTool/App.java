@@ -10,7 +10,7 @@ public class App {
 		// REMOVER DA LISTA DE COUNTERS SE ALGUM HEROI DE LA FOR SELECIONADO
 		HeroModel hm = new HeroModel();
 		hm.init();
-
+		
 		
 	}
 }

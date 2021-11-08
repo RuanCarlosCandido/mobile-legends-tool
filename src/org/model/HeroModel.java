@@ -18,7 +18,7 @@ public class HeroModel {
 
 	public void init() {
 		List<Hero> pickedHeroes                     = new ArrayList<Hero>();
-		List<Spell> allSpellCounterinOneList        = new ArrayList<Spell>();
+		List<Spell> spells					        = new ArrayList<Spell>();
 		Map<HeroesName, Integer> damageCountersMap  = new HashMap<HeroesName, Integer>();
 		Map<HeroesName, Integer> tankCountersMap    = new HashMap<HeroesName, Integer>();
 		Map<HeroesName, Integer> supportCountersMap = new HashMap<HeroesName, Integer>();
@@ -47,13 +47,13 @@ public class HeroModel {
 
 					HeroesName heroName = counters.get(j);
 
-						 if	(Validator.isTank(heroName))
+						 if	(heroName.isTank())
 						tankCountersMap    = addCounterInMap(tankCountersMap, heroName, heroPicked);
-					else if (Validator.isSupport(heroName))
+					else if (heroName.isSupport())
 						supportCountersMap = addCounterInMap(supportCountersMap, heroName, heroPicked);
-					else if (Validator.isSoldier(heroName))
+					else if (heroName.isSoldier())
 						soldierCountersMap = addCounterInMap(soldierCountersMap, heroName, heroPicked);
-					else if (Validator.isMage(heroName))
+					else if (heroName.isMage())
 						mageCountersMap    = addCounterInMap(mageCountersMap, heroName, heroPicked);
 					else
 						damageCountersMap  = addCounterInMap(damageCountersMap, heroName, heroPicked);
@@ -64,8 +64,7 @@ public class HeroModel {
 					mageCountersMap    = adjustWithPick(mageCountersMap, pickedHeroes);
 					damageCountersMap  = adjustWithPick(damageCountersMap, pickedHeroes);
 				}
-
-				allSpellCounterinOneList.add(hero.getCounterSpell());
+				spells.add(hero.getCounterSpell());
 
 				printTopScored(damageCountersMap, tankCountersMap, supportCountersMap, soldierCountersMap,
 						mageCountersMap);
@@ -77,7 +76,7 @@ public class HeroModel {
 			}
 		}
 
-		printSpell(allSpellCounterinOneList);
+		printSpell(spells);
 		in.close();
 	}
 
@@ -134,17 +133,17 @@ public class HeroModel {
 		return countersMap;
 	}
 
-	private void printSpell(List<Spell> list) {
+	private void printSpell(List<Spell> spells) {
 
 		Set<Spell> set      = new LinkedHashSet<Spell>();
-		int ammountCounters = list.size();
+		int ammountCounters = spells.size();
 
 		for (int i = 0; i < ammountCounters - 1; i++) {
 
 			for (int j = i + 1; j < ammountCounters; j++) {
 
-				if (list.get(i).equals(list.get(j))) {
-					set.add(list.get(i));
+				if (spells.get(i).equals(spells.get(j))) {
+					set.add(spells.get(i));
 
 				}
 			}
@@ -174,45 +173,46 @@ public class HeroModel {
 		
 	}
 
-	private List<HeroesName> rankTheCounters(Map<HeroesName, Integer> allCountersMap) {
+	private List<HeroesName> rankTheCounters(Map<HeroesName, Integer> scorePerHero) {
 
-		List<HeroesName> list = new ArrayList<HeroesName>();
+		List<HeroesName> rankedHeroes = new ArrayList<HeroesName>();
 
-		int higher = verifyTheHigherNumberInMap(allCountersMap);
+		int score = getHighestScore(scorePerHero);
 
-		for (HeroesName key : allCountersMap.keySet()) {
-			if (allCountersMap.get(key) == higher)
-				list.add(key);
+		for (HeroesName heroName : scorePerHero.keySet()) {
+			if (scorePerHero.get(heroName) == score)
+				rankedHeroes.add(heroName);
 		}
-
-		return list;
+		return rankedHeroes;
 	}
 
-	private int verifyTheHigherNumberInMap(Map<HeroesName, Integer> allCountersMap) {
-		int higher = 0;
+	private int getHighestScore(Map<HeroesName, Integer> scorePerHero) {
+		int max = 0;
 
-		for (HeroesName key : allCountersMap.keySet()) {
-			if (allCountersMap.get(key) > higher)
-				higher = allCountersMap.get(key);
+		for (HeroesName heroName : scorePerHero.keySet()) {
+			int score = scorePerHero.get(heroName);
+			
+			if (score > max)
+				max = score;
 		}
-
-		return higher;
+		return max;
 	}
 
 	private Hero configHero(HeroesName name) {
 		Spell counterSpell = SpellCounter.of(name);
 		ArrayList<HeroesName> counters = Counter.of(name);
-		ArrayList<Equipment> counterEquipment = getCounterEquipments(name);
+		ArrayList<Equipment> counterEquipments = getCounterEquipments(name);
 
 		Hero hero = new Hero();
 		hero.setName(name);
 		hero.setCounterSpell(counterSpell);
 		hero.setCounters(counters);
-		hero.setCounterEquipments(counterEquipment);
+		hero.setCounterEquipments(counterEquipments);
 
 		return hero;
 	}
 
+	//TODO after
 	private ArrayList<Equipment> getCounterEquipments(HeroesName name) {
 
 		return null;
