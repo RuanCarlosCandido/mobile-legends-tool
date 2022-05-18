@@ -1,4 +1,4 @@
-package org.bean;
+package org.models;
 
 public enum Spell {
 
