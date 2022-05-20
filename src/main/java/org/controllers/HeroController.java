@@ -16,9 +16,7 @@ public class HeroController {
 
 	public Map<Role, List<Hero>> getCounterHeroes(String pickedHero) {
 
-		if (!getHeroesNameMap().containsKey(pickedHero)) {
-			throw new UnknownHeroException(pickedHero);
-		}
+		if (!getHeroesNameMap().containsKey(pickedHero)) throw new UnknownHeroException(pickedHero);
 		
 		return heroService.getCounterHeroes(pickedHero);
 	}

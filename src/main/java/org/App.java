@@ -16,7 +16,7 @@ public class App {
 		// PRECISO IMPLEMENTAR MAIS UMA FEATURE
 		// REMOVER DA LISTA DE COUNTERS SE ALGUM HEROI DE LA FOR SELECIONADO
 		Scanner in = new Scanner(System.in);
-		String heroPicked = in.next().toUpperCase();
+		String heroPicked = "";
 		
 		
 		HeroController heroController = new HeroController();
@@ -25,13 +25,14 @@ public class App {
 		while (i < 5) {
 			try {
 				System.out.println("Entre com o Nome do " + (i + 1) + "º Hero : ");
+				heroPicked = in.next().toUpperCase();
 				countersHeroes = heroController.getCounterHeroes(heroPicked);
-				System.out.println(countersHeroes);
+				System.out.println("\n" + countersHeroes + "\n");
 				i++;
 				// dont increment in case of error
 			} catch (Exception e) {
 				System.err.println(
-						"\n[ATENCAO]	HERO INVALIDO\n");
+						"\n[ATENCAO]	HERO INVALIDO, DIGITE NOVAMENTE\n");
 			}
 		}
 		in.close();

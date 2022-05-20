@@ -1,10 +1,10 @@
 package org.services;
 
-import static org.models.Behaviour.CHARGE;
+import static org.models.Behaviour.ARMOR_BREAKER;
 import static org.models.Behaviour.CONTROL_IMMUNITY;
 import static org.models.Behaviour.CROWD_CONTROL;
-import static org.models.Behaviour.ESCAPE;
-import static org.models.Behaviour.HIGH_HP;
+import static org.models.Behaviour.ENDURANCE;
+import static org.models.Behaviour.HIGH_MOBILITY;
 import static org.models.Behaviour.INVULNERABILITY;
 import static org.models.Behaviour.LONG_RANGE;
 import static org.models.Behaviour.REAL_DAMAGE;
@@ -18,45 +18,69 @@ import static org.models.Hero.getHeroesNameMap;
 import static org.models.Role.getRolesMap;
 
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 import org.models.Behaviour;
-import org.models.Equipment;
 import org.models.Hero;
 import org.models.Role;
-import org.models.Spell;
 
 public class HeroService {
+
+	Map<Role, List<Hero>> result = getRolesMap();
+	List<Hero> pickedHeroes = new ArrayList<Hero>();
 
 	public Map<Role, List<Hero>> getCounterHeroes(String heroPicked) {
 
 		Hero hero = getHeroesNameMap().get(heroPicked.toUpperCase());
 
-		Map<Role, List<Hero>> result = getRolesMap();
+		pickedHeroes.add(hero);
 
-		getCounterHeroes(hero, result);
+		getCounterHeroes(hero);
 
+		rank();
 
-//		for (int j = 0; j < countersAmmount; j++) {
-//
-//			Hero heroName = counters.get(j);
-//
-//			tankCountersMap = adjustWithPick(tankCountersMap, pickedHeroes);
-//			supportCountersMap = adjustWithPick(supportCountersMap, pickedHeroes);
-//			soldierCountersMap = adjustWithPick(soldierCountersMap, pickedHeroes);
-//			mageCountersMap = adjustWithPick(mageCountersMap, pickedHeroes);
-//			damageCountersMap = adjustWithPick(damageCountersMap, pickedHeroes);
-//		}
-//		spells.add(hero.getCounterSpell());
-//
-//		printTopScored(damageCountersMap, tankCountersMap, supportCountersMap, soldierCountersMap, mageCountersMap);
-//
-//		printSpell(spells);
+		adjust(hero);
+
 		return result;
+	}
+
+	/**
+	 * Ajust the counters result by eliminating: 1 - a hero picked by the enemy team
+	 * 2 - a hero that can be countered by a hero picked by the enemy team
+	 * 
+	 * @param hero
+	 */
+	private void adjust(Hero hero) {
+		pickedHeroes.forEach(pickedHero -> result.values()
+				.forEach(list -> list.removeIf(insideHeroList -> canCounter(hero, insideHeroList)
+						|| canCounter(pickedHero, insideHeroList) || insideHeroList.equals(hero))));
+
+	}
+
+	/**
+	 * Adjust the counter list by leaving only the heroes that appears most of time
+	 * 
+	 * @param result
+	 */
+	private void rank() {
+
+		for (Entry<Role, List<Hero>> entry : result.entrySet()) {
+
+			Map<Hero, Long> gruopByHeroCount = entry.getValue().stream()
+					.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+			if (!gruopByHeroCount.isEmpty()) {
+				long maxValue = gruopByHeroCount.values().stream().max(Comparator.comparing(t -> t)).get();
+
+				result.put(entry.getKey(), gruopByHeroCount.keySet().stream()
+						.filter(key -> gruopByHeroCount.get(key).equals(maxValue)).collect(Collectors.toList()));
+			}
+		}
 	}
 
 	/**
@@ -66,197 +90,145 @@ public class HeroService {
 	 * @param result
 	 * @param canCounter
 	 */
-	private void getCounterHeroes(Hero hero, Map<Role, List<Hero>> result) {
-
-		List<Behaviour> strengths = hero.getStrengths();
-		List<Behaviour> weaknesses = buildWeaknesses(hero);
-
-		boolean canCounter = true;
+	private void getCounterHeroes(Hero hero) {
 
 		Map<String, Hero> allHeroes = getHeroesNameMap();
 
 		for (Entry<String, Hero> entry : allHeroes.entrySet()) {
-			canCounter = true;
 
 			Hero iterationHero = entry.getValue();
-			for (Behaviour strength : strengths) {
 
-				
-				if (buildWeaknesses(iterationHero).contains(strength))
-					canCounter = false;
-			}
-			if (canCounter) {
-				canCounter = false;
-				for (Behaviour weakness : weaknesses)
-					if (iterationHero.getStrengths().contains(weakness))
-						canCounter = true;
+			boolean canCounter = canCounter(iterationHero, hero);
 
-			}
-			if (canCounter)
+			if (canCounter && !iterationHero.getRole().equals(hero.getRole()))
 				result.get(iterationHero.getRole()).add(iterationHero);
 		}
 	}
 
+	/**
+	 * Build the hero weaknesses from his strengths, i.e, weakness is opposite from
+	 * strength
+	 * 
+	 * @param hero
+	 * @return
+	 */
 	private List<Behaviour> buildWeaknesses(Hero hero) {
 		List<Behaviour> weaknesses = new ArrayList<Behaviour>();
 
 		for (Behaviour strenght : hero.getStrengths()) {
-			if (strenght.equals(REGENERATION))
+
+			if (strenght.equals(REGENERATION)) {
 				weaknesses.add(REGENERATION_REDUCTION);
-			
-			if (strenght.equals(REGENERATION_REDUCTION)) {
-				weaknesses.add(REFLECTION);
-				weaknesses.add(REAP);			
+				weaknesses.add(ENDURANCE);
 			}
 
-			if (strenght.equals(CROWD_CONTROL))
+			if (strenght.equals(REGENERATION_REDUCTION)) {
+				weaknesses.add(LONG_RANGE);
+				weaknesses.add(REAL_DAMAGE);
+			}
+
+			if (strenght.equals(CROWD_CONTROL)) {
 				weaknesses.add(CONTROL_IMMUNITY);
+				weaknesses.add(INVULNERABILITY);
+				weaknesses.add(ENDURANCE);
+			}
 
 			if (strenght.equals(REAL_DAMAGE))
-				weaknesses.add(HIGH_HP);
+				weaknesses.add(ENDURANCE);
 
-			if (strenght.equals(SHIELD_STEALING))
+			if (strenght.equals(SHIELD_STEALING)) {
 				weaknesses.add(REGENERATION_REDUCTION);
-
-			if (strenght.equals(LONG_RANGE))
-				weaknesses.add(CHARGE);
-
-			if (strenght.equals(REFLECTION))
+				weaknesses.add(REAL_DAMAGE);
 				weaknesses.add(LONG_RANGE);
+				weaknesses.add(ARMOR_BREAKER);
+			}
 
-			if (strenght.equals(HIGH_HP))
-				weaknesses.add(REAP);
+			if (strenght.equals(LONG_RANGE)) {
+				weaknesses.add(HIGH_MOBILITY);
+				weaknesses.add(ENDURANCE);
+			}
+
+			if (strenght.equals(REFLECTION)) {
+				weaknesses.add(CROWD_CONTROL);
+				weaknesses.add(LONG_RANGE);
+			}
 
 			if (strenght.equals(SHIELD)) {
 				weaknesses.add(SHIELD_STEALING);
 				weaknesses.add(REGENERATION_REDUCTION);
+				weaknesses.add(REAL_DAMAGE);
+				weaknesses.add(ARMOR_BREAKER);
 			}
 
-			if (strenght.equals(ESCAPE)) {
-				weaknesses.add(CHARGE);
+			if (strenght.equals(HIGH_MOBILITY)) {
 				weaknesses.add(LONG_RANGE);
 			}
 
 			if (strenght.equals(CONTROL_IMMUNITY)) {
-				weaknesses.add(CHARGE);
+				weaknesses.add(HIGH_MOBILITY);
 				weaknesses.add(LONG_RANGE);
 			}
-			if (strenght.equals(CHARGE)) {
+			if (strenght.equals(HIGH_MOBILITY)) {
 				weaknesses.add(REFLECTION);
-				weaknesses.add(HIGH_HP);
+				weaknesses.add(ENDURANCE);
 
 			}
 			if (strenght.equals(INVULNERABILITY)) {
-				weaknesses.add(ESCAPE);
-				weaknesses.add(LONG_RANGE);
-				weaknesses.add(HIGH_HP);
+				weaknesses.add(HIGH_MOBILITY);
 			}
+
+			if (strenght.equals(ARMOR_BREAKER)) {
+				weaknesses.add(CROWD_CONTROL);
+				weaknesses.add(INVULNERABILITY);
+				weaknesses.add(REFLECTION);
+			}
+
+			if (strenght.equals(REAP)) {
+				weaknesses.add(REFLECTION);
+				weaknesses.add(HIGH_MOBILITY);
+				weaknesses.add(LONG_RANGE);
+			}
+
+			if (strenght.equals(ENDURANCE))
+				weaknesses.add(REAP);
+
 		}
 
+		hero.getWeaknesses().addAll(weaknesses);
 		return weaknesses;
 	}
 
+	public void clearResult() {
+		result.values().forEach(list -> list.clear());
+	}
+
 	/**
-	 * Adjust the map that score the counters eliminating from the rank a counter
-	 * who is countered by one picked enemy hero.
+	 * Compare strengths and weaknesses of two heroes and determinates if the first
+	 * hero passed as parameter can counter the second one
 	 * 
-	 * <p>
-	 * Ex: if Aldous have 3 points (suggesting you to pick him) and the enemy pick
-	 * Angela then Aldous is removed from the top scored (Integer.MIN_Value).
+	 * @param firstHero  the one to counter
+	 * @param secondHero the one to be countered
+	 * @return
 	 */
-//	private Map<Hero, Integer> adjustWithPick(Map<Hero, Integer> countersMap, List<Hero> pickedHeroes) {
-//
-//		int pickedHeroesAmmount = pickedHeroes.size();
-//
-//		// first analyses the counters contained in this map, one by one
-//		for (Hero key : countersMap.keySet()) {
-//
-//			Hero heroInTheMap = buildHero(key);
-//			List<Hero> countersFromThisHero = heroInTheMap.getCounters();
-//			int countersAmmount = countersFromThisHero.size();
-//
-//			// Then analyses all counters from each hero in the map
-//			for (int i = 0; i < countersAmmount; i++) {
-//
-//				for (int j = 0; j < pickedHeroesAmmount; j++) {
-//					if (countersFromThisHero.get(i) == pickedHeroes.get(j).getName()) {
-//						countersMap.put(key, Integer.MIN_VALUE);
-//					}
-//				}
-//			}
-//		}
-//		return countersMap;
-//	}
+	private boolean canCounter(Hero firstHero, Hero secondHero) {
+		List<Behaviour> strengths = firstHero.getStrengths();
+		List<Behaviour> weaknesses = buildWeaknesses(firstHero);
 
-	private void printSpell(List<Spell> spells) {
+		List<Behaviour> secondHeroWeaknesses = buildWeaknesses(secondHero);
 
-		Set<Spell> set = new LinkedHashSet<Spell>();
-		int ammountCounters = spells.size();
+		boolean canCounter = false;
+		for (Behaviour strength : strengths) {
 
-		for (int i = 0; i < ammountCounters - 1; i++) {
-
-			for (int j = i + 1; j < ammountCounters; j++) {
-
-				if (spells.get(i).equals(spells.get(j))) {
-					set.add(spells.get(i));
-
-				}
-			}
+			if (secondHeroWeaknesses.contains(strength))
+				canCounter = true;
 		}
-		System.out.println("SPELL " + set);
-
-	}
-
-	/**
-	 * Print the top scored counter heroes classified by classes
-	 */
-	private void printTopScored(Map<Hero, Integer> damageCountersMap, Map<Hero, Integer> tankCountersMap,
-			Map<Hero, Integer> supportCountersMap, Map<Hero, Integer> soldierCountersMap,
-			Map<Hero, Integer> mageCountersMap) {
-
-		List<Hero> topRankedDamage = rankTheCounters(damageCountersMap);
-		List<Hero> topRankedTank = rankTheCounters(tankCountersMap);
-		List<Hero> topRankedSupport = rankTheCounters(supportCountersMap);
-		List<Hero> topRankedSoldier = rankTheCounters(soldierCountersMap);
-		List<Hero> topRankedMage = rankTheCounters(mageCountersMap);
-
-		System.out.println("\nTANK		" + topRankedTank);
-		System.out.println("SUPPORT		" + topRankedSupport);
-		System.out.println("SOLDIER		" + topRankedSoldier);
-		System.out.println("MAGE		" + topRankedMage);
-		System.out.println("DAMAGE		" + topRankedDamage + "\n");
-
-	}
-
-	private List<Hero> rankTheCounters(Map<Hero, Integer> scorePerHero) {
-
-		List<Hero> rankedHeroes = new ArrayList<Hero>();
-
-		int score = getHighestScore(scorePerHero);
-
-		for (Hero heroName : scorePerHero.keySet()) {
-			if (scorePerHero.get(heroName) == score)
-				rankedHeroes.add(heroName);
+		if (canCounter) {
+			for (Behaviour weakness : weaknesses)
+				if (secondHero.getStrengths().contains(weakness))
+					canCounter = false;
 		}
-		return rankedHeroes;
-	}
+		return canCounter;
 
-	private int getHighestScore(Map<Hero, Integer> scorePerHero) {
-		int max = 0;
-
-		for (Hero heroName : scorePerHero.keySet()) {
-			int score = scorePerHero.get(heroName);
-
-			if (score > max)
-				max = score;
-		}
-		return max;
-	}
-
-	// TODO after
-	private ArrayList<Equipment> getCounterEquipments(Hero name) {
-
-		return null;
 	}
 
 }
