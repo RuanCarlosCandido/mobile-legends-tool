@@ -31,7 +31,7 @@ public class JUnitTest {
 				{ Arrays.asList(Hero.LOLITA, Hero.ANGELA, Hero.HILDA, Hero.URANUS), Hero.ESMERALDA, true },
 				{ Arrays.asList(Hero.LOLITA, Hero.ANGELA, Hero.HILDA, Hero.URANUS, Hero.KARINA), Hero.ESMERALDA, false },
 				{ Arrays.asList(Hero.MYA, Hero.WANWAN, Hero.BRUNO), Hero.BELERICK, true } });
-
+		
 	}
 
 	@Test
