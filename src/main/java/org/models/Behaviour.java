@@ -14,7 +14,9 @@ public enum Behaviour {
 	REFLECTION("ability to reflect damage from Belerick"),
 	ENDURANCE("Just Like Hylos"),
 	REAP("Ability to do drain HP like WanWan, Mya"),
+	SPLASH_DAMAGE("Area damage"),
 	ARMOR_BREAKER("Ability to reduce armor like ALucard");
+	
 
 	String description;
 

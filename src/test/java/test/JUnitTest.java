@@ -30,7 +30,8 @@ public class JUnitTest {
 		return Arrays.asList(new Object[][] {
 				{ Arrays.asList(Hero.LOLITA, Hero.ANGELA, Hero.HILDA, Hero.URANUS), Hero.ESMERALDA, true },
 				{ Arrays.asList(Hero.LOLITA, Hero.ANGELA, Hero.HILDA, Hero.URANUS, Hero.KARINA), Hero.ESMERALDA, false },
-				{ Arrays.asList(Hero.MYA, Hero.WANWAN, Hero.BRUNO), Hero.BELERICK, true } });
+				{ Arrays.asList(Hero.KARINA, Hero.AURORA, Hero.FRANCO, Hero.LAYLA, Hero.CHOU), Hero.FARAMIS, false },
+				{ Arrays.asList(Hero.IRITHEL, Hero.MOSKOV, Hero.BRUNO), Hero.BELERICK, true } });
 		
 	}
 
