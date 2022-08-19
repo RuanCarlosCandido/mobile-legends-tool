@@ -15,6 +15,8 @@ import static org.models.Behaviour.REGENERATION_REDUCTION;
 import static org.models.Behaviour.SHIELD;
 import static org.models.Behaviour.SHIELD_STEALING;
 import static org.models.Behaviour.SPLASH_DAMAGE;
+import static org.models.Behaviour.SUMMON;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +38,12 @@ public class HeroUtil {
 
 		for (Behaviour strenght : hero.getStrengths()) {
 
+
+			if (strenght.equals(SUMMON)) {
+				weaknesses.add(INVULNERABILITY);
+				weaknesses.add(SPLASH_DAMAGE);	
+			}
+
 			if (strenght.equals(SPLASH_DAMAGE)) {
 				weaknesses.add(CONTROL_IMMUNITY);
 				weaknesses.add(HIGH_MOBILITY);
@@ -50,13 +58,13 @@ public class HeroUtil {
 
 			if (strenght.equals(REGENERATION_REDUCTION)) {
 				weaknesses.add(LONG_RANGE);
-				weaknesses.add(REAL_DAMAGE);
 			}
 
 			if (strenght.equals(CROWD_CONTROL)) {
 				weaknesses.add(CONTROL_IMMUNITY);
 				weaknesses.add(INVULNERABILITY);
-				weaknesses.add(ENDURANCE);
+				weaknesses.add(ENDURANCE);			
+				weaknesses.add(SUMMON);
 			}
 
 			if (strenght.equals(REAL_DAMAGE))
@@ -67,17 +75,18 @@ public class HeroUtil {
 				weaknesses.add(REAL_DAMAGE);
 				weaknesses.add(LONG_RANGE);
 				weaknesses.add(ARMOR_BREAKER);
-				weaknesses.add(SPLASH_DAMAGE);
 			}
 
 			if (strenght.equals(LONG_RANGE)) {
 				weaknesses.add(HIGH_MOBILITY);
 				weaknesses.add(REFLECTION);
+				weaknesses.add(SUMMON);
 			}
 
 			if (strenght.equals(REFLECTION)) {
 				weaknesses.add(CROWD_CONTROL);
 				weaknesses.add(LONG_RANGE);
+				weaknesses.add(SUMMON);
 			}
 
 			if (strenght.equals(SHIELD)) {
@@ -90,7 +99,6 @@ public class HeroUtil {
 
 			if (strenght.equals(HIGH_MOBILITY)) {
 				weaknesses.add(LONG_RANGE);
-				weaknesses.add(SPLASH_DAMAGE);
 			}
 
 			if (strenght.equals(CONTROL_IMMUNITY)) {

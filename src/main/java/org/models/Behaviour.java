@@ -15,7 +15,9 @@ public enum Behaviour {
 	ENDURANCE("Just Like Hylos"),
 	REAP("Ability to do drain HP like WanWan, Mya"),
 	SPLASH_DAMAGE("Area damage"),
+	SUMMON("Summons ability like Zhask and Popol & Kupa"),
 	ARMOR_BREAKER("Ability to reduce armor like ALucard");
+	
 	
 
 	String description;
