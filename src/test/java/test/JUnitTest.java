@@ -7,6 +7,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Stream;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -29,11 +30,13 @@ public class JUnitTest {
 
 		return Arrays.asList(new Object[][] {
 				{ Arrays.asList(Hero.LOLITA, Hero.ANGELA, Hero.HILDA, Hero.URANUS), Hero.ESMERALDA, true },
-				{ Arrays.asList(Hero.LOLITA, Hero.ANGELA, Hero.HILDA, Hero.URANUS, Hero.KARINA), Hero.ESMERALDA, false },
+				{ Arrays.asList(Hero.LOLITA, Hero.ANGELA, Hero.HILDA, Hero.URANUS, Hero.KARINA), Hero.ESMERALDA,
+						false },
 				{ Arrays.asList(Hero.KARINA, Hero.AURORA, Hero.FRANCO, Hero.LAYLA, Hero.CHOU), Hero.FARAMIS, false },
-				{ Arrays.asList(Hero.KARINA, Hero.ALUCARD, Hero.ESTES, Hero.LUNOX, Hero.CLINT), Hero.BAXIA, true },
+				{ Arrays.asList(Hero.GUINEVERE, Hero.ANGELA, Hero.ESTES, Hero.RAFAELA, Hero.HILDA), Hero.BAXIA, true },
+				// { Arrays.asList(Hero.ZHASK, Hero.POPOL, Hero.VEXANA), Hero.LANCELOT, true },
 				{ Arrays.asList(Hero.IRITHEL, Hero.MOSKOV, Hero.BRUNO), Hero.BELERICK, true } });
-		
+
 	}
 
 	@Test
@@ -45,6 +48,24 @@ public class JUnitTest {
 		assertEquals(false, result.get(Role.MAGE).isEmpty());
 		assertEquals(false, result.get(Role.SOLDIER).isEmpty());
 		assertEquals(false, result.get(Role.SUPPORT).isEmpty());
+	}
+
+	@Test
+	public void all_heroes_must_have_counters_sucess_expected() throws Exception {
+
+		
+		for(Hero hero : Hero.values()){
+			Map<Role, List<Hero>> result = heroService.getCounterHeroes(hero.name());
+			boolean isEmpty = true;
+			for(Role role : result.keySet()){
+				if(!result.get(role).isEmpty())
+					isEmpty = false;
+		}
+			if(isEmpty)
+			throw new Exception(hero + " has no counters");
+		}
+
+
 	}
 
 	@Test
@@ -71,7 +92,6 @@ public class JUnitTest {
 		result = heroService.getCounterHeroes("karina");
 		assertEquals(false, result.get(Role.MAGE).contains(Hero.ESMERALDA));
 	}
-	
 
 	@ParameterizedTest
 	@MethodSource("heroData")

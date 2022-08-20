@@ -16,11 +16,13 @@ import static org.models.Behaviour.SHIELD;
 import static org.models.Behaviour.SHIELD_STEALING;
 import static org.models.Behaviour.SPLASH_DAMAGE;
 import static org.models.Behaviour.SUMMON;
+import static org.models.Behaviour.SKILL_SUPPRESSION;
 import static org.models.Role.DAMAGE;
 import static org.models.Role.MAGE;
 import static org.models.Role.SOLDIER;
 import static org.models.Role.SUPPORT;
 import static org.models.Role.TANK;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,8 +32,7 @@ import java.util.Map;
 
 public enum Hero {
 
-	AAMON(MAGE, Arrays.asList(HIGH_MOBILITY)), 
-	AKAI(TANK, Arrays.asList(CROWD_CONTROL, SHIELD, SPLASH_DAMAGE)),
+	AKAI(TANK, Arrays.asList(CROWD_CONTROL, SHIELD)),
 	ALDOUS(SOLDIER, Arrays.asList(HIGH_MOBILITY, SHIELD)),
 	ALICE(MAGE, Arrays.asList(REGENERATION, CROWD_CONTROL, HIGH_MOBILITY, SPLASH_DAMAGE)),
 	ALPHA(SOLDIER, Arrays.asList(REGENERATION,REAL_DAMAGE)),
@@ -58,7 +59,7 @@ public enum Hero {
 	CLAUDE(DAMAGE, Arrays.asList(HIGH_MOBILITY)),
 	CLINT(DAMAGE, Arrays.asList(ARMOR_BREAKER,SPLASH_DAMAGE)),
 	CYCLOPS(MAGE, Arrays.asList(CROWD_CONTROL, HIGH_MOBILITY)),
-	DIGGIE(SUPPORT, Arrays.asList(CONTROL_IMMUNITY, LONG_RANGE)),
+	DIGGIE(SUPPORT, Arrays.asList(CONTROL_IMMUNITY)),
 	DYRROTH(DAMAGE, Arrays.asList(REGENERATION)),
 	ESMERALDA(MAGE, Arrays.asList(SHIELD_STEALING, SPLASH_DAMAGE)),
 	ESTES(SUPPORT, Arrays.asList(REGENERATION)),
@@ -80,7 +81,7 @@ public enum Hero {
 	HARITH(MAGE, Arrays.asList(CROWD_CONTROL, HIGH_MOBILITY)),
 	HARLEY(MAGE, Arrays.asList(HIGH_MOBILITY)),
 	HAYABUSA(DAMAGE, Arrays.asList(HIGH_MOBILITY, INVULNERABILITY)),
-	HELCURT(DAMAGE, Arrays.asList(HIGH_MOBILITY, INVULNERABILITY)),
+	HELCURT(DAMAGE, Arrays.asList(HIGH_MOBILITY, INVULNERABILITY,SKILL_SUPPRESSION)),
 	HILDA(SOLDIER, Arrays.asList(SHIELD, REGENERATION)),
 	HYLOS(TANK, Arrays.asList(ENDURANCE, HIGH_MOBILITY)),
 	IRITHEL(DAMAGE, Arrays.asList(REAP)),
@@ -108,11 +109,11 @@ public enum Hero {
 	MASHA(DAMAGE, Arrays.asList(HIGH_MOBILITY, SHIELD)),
 	MATHILDA(SUPPORT, Arrays.asList(HIGH_MOBILITY)),
 	MINOTAUR(SUPPORT, Arrays.asList(ENDURANCE, REGENERATION, CROWD_CONTROL)),
-	MINSITTHAR(SUPPORT, Arrays.asList(SHIELD, CROWD_CONTROL)),
+	MINSITTHAR(SUPPORT, Arrays.asList(SHIELD, CROWD_CONTROL,SKILL_SUPPRESSION)),
 	MYA(DAMAGE, Arrays.asList(REAP, CONTROL_IMMUNITY)),
 	MOSKOV(DAMAGE, Arrays.asList(REAP, LONG_RANGE)), 
 	NANA(MAGE, Arrays.asList(INVULNERABILITY, SPLASH_DAMAGE)),
-	NATALIA(DAMAGE, Arrays.asList(INVULNERABILITY)),
+	NATALIA(DAMAGE, Arrays.asList(INVULNERABILITY,SKILL_SUPPRESSION)),
 	NATAN(DAMAGE, Arrays.asList(REAP)),
 	ODETTE(MAGE, Arrays.asList(ENDURANCE, SPLASH_DAMAGE)),
 	PAQUITO(SOLDIER, Arrays.asList(INVULNERABILITY, HIGH_MOBILITY)),

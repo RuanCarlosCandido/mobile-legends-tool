@@ -16,7 +16,8 @@ public enum Behaviour {
 	REAP("Ability to do drain HP like WanWan, Mya"),
 	SPLASH_DAMAGE("Area damage"),
 	SUMMON("Summons ability like Zhask and Popol & Kupa"),
-	ARMOR_BREAKER("Ability to reduce armor like ALucard");
+	ARMOR_BREAKER("Ability to reduce armor like ALucard"),
+	SKILL_SUPPRESSION("Silence skill like from helcurt and minsithar");
 	
 	
 
