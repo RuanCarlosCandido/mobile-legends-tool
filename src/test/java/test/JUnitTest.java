@@ -40,6 +40,17 @@ public class JUnitTest {
 				{ Arrays.asList(Hero.HYLOS), Hero.KARRIE, true },
 				{ Arrays.asList(Hero.NANA), Hero.NATALIA, true },
 				{ Arrays.asList(Hero.MYA), Hero.ALICE, true },
+				{ Arrays.asList(Hero.AKAI), Hero.DIGGIE, true },
+				{ Arrays.asList(Hero.AAMON), Hero.SABER, true },
+				{ Arrays.asList(Hero.ALDOUS), Hero.ANGELA, true },
+				{ Arrays.asList(Hero.ALICE), Hero.BAXIA, true },
+				{ Arrays.asList(Hero.ALPHA), Hero.RUBY, true },
+				{ Arrays.asList(Hero.ALUCARD), Hero.SUN, true },
+				{ Arrays.asList(Hero.ANGELA), Hero.BAXIA, true },
+				{ Arrays.asList(Hero.ARGUS), Hero.AKAI, true },
+				{ Arrays.asList(Hero.ATLAS), Hero.DIGGIE, true },
+				{ Arrays.asList(Hero.AULUS), Hero.SABER, true },
+				{ Arrays.asList(Hero.AURORA), Hero.HELCURT, true },
 				{ Arrays.asList(Hero.IRITHEL, Hero.MOSKOV, Hero.BRUNO), Hero.BELERICK, true } });
 
 	}
