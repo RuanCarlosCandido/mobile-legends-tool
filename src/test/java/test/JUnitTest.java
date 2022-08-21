@@ -44,6 +44,7 @@ public class JUnitTest {
 				{ Arrays.asList(Hero.AAMON), Hero.SABER, true },
 				{ Arrays.asList(Hero.ALDOUS), Hero.ANGELA, true },
 				{ Arrays.asList(Hero.ALICE), Hero.BAXIA, true },
+				{ Arrays.asList(Hero.ALICE), Hero.BRODY, true },
 				{ Arrays.asList(Hero.ALPHA), Hero.RUBY, true },
 				{ Arrays.asList(Hero.ALUCARD), Hero.SUN, true },
 				{ Arrays.asList(Hero.ANGELA), Hero.BAXIA, true },
@@ -52,6 +53,8 @@ public class JUnitTest {
 				{ Arrays.asList(Hero.AULUS), Hero.SABER, true },
 				{ Arrays.asList(Hero.AURORA), Hero.HELCURT, true },
 				{ Arrays.asList(Hero.GROCK), Hero.KARRIE, true },
+				{ Arrays.asList(Hero.GUINEVERE), Hero.MINSITTHAR, true },
+				{ Arrays.asList(Hero.LANCELOT), Hero.KAJA, true },
 				{ Arrays.asList(Hero.IRITHEL, Hero.MOSKOV, Hero.BRUNO), Hero.BELERICK, true } });
 
 	}

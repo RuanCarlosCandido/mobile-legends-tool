@@ -17,6 +17,7 @@ public enum Behaviour {
 	SPLASH_DAMAGE("Area damage"),
 	SUMMON("Summons ability like Zhask and Popol & Kupa"),
 	ARMOR_BREAKER("Ability to reduce armor like ALucard"),
+	ENCAGE("Ability to encage heroes, preventing them to escape or blink like Silvanna, Khufra, Barats"),
 	SKILL_SUPPRESSION("Silence skill like from helcurt and minsithar");
 	
 	

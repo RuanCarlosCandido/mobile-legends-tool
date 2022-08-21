@@ -17,8 +17,7 @@ import static org.models.Behaviour.SHIELD_STEALING;
 import static org.models.Behaviour.SPLASH_DAMAGE;
 import static org.models.Behaviour.SUMMON;
 import static org.models.Behaviour.SKILL_SUPPRESSION;
-
-
+import static org.models.Behaviour.ENCAGE;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +39,10 @@ public class HeroUtil {
 
 		for (Behaviour strenght : hero.getStrengths()) {
 
+
+			if (strenght.equals(ENCAGE)) {
+				weaknesses.add(CONTROL_IMMUNITY);
+			}
 
 			if (strenght.equals(SKILL_SUPPRESSION)) {
 				weaknesses.add(SHIELD);
@@ -98,6 +101,7 @@ public class HeroUtil {
 
 			if (strenght.equals(HIGH_MOBILITY)) {
 				weaknesses.add(LONG_RANGE);
+				weaknesses.add(ENCAGE);
 				
 			}
 
@@ -108,6 +112,7 @@ public class HeroUtil {
 			if (strenght.equals(INVULNERABILITY)) {
 				weaknesses.add(SKILL_SUPPRESSION);
 				weaknesses.add(CROWD_CONTROL);
+				weaknesses.add(ENCAGE);
 			}
 
 			if (strenght.equals(ARMOR_BREAKER)) {
