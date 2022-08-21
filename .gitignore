@@ -19,6 +19,10 @@ local.properties
 .recommenders
 .log/
 .logs/
+/log
+
+#gitpod
+.gitpod.yml
 
 # External tool builders
 .externalToolBuilders/
