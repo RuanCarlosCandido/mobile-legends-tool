@@ -51,6 +51,7 @@ public class JUnitTest {
 				{ Arrays.asList(Hero.ATLAS), Hero.DIGGIE, true },
 				{ Arrays.asList(Hero.AULUS), Hero.SABER, true },
 				{ Arrays.asList(Hero.AURORA), Hero.HELCURT, true },
+				{ Arrays.asList(Hero.GROCK), Hero.KARRIE, true },
 				{ Arrays.asList(Hero.IRITHEL, Hero.MOSKOV, Hero.BRUNO), Hero.BELERICK, true } });
 
 	}
