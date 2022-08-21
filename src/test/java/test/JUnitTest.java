@@ -24,6 +24,7 @@ public class JUnitTest {
 	@BeforeEach
 	void cleanResult() {
 		heroService.clearResult();
+		heroService.clearPickedHeroes();
 	}
 
 	public static Collection<Object[]> heroData() {
@@ -34,7 +35,11 @@ public class JUnitTest {
 						false },
 				{ Arrays.asList(Hero.KARINA, Hero.AURORA, Hero.FRANCO, Hero.LAYLA, Hero.CHOU), Hero.FARAMIS, false },
 				{ Arrays.asList(Hero.GUINEVERE, Hero.ANGELA, Hero.ESTES, Hero.RAFAELA, Hero.HILDA), Hero.BAXIA, true },
-				// { Arrays.asList(Hero.ZHASK, Hero.POPOL, Hero.VEXANA), Hero.LANCELOT, true },
+				{ Arrays.asList(Hero.ZHASK, Hero.POPOL, Hero.PHARSA, Hero.LAYLA, Hero.GORD, Hero.MYA, Hero.CLINT), Hero.LANCELOT, true },
+				{ Arrays.asList(Hero.KARRIE, Hero.VEXANA, Hero.VALIR, Hero.ANGELA, Hero.ZHASK), Hero.HYLOS, false },
+				{ Arrays.asList(Hero.HYLOS), Hero.KARRIE, true },
+				{ Arrays.asList(Hero.NANA), Hero.NATALIA, true },
+				{ Arrays.asList(Hero.MYA), Hero.ALICE, true },
 				{ Arrays.asList(Hero.IRITHEL, Hero.MOSKOV, Hero.BRUNO), Hero.BELERICK, true } });
 
 	}
@@ -53,19 +58,20 @@ public class JUnitTest {
 	@Test
 	public void all_heroes_must_have_counters_sucess_expected() throws Exception {
 
-		
-		for(Hero hero : Hero.values()){
-			Map<Role, List<Hero>> result = heroService.getCounterHeroes(hero.name());
-			boolean isEmpty = true;
+		Map<Role, List<Hero>> result = null;
+		boolean isEmpty = true;
+		for(Hero hero : Hero.values()){	
+			result = heroService.getCounterHeroes(hero.name());
+			isEmpty = true;
 			for(Role role : result.keySet()){
 				if(!result.get(role).isEmpty())
 					isEmpty = false;
 		}
-			if(isEmpty)
-			throw new Exception(hero + " has no counters");
+		heroService.clearPickedHeroes();
+			if(isEmpty)	
+				throw new Exception(hero + " has no counters");
+				
 		}
-
-
 	}
 
 	@Test

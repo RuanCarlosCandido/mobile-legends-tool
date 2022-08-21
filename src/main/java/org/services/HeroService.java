@@ -101,6 +101,10 @@ public class HeroService {
 		result.values().forEach(list -> list.clear());
 	}
 
+	public void clearPickedHeroes() {
+		pickedHeroes.clear();
+	}
+
 	/**
 	 * Compare strengths and weaknesses of two heroes and determinates if the first
 	 * hero passed as parameter can counter the second one
