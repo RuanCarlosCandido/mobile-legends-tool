@@ -37,6 +37,7 @@ public class JUnitTest {
 				{ Arrays.asList(Hero.GUINEVERE, Hero.ANGELA, Hero.ESTES, Hero.RAFAELA, Hero.HILDA), Hero.BAXIA, true },
 				{ Arrays.asList(Hero.ZHASK, Hero.POPOL, Hero.PHARSA, Hero.LAYLA, Hero.GORD, Hero.MYA, Hero.CLINT), Hero.LANCELOT, true },
 				{ Arrays.asList(Hero.KARRIE, Hero.VEXANA, Hero.VALIR, Hero.ANGELA, Hero.ZHASK), Hero.HYLOS, false },
+				{ Arrays.asList(Hero.TIGREAL, Hero.GUINEVERE, Hero.SILVANNA, Hero.AKAI, Hero.HYLOS), Hero.DIGGIE, true },
 				{ Arrays.asList(Hero.HYLOS), Hero.KARRIE, true },
 				{ Arrays.asList(Hero.NANA), Hero.NATALIA, true },
 				{ Arrays.asList(Hero.MYA), Hero.ALICE, true },
@@ -55,6 +56,12 @@ public class JUnitTest {
 				{ Arrays.asList(Hero.GROCK), Hero.KARRIE, true },
 				{ Arrays.asList(Hero.GUINEVERE), Hero.MINSITTHAR, true },
 				{ Arrays.asList(Hero.LANCELOT), Hero.KAJA, true },
+				{ Arrays.asList(Hero.KARINA), Hero.ALUCARD, false },
+				{ Arrays.asList(Hero.BAXIA), Hero.BRODY, true },
+				{ Arrays.asList(Hero.SUN), Hero.MYA, true },
+				{ Arrays.asList(Hero.CLINT), Hero.BELERICK, true },
+				{ Arrays.asList(Hero.BENEDETA), Hero.BELERICK, false },
+				{ Arrays.asList(Hero.BELERICK), Hero.LESLEY, true },
 				{ Arrays.asList(Hero.IRITHEL, Hero.MOSKOV, Hero.BRUNO), Hero.BELERICK, true } });
 
 	}

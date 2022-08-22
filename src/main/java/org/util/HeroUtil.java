@@ -51,6 +51,7 @@ public class HeroUtil {
 			
 			if (strenght.equals(SUMMON)) {
 				weaknesses.add(INVULNERABILITY);
+				weaknesses.add(SPLASH_DAMAGE);
 			}
 
 			if (strenght.equals(SPLASH_DAMAGE)) {
@@ -90,6 +91,8 @@ public class HeroUtil {
 
 			if (strenght.equals(REFLECTION)) {
 				weaknesses.add(SUMMON);
+				weaknesses.add(LONG_RANGE);
+					
 			}
 
 			if (strenght.equals(SHIELD)) {
@@ -102,7 +105,6 @@ public class HeroUtil {
 			if (strenght.equals(HIGH_MOBILITY)) {
 				weaknesses.add(LONG_RANGE);
 				weaknesses.add(ENCAGE);
-				
 			}
 
 			if (strenght.equals(CONTROL_IMMUNITY)) {
@@ -122,7 +124,6 @@ public class HeroUtil {
 
 			if (strenght.equals(REAP)) {
 				weaknesses.add(REFLECTION);
-				weaknesses.add(SUMMON);
 			}
 
 			if (strenght.equals(ENDURANCE)){
