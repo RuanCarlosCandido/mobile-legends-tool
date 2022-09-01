@@ -7,6 +7,8 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -40,8 +42,9 @@ public class JUnitTest {
 				{ Arrays.asList(Hero.TIGREAL, Hero.GUINEVERE, Hero.SILVANNA, Hero.AKAI, Hero.HYLOS), Hero.DIGGIE, true },
 				{ Arrays.asList(Hero.HYLOS), Hero.KARRIE, true },
 				{ Arrays.asList(Hero.NANA), Hero.NATALIA, true },
-				{ Arrays.asList(Hero.MYA), Hero.ALICE, true },
+				{ Arrays.asList(Hero.MYA), Hero.XBORG, true },
 				{ Arrays.asList(Hero.AKAI), Hero.DIGGIE, true },
+				{ Arrays.asList(Hero.AKAI), Hero.MARTIS, true },
 				{ Arrays.asList(Hero.AAMON), Hero.SABER, true },
 				{ Arrays.asList(Hero.ALDOUS), Hero.ANGELA, true },
 				{ Arrays.asList(Hero.ALICE), Hero.BAXIA, true },
@@ -51,7 +54,7 @@ public class JUnitTest {
 				{ Arrays.asList(Hero.ANGELA), Hero.BAXIA, true },
 				{ Arrays.asList(Hero.ARGUS), Hero.AKAI, true },
 				{ Arrays.asList(Hero.ATLAS), Hero.DIGGIE, true },
-				{ Arrays.asList(Hero.AULUS), Hero.SABER, true },
+				{ Arrays.asList(Hero.AULUS), Hero.LESLEY, true },
 				{ Arrays.asList(Hero.AURORA), Hero.HELCURT, true },
 				{ Arrays.asList(Hero.GROCK), Hero.KARRIE, true },
 				{ Arrays.asList(Hero.GUINEVERE), Hero.MINSITTHAR, true },
@@ -62,6 +65,14 @@ public class JUnitTest {
 				{ Arrays.asList(Hero.CLINT), Hero.BELERICK, true },
 				{ Arrays.asList(Hero.BENEDETA), Hero.BELERICK, false },
 				{ Arrays.asList(Hero.BELERICK), Hero.LESLEY, true },
+				{ Arrays.asList(Hero.MOSKOV), Hero.BELERICK, true },
+				{ Arrays.asList(Hero.VALE), Hero.SABER, true },
+				{ Arrays.asList(Hero.VALE), Hero.ZILONG, true },
+				{ Arrays.asList(Hero.VALE), Hero.LANCELOT, true },
+				{ Arrays.asList(Hero.NATALIA), Hero.AKAI, true },
+				{ Arrays.asList(Hero.VALENTINA), Hero.HELCURT, true },
+				{ Arrays.asList(Hero.VALENTINA), Hero.POPOL, true },
+				// { Arrays.asList(Hero.BENEDETA), Hero.SILVANNA, true },
 				{ Arrays.asList(Hero.IRITHEL, Hero.MOSKOV, Hero.BRUNO), Hero.BELERICK, true } });
 
 	}
@@ -82,17 +93,18 @@ public class JUnitTest {
 
 		Map<Role, List<Hero>> result = null;
 		boolean isEmpty = true;
-		for(Hero hero : Hero.values()){	
+		Hero[] heroes = Hero.values();
+		for(Hero hero : heroes){
 			result = heroService.getCounterHeroes(hero.name());
 			isEmpty = true;
 			for(Role role : result.keySet()){
 				if(!result.get(role).isEmpty())
 					isEmpty = false;
-		}
-		heroService.clearPickedHeroes();
-			if(isEmpty)	
+			}
+			heroService.clearPickedHeroes();
+			if(isEmpty)
 				throw new Exception(hero + " has no counters");
-				
+
 		}
 	}
 
@@ -119,6 +131,24 @@ public class JUnitTest {
 		assertEquals(true, result.get(Role.MAGE).contains(Hero.ESMERALDA));
 		result = heroService.getCounterHeroes("karina");
 		assertEquals(false, result.get(Role.MAGE).contains(Hero.ESMERALDA));
+	}
+
+	@Test
+	public void every_hero_must_have_counters_for_every_role_other_than_yours() throws Exception {
+		Hero[] heroes = Hero.values();
+		for(Hero hero : heroes){
+			heroService.clearPickedHeroes();
+			heroService.clearResult();
+			Map<Role, List<Hero>> result = heroService.getCounterHeroes(hero.name());
+
+			for(Entry<Role, List<Hero>> entry : result.entrySet())
+				if(entry.getKey() != hero.getRole())
+					if(entry.getValue().isEmpty())
+						throw new Exception(hero + " does not have sufficient counters " + result);
+
+
+		}
+
 	}
 
 	@ParameterizedTest
