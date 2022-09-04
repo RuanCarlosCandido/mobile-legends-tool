@@ -12,13 +12,24 @@ import org.services.HeroService;
 
 public class HeroController {
 
-	HeroService heroService = new HeroService();
+	private HeroService heroService = new HeroService();
 
-	public Map<Role, List<Hero>> getCounterHeroes(String pickedHero) {
+	public Map<Role, List<Hero>> getCounterHeroes() {
 
-		if (!getHeroesNameMap().containsKey(pickedHero)) throw new UnknownHeroException(pickedHero);
 		
-		return heroService.getCounterHeroes(pickedHero);
+
+		return heroService.getCounterHeroes();
 	}
 
+	public List<Hero> getPickedHeroes() {
+
+		return heroService.getPickedHeroes();
+	}
+
+	public void addPickedHero(String pickedHero) {
+		if (!getHeroesNameMap().containsKey(pickedHero))
+			throw new UnknownHeroException(pickedHero);
+		
+		heroService.addPickedHero(pickedHero);
+	}
 }

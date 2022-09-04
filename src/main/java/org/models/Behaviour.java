@@ -19,6 +19,10 @@ public enum Behaviour {
 	ARMOR_BREAKER("Ability to reduce armor like ALucard"),
 	ENCAGE("Ability to encage heroes, preventing them to escape or blink like Silvanna, Khufra, Barats"),
 	EXPLOSION("High damage in a small space of time"),
+	MAGIC_DEFENSE("Defense against magic damage"),
+	PHYSICAL_DEFENSE("Defense against physical damage"),
+	MANA_POOL("Gives Mana"),
+	MANA_REGENERATION("mana regen"),
 	SKILL_SUPPRESSION("Silence skill like from helcurt and minsithar");
 
 

@@ -1,12 +1,15 @@
-package org.util;
+package org.facade;
 
 import static org.models.Behaviour.ARMOR_BREAKER;
 import static org.models.Behaviour.CONTROL_IMMUNITY;
 import static org.models.Behaviour.CROWD_CONTROL;
+import static org.models.Behaviour.ENCAGE;
 import static org.models.Behaviour.ENDURANCE;
+import static org.models.Behaviour.EXPLOSION;
 import static org.models.Behaviour.HIGH_MOBILITY;
 import static org.models.Behaviour.INVULNERABILITY;
 import static org.models.Behaviour.LONG_RANGE;
+import static org.models.Behaviour.MAGIC_DEFENSE;
 import static org.models.Behaviour.REAL_DAMAGE;
 import static org.models.Behaviour.REAP;
 import static org.models.Behaviour.REFLECTION;
@@ -14,19 +17,19 @@ import static org.models.Behaviour.REGENERATION;
 import static org.models.Behaviour.REGENERATION_REDUCTION;
 import static org.models.Behaviour.SHIELD;
 import static org.models.Behaviour.SHIELD_STEALING;
+import static org.models.Behaviour.SKILL_SUPPRESSION;
 import static org.models.Behaviour.SPLASH_DAMAGE;
 import static org.models.Behaviour.SUMMON;
-import static org.models.Behaviour.SKILL_SUPPRESSION;
-import static org.models.Behaviour.ENCAGE;
-import static org.models.Behaviour.EXPLOSION;
+import static org.models.Behaviour.PHYSICAL_DEFENSE;
+import static org.models.Behaviour.MANA_POOL;
+import static org.models.Behaviour.MANA_REGENERATION;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.models.Behaviour;
-import org.models.Hero;
 
-public class HeroUtil {
+public class BehaviourFacade {
 
 	/**
 	 * Build the hero weaknesses from his strengths, i.e, weakness is opposite from
@@ -35,10 +38,29 @@ public class HeroUtil {
 	 * @param hero
 	 * @return
 	 */
-	public static List<Behaviour> buildWeaknesses(Hero hero) {
+	public static List<Behaviour> buildWeaknesses(List<Behaviour> strenghts) {
 		List<Behaviour> weaknesses = new ArrayList<Behaviour>();
 
-		for (Behaviour strenght : hero.getStrengths()) {
+		for (Behaviour strenght : strenghts) {
+
+			//TODO add behaviour MAGIC_DAMAGE e PHYSICAL_DAMAGE
+			
+			if (strenght.equals(MANA_POOL)) {
+				//
+			}
+			if (strenght.equals(MANA_REGENERATION)) {
+				//
+			}
+			
+			if (strenght.equals(MAGIC_DEFENSE)) {
+				weaknesses.add(ARMOR_BREAKER);
+				weaknesses.add(REAL_DAMAGE);
+			}
+			
+			if (strenght.equals(PHYSICAL_DEFENSE)) {
+				weaknesses.add(ARMOR_BREAKER);
+				weaknesses.add(REAL_DAMAGE);
+			}
 
 
 			if (strenght.equals(EXPLOSION)) {
@@ -158,7 +180,6 @@ public class HeroUtil {
 
 		}
 
-		hero.getWeaknesses().addAll(weaknesses);
 		return weaknesses;
 	}
 }

@@ -1,14 +1,12 @@
 package org;
 
-import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
 import org.apache.log4j.LogManager;
+import org.controllers.EquipmentController;
 import org.controllers.HeroController;
-import org.models.Hero;
-import org.models.Role;
-import org.utils.Util;
+import static org.utils.Util.*;
+
 
 public class App {
 	
@@ -16,28 +14,32 @@ public class App {
 
 	// TODO do the code calculate a build and a proper spell for the enemy team and
 	// the player pick
+	
 	public static void main(String[] args) {
-		Util.printWelcomeMesage();
+		printWelcomeMesage();
 
 		Scanner in = new Scanner(System.in);
-		String heroPicked = "";
 
 		HeroController heroController = new HeroController();
-		Map<Role, List<Hero>> countersHeroes;
 		int i = 0;
 		while (i < 5) {
 			try {
 				System.out.println("Entre com o Nome do " + (i + 1) + "º Hero : ");
-				heroPicked = in.next().toUpperCase();
-				countersHeroes = heroController.getCounterHeroes(heroPicked);
+		
+				heroController.addPickedHero(in.next().toUpperCase());
 				
-				LOGGER.info("Sugestões: " + countersHeroes);
+				// LOGGER.info("Sugestões: " + countersHeroes);
+				heroController.getCounterHeroes().entrySet().forEach(System.out::println);
 				i++;
-				// dont increment in case of error
-			} catch (Exception e) {
+				
+			} catch (Exception e) {// dont increment in case of error
 				LOGGER.error("[ATENCAO]	HERO INVALIDO, DIGITE NOVAMENTE\n");
 			}
 		}
 		in.close();
+		System.out.println("\n---------------------EQUIPS-----------------------------------");
+		EquipmentController equipController = new EquipmentController();
+		equipController.setPickedHeroes(heroController.getPickedHeroes());
+		equipController.getCounterEquipments().entrySet().forEach(System.out::println);;
 	}
 }

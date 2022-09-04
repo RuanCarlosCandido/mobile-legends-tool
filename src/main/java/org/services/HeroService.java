@@ -2,7 +2,7 @@ package org.services;
 
 import static org.models.Hero.getHeroesNameMap;
 import static org.models.Role.getRolesMap;
-import static org.util.HeroUtil.buildWeaknesses;
+import static org.facade.BehaviourFacade.buildWeaknesses;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -20,17 +20,13 @@ import org.models.Role;
 public class HeroService {
 
 	private final org.apache.log4j.Logger LOGGER = LogManager.getLogger(this.getClass());
-	
+
 	Map<Role, List<Hero>> result = getRolesMap();
 	List<Hero> pickedHeroes = new ArrayList<Hero>();
 
-	public Map<Role, List<Hero>> getCounterHeroes(String heroPicked) {
-		
-		Hero hero = getHeroesNameMap().get(heroPicked.toUpperCase());
-		
-		LOGGER.info("Heroi selecionado: " + hero);
-		
-		pickedHeroes.add(hero);
+	public Map<Role, List<Hero>> getCounterHeroes() {
+
+		Hero hero = pickedHeroes.get(pickedHeroes.size() - 1);
 
 		getCounterHeroes(hero);
 
@@ -92,7 +88,9 @@ public class HeroService {
 
 			boolean canCounter = canCounter(iterationHero, hero);
 
-			if (canCounter && !iterationHero.getRole().equals(hero.getRole()) && !pickedHeroes.contains(iterationHero))
+			if (canCounter && !iterationHero.getRole().equals(hero.getRole()) // doesn't add counters from the same role
+																				// of the picked hero
+					&& !pickedHeroes.contains(iterationHero))
 				result.get(iterationHero.getRole()).add(iterationHero);
 		}
 	}
@@ -115,9 +113,11 @@ public class HeroService {
 	 */
 	private boolean canCounter(Hero firstHero, Hero secondHero) {
 		List<Behaviour> strengths = firstHero.getStrengths();
-		List<Behaviour> weaknesses = buildWeaknesses(firstHero);
-
-		List<Behaviour> secondHeroWeaknesses = buildWeaknesses(secondHero);
+		List<Behaviour> weaknesses = buildWeaknesses(firstHero.getStrengths());
+		firstHero.getWeaknesses().addAll(weaknesses);
+		
+		List<Behaviour> secondHeroWeaknesses = buildWeaknesses(secondHero.getStrengths());
+		secondHero.getWeaknesses().addAll(secondHeroWeaknesses);
 
 		boolean canCounter = false;
 
@@ -131,6 +131,18 @@ public class HeroService {
 		}
 		return canCounter;
 
+	}
+
+	public List<Hero> getPickedHeroes() {
+		return pickedHeroes;
+	}
+
+	public void addPickedHero(String pickedHero) {
+		Hero hero = getHeroesNameMap().get(pickedHero.toUpperCase());
+
+		LOGGER.info("Heroi selecionado: " + hero);
+
+		pickedHeroes.add(hero);
 	}
 
 }

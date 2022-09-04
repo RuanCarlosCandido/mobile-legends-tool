@@ -6,7 +6,7 @@ import static org.models.Spell.*;
 import org.models.Hero;
 import org.models.Spell;
 
-public class SpellCounter {
+public class SpellService {
 //
 //	public static Spell of(Hero name) {
 //		Spell spell = null;
