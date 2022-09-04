@@ -7,7 +7,7 @@ import java.util.Map;
 
 public enum Role {
 
-	TANK, SUPPORT, SOLDIER, MAGE, DAMAGE;
+	TANK, SUPPORT, SOLDIER, MAGE, DAMAGE, JUNGLE;
 
 	private static Map<Role, List<Hero>> roles = new HashMap<Role, List<Hero>>();
 
