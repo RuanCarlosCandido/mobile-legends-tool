@@ -1,41 +1,64 @@
 package org.models;
 
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public enum Behaviour {
-	REGENERATION_REDUCTION("heroes like Baxia can reduce healing/regeneration"),
-	REGENERATION("regenaration/healing effects from heroes like Rafaela, Alice, Esmeralda"),
-	CROWD_CONTROL("Control like STUN and SLOW from heroes like Akai, Aurora"),
-	SHIELD("Heroes that generate shields like Esmeralda, Lolita"),
-	CONTROL_IMMUNITY("Heroes that can 'purify' like Diggie, Mya"),
-	REAL_DAMAGE("Damage that pass through shield/armor like from Karrie"),
-	HIGH_MOBILITY("Ability from heroes that can pursuit and escape quickly"),
-	INVULNERABILITY("Ability from heroes that can become invencible sometimes like Lancelot and Khaleed"),
-	SHIELD_STEALING("Absroving skill from Esmeralda"),
-	LONG_RANGE("Poke like Lesley and long range damage like Layla"),
-	REFLECTION("ability to reflect damage from Belerick"),
-	ENDURANCE("Just Like Hylos"),
-	REAP("Ability to do drain HP like WanWan, Mya"),
-	SPLASH_DAMAGE("Area damage"),
-	SUMMON("Summons ability like Zhask and Popol & Kupa"),
-	ARMOR_BREAKER("Ability to reduce armor like ALucard"),
-	ENCAGE("Ability to encage heroes, preventing them to escape or blink like Silvanna, Khufra, Barats"),
-	EXPLOSION("High damage in a small space of time"),
-	MAGIC_DEFENSE("Defense against magic damage"),
-	PHYSICAL_DEFENSE("Defense against physical damage"),
-	MANA_POOL("Gives Mana"),
-	MANA_REGENERATION("mana regen"),
-	SKILL_SUPPRESSION("Silence skill like from helcurt and minsithar");
+	//thhis iddentation must be removed after the tests are OK
+	REGENERATION_REDUCTION	(Arrays.asList("LONG_RANGE")),
+	REGENERATION		  	(Arrays.asList("REGENERATION_REDUCTION", "SUMMON", "LONG_RANGE")),
+	CROWD_CONTROL		  	(Arrays.asList("CONTROL_IMMUNITY", "SKILL_SUPPRESSION")),
+	SHIELD					(Arrays.asList("SHIELD_STEALING", "REAL_DAMAGE", "REGENERATION")),
+	CONTROL_IMMUNITY		(Arrays.asList("EXPLOSION","LONG_RANGE","HIGH_MOBILITY", "SKILL_SUPPRESSION")),
+	REAL_DAMAGE				(Arrays.asList("HIGH_MOBILITY","ENDURANCE")),
+	HIGH_MOBILITY			(Arrays.asList("SKILL_SUPPRESSION","ENCAGE","EXPLOSION")),
+	INVULNERABILITY			(Arrays.asList("SKILL_SUPPRESSION","CROWD_CONTROL","ENCAGE")),
+	SHIELD_STEALING			(Arrays.asList("REGENERATION_REDUCTION","REAL_DAMAGE")),
+	LONG_RANGE				(Arrays.asList("SUMMON","INVULNERABILITY","EXPLOSION","ENDURANCE")),
+	REFLECTION				(Arrays.asList("SUMMON","LONG_RANGE")),
+	ENDURANCE				(Arrays.asList("REAP","ARMOR_BREAKER")),
+	REAP					(Arrays.asList("REFLECTION","INVULNERABILITY","SHIELD")),
+	SPLASH_DAMAGE			(Arrays.asList("ENDURANCE","SHIELD","HIGH_MOBILITY")),
+	SUMMON					(Arrays.asList("INVULNERABILITY","SPLASH_DAMAGE","SHIELD")),
+	ARMOR_BREAKER			(Arrays.asList("REFLECTION","SHIELD")),
+	ENCAGE					(Arrays.asList("CONTROL_IMMUNITY","CROWD_CONTROL")),
+	EXPLOSION				(Arrays.asList("ENDURANCE","CROWD_CONTROL")),
+	MAGIC_DEFENSE			(Arrays.asList("ARMOR_BREAKER","REAL_DAMAGE")),
+	PHYSICAL_DEFENSE		(Arrays.asList("ARMOR_BREAKER","REAL_DAMAGE")),
+	MANA_POOL				(Arrays.asList("")),
+	MANA_REGENERATION		(Arrays.asList("")),
+	HP_BASED_DAMAGE		    (Arrays.asList("REGENERATION")),
+	HP_POOL		            (Arrays.asList("HP_BASED_DAMAGE")),
+	SKILL_SUPPRESSION		(Arrays.asList("SHIELD","SUMMON"));
 
 
 
+	static Map<String, Behaviour> namesMap = new HashMap<String, Behaviour>();
 
-	String description;
+	static { Arrays.asList(values()).forEach(behaviour -> namesMap.put(behaviour.toString(), behaviour)); }
 
-	Behaviour(String description) {
-		this.description = description;
+
+
+	List<String> weaknesses = new ArrayList<String>();
+	Behaviour(List<String> weaknesses) {
+		this.weaknesses = weaknesses;
 	}
 
-	public String getDescription() {
-		return description;
+
+	public List<Behaviour> getWeaknesses() {
+
+		List<Behaviour> result = new ArrayList<Behaviour>();
+		for (String weaknessAsString : weaknesses) {
+			result.add(namesMap.get(weaknessAsString));
+		}
+
+		return result;
 	}
+
+
 
 }
