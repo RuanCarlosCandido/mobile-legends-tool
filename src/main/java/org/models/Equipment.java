@@ -15,6 +15,7 @@ import static org.models.Behaviour.REGENERATION_REDUCTION;
 import static org.models.Behaviour.SHIELD;
 import static org.models.Behaviour.SPLASH_DAMAGE;
 import static org.models.Behaviour.ARMOR_BREAKER;
+import static org.models.Behaviour.HP_POOL;
 import static org.models.EquipmentType.*;
 
 import java.util.ArrayList;
@@ -33,7 +34,7 @@ public enum Equipment {
 	ATHENAS_SHIELD(DEFENSE, Arrays.asList(ENDURANCE, MAGIC_DEFENSE)),
 	ORACLE(DEFENSE, Arrays.asList(ENDURANCE, MAGIC_DEFENSE, REGENERATION, SHIELD)),
 	ANTIQUE_CUIRASS(DEFENSE, Arrays.asList(ENDURANCE, PHYSICAL_DEFENSE)),
-	GUARDIAN_HELMET(DEFENSE, Arrays.asList(ENDURANCE, REGENERATION)),
+	GUARDIAN_HELMET(DEFENSE, Arrays.asList(HP_POOL, REGENERATION)),
 	CURSED_HELMET(DEFENSE, Arrays.asList(ENDURANCE, MAGIC_DEFENSE, SPLASH_DAMAGE)),
 	THUNDER_BELT(DEFENSE, Arrays.asList(ENDURANCE, MANA_REGENERATION, PHYSICAL_DEFENSE, REAL_DAMAGE, CROWD_CONTROL)),
 	QUEENS_WINGS(DEFENSE, Arrays.asList(ENDURANCE)), 

@@ -88,8 +88,8 @@ public class HeroService {
 
 			boolean canCounter = canCounter(iterationHero, hero);
 
-			if (canCounter && !iterationHero.getRole().equals(hero.getRole()) // doesn't add counters from the same role
-																				// of the picked hero
+			if (canCounter 
+//					&& !iterationHero.getRole().equals(hero.getRole()) // doesn't add counters from the same role of the picked hero
 					&& !pickedHeroes.contains(iterationHero))
 				result.get(iterationHero.getRole()).add(iterationHero);
 		}
