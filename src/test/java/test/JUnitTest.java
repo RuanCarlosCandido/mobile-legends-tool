@@ -37,33 +37,32 @@ public class JUnitTest {
 					{ Arrays.asList(Hero.HYLOS), Arrays.asList(Hero.KARRIE) },
 					{ Arrays.asList(Hero.MYA), Arrays.asList(Hero.XBORG) },
 					{ Arrays.asList(Hero.AAMON), Arrays.asList(Hero.CHOU,Hero.RUBY,Hero.EUDORA,Hero.SABER,Hero.FRANCO,Hero.BEATRIX,Hero.AULUS,Hero.PHOVEUS,Hero.GLOO,Hero.YVE,Hero.BAXIA,Hero.LANCELOT,Hero.HAYABUSA,Hero.BENEDETA,Hero.PAQUITO) },
-					{ Arrays.asList(Hero.AKAI), Arrays.asList(Hero.DIGGIE,Hero.MARTIS,Hero.ATLAS,Hero.NANA,Hero.MELISSA,Hero.KAJA,Hero.BARATS) },
-					{ Arrays.asList(Hero.ALDOUS), Arrays.asList(Hero.ANGELA) },
+					{ Arrays.asList(Hero.AKAI), Arrays.asList(Hero.DIGGIE,Hero.MARTIS,Hero.NANA,Hero.MELISSA,Hero.KAJA,Hero.BARATS) },
 					{ Arrays.asList(Hero.ALICE), Arrays.asList(Hero.BAXIA) },
 					{ Arrays.asList(Hero.ALICE), Arrays.asList(Hero.BRODY) },
 					{ Arrays.asList(Hero.ALPHA), Arrays.asList(Hero.RUBY) },
 					{ Arrays.asList(Hero.ALUCARD), Arrays.asList(Hero.SUN) },
 					{ Arrays.asList(Hero.ANGELA), Arrays.asList(Hero.BAXIA) },
-					{ Arrays.asList(Hero.ARGUS), Arrays.asList(Hero.AKAI) },
 					{ Arrays.asList(Hero.ATLAS), Arrays.asList(Hero.DIGGIE) },
 					{ Arrays.asList(Hero.AULUS), Arrays.asList(Hero.LESLEY) },
 					{ Arrays.asList(Hero.AURORA), Arrays.asList(Hero.HELCURT) },
+					{ Arrays.asList(Hero.BARATS), Arrays.asList(Hero.XBORG,Hero.THAMUZ, Hero.BALMOND, Hero.LUNOX, Hero.KARRIE, Hero.CLINT) },
+					{ Arrays.asList(Hero.CHOU), Arrays.asList(Hero.MINSITTHAR, Hero.KAJA) },
 					{ Arrays.asList(Hero.GROCK), Arrays.asList(Hero.KARRIE) },
 					{ Arrays.asList(Hero.GUINEVERE), Arrays.asList(Hero.MINSITTHAR) },
 					{ Arrays.asList(Hero.LANCELOT), Arrays.asList(Hero.KAJA) },
 					{ Arrays.asList(Hero.BAXIA), Arrays.asList(Hero.BRODY) },
 					{ Arrays.asList(Hero.SUN), Arrays.asList(Hero.MYA) },
 					{ Arrays.asList(Hero.CLINT), Arrays.asList(Hero.BELERICK) },
-					{ Arrays.asList(Hero.BELERICK), Arrays.asList(Hero.LESLEY) },
+					{ Arrays.asList(Hero.BELERICK), Arrays.asList(Hero.KARRIE, Hero.LESLEY) },
 					{ Arrays.asList(Hero.MOSKOV), Arrays.asList(Hero.BELERICK) },
 					{ Arrays.asList(Hero.VALE), Arrays.asList(Hero.SABER) },
-					{ Arrays.asList(Hero.VALE), Arrays.asList(Hero.LANCELOT) },
-					{ Arrays.asList(Hero.NATALIA), Arrays.asList(Hero.AKAI) },
 					{ Arrays.asList(Hero.VALENTINA), Arrays.asList(Hero.HELCURT) },
 					{ Arrays.asList(Hero.VALENTINA), Arrays.asList(Hero.POPOL) },
 					{ Arrays.asList(Hero.ALUCARD), Arrays.asList(Hero.GUINEVERE) },
-					{ Arrays.asList(Hero.SUN), Arrays.asList(Hero.BALMOND) },
 					{ Arrays.asList(Hero.ODETTE), Arrays.asList(Hero.SABER) },
+					{ Arrays.asList(Hero.LOLITA), Arrays.asList(Hero.MINSITTHAR) },
+					{ Arrays.asList(Hero.DIGGIE), Arrays.asList(Hero.HILDA, Hero.HANZO) },
 					// { Arrays.asList(Hero.BENEDETA), Arrays.asList(Hero.SILVANNA) },
 					{ Arrays.asList(Hero.IRITHEL, Hero.MOSKOV, Hero.BRUNO), Arrays.asList(Hero.BELERICK) } });
 
@@ -121,7 +120,7 @@ public class JUnitTest {
 	}
 
 	@Test
-	public void every_hero_must_have_counters_for_every_role_other_than_yours() throws Exception {
+	public void every_hero_must_have_counters_for_every_role() throws Exception {
 		Hero[] heroes = Hero.values();
 		for (Hero hero : heroes) {
 			heroService.clearPickedHeroes();
