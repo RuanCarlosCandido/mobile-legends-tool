@@ -1,11 +1,12 @@
 package org;
 
+import static org.utils.Util.printWelcomeMesage;
+
 import java.util.Scanner;
 
 import org.apache.log4j.LogManager;
 import org.controllers.EquipmentController;
 import org.controllers.HeroController;
-import static org.utils.Util.*;
 
 
 public class App {
@@ -16,6 +17,7 @@ public class App {
 	// the player pick
 	
 	public static void main(String[] args) {
+		
 		printWelcomeMesage();
 
 		Scanner in = new Scanner(System.in);

@@ -9,6 +9,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -113,10 +114,10 @@ public class HeroService {
 	 */
 	private boolean canCounter(Hero firstHero, Hero secondHero) {
 		List<Behaviour> strengths = firstHero.getStrengths();
-		List<Behaviour> weaknesses = buildWeaknesses(firstHero.getStrengths());
+		Set<Behaviour> weaknesses = buildWeaknesses(firstHero.getStrengths());
 		firstHero.getWeaknesses().addAll(weaknesses);
 		
-		List<Behaviour> secondHeroWeaknesses = buildWeaknesses(secondHero.getStrengths());
+		Set<Behaviour> secondHeroWeaknesses = buildWeaknesses(secondHero.getStrengths());
 		secondHero.getWeaknesses().addAll(secondHeroWeaknesses);
 
 		boolean canCounter = false;

@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.facade.BehaviourFacade;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -32,38 +33,32 @@ public class JUnitTest {
 		return Arrays
 				.asList(new Object[][] {
 					{ Arrays.asList(Hero.LOLITA, Hero.ANGELA, Hero.HILDA, Hero.URANUS), Arrays.asList(Hero.ESMERALDA) },
-					{ Arrays.asList(Hero.GUINEVERE, Hero.ANGELA, Hero.ESTES, Hero.RAFAELA, Hero.HILDA), Arrays.asList(Hero.BAXIA)},
+					{ Arrays.asList(Hero.ESTES, Hero.RAFAELA, Hero.HILDA), Arrays.asList(Hero.BAXIA)},
 					{ Arrays.asList(Hero.TIGREAL, Hero.GUINEVERE, Hero.SILVANNA, Hero.AKAI, Hero.HYLOS), Arrays.asList(Hero.DIGGIE) },
 					{ Arrays.asList(Hero.HYLOS), Arrays.asList(Hero.KARRIE) },
-					{ Arrays.asList(Hero.MYA), Arrays.asList(Hero.XBORG) },
-					{ Arrays.asList(Hero.AAMON), Arrays.asList(Hero.CHOU,Hero.RUBY,Hero.EUDORA,Hero.SABER,Hero.FRANCO,Hero.BEATRIX,Hero.AULUS,Hero.PHOVEUS,Hero.GLOO,Hero.YVE,Hero.BAXIA,Hero.LANCELOT,Hero.HAYABUSA,Hero.BENEDETA,Hero.PAQUITO) },
-					{ Arrays.asList(Hero.AKAI), Arrays.asList(Hero.DIGGIE,Hero.MARTIS,Hero.NANA,Hero.MELISSA,Hero.KAJA,Hero.BARATS) },
+					{ Arrays.asList(Hero.AAMON), Arrays.asList(Hero.CHOU,Hero.RUBY,Hero.SABER,Hero.FRANCO,Hero.PHOVEUS,Hero.GLOO,Hero.BAXIA,Hero.LANCELOT,Hero.HAYABUSA) },
+					{ Arrays.asList(Hero.AKAI), Arrays.asList(Hero.DIGGIE,Hero.MARTIS,Hero.MELISSA) },
 					{ Arrays.asList(Hero.ALICE), Arrays.asList(Hero.BAXIA) },
 					{ Arrays.asList(Hero.ALICE), Arrays.asList(Hero.BRODY) },
-					{ Arrays.asList(Hero.ALPHA), Arrays.asList(Hero.RUBY) },
 					{ Arrays.asList(Hero.ALUCARD), Arrays.asList(Hero.SUN) },
-					{ Arrays.asList(Hero.ANGELA), Arrays.asList(Hero.BAXIA) },
-					{ Arrays.asList(Hero.ATLAS), Arrays.asList(Hero.DIGGIE) },
-					{ Arrays.asList(Hero.AULUS), Arrays.asList(Hero.LESLEY) },
-					{ Arrays.asList(Hero.AURORA), Arrays.asList(Hero.HELCURT) },
-					{ Arrays.asList(Hero.BARATS), Arrays.asList(Hero.XBORG,Hero.THAMUZ, Hero.BALMOND, Hero.LUNOX, Hero.KARRIE, Hero.CLINT) },
-					{ Arrays.asList(Hero.CHOU), Arrays.asList(Hero.MINSITTHAR, Hero.KAJA) },
-					{ Arrays.asList(Hero.GROCK), Arrays.asList(Hero.KARRIE) },
-					{ Arrays.asList(Hero.GUINEVERE), Arrays.asList(Hero.MINSITTHAR) },
-					{ Arrays.asList(Hero.LANCELOT), Arrays.asList(Hero.KAJA) },
-					{ Arrays.asList(Hero.BAXIA), Arrays.asList(Hero.BRODY) },
-					{ Arrays.asList(Hero.SUN), Arrays.asList(Hero.MYA) },
+					{ Arrays.asList(Hero.BARATS), Arrays.asList(Hero.XBORG,Hero.THAMUZ, Hero.KARRIE, Hero.CLINT) },
 					{ Arrays.asList(Hero.CLINT), Arrays.asList(Hero.BELERICK) },
-					{ Arrays.asList(Hero.BELERICK), Arrays.asList(Hero.KARRIE, Hero.LESLEY) },
+					{ Arrays.asList(Hero.LAYLA), Arrays.asList(Hero.ALUCARD) },
+					{ Arrays.asList(Hero.BAXIA), Arrays.asList(Hero.FLORYN) },
+					{ Arrays.asList(Hero.BELERICK), Arrays.asList(Hero.LESLEY) },
 					{ Arrays.asList(Hero.MOSKOV), Arrays.asList(Hero.BELERICK) },
 					{ Arrays.asList(Hero.VALE), Arrays.asList(Hero.SABER) },
 					{ Arrays.asList(Hero.VALENTINA), Arrays.asList(Hero.HELCURT) },
-					{ Arrays.asList(Hero.VALENTINA), Arrays.asList(Hero.POPOL) },
 					{ Arrays.asList(Hero.ALUCARD), Arrays.asList(Hero.GUINEVERE) },
 					{ Arrays.asList(Hero.ODETTE), Arrays.asList(Hero.SABER) },
 					{ Arrays.asList(Hero.LOLITA), Arrays.asList(Hero.MINSITTHAR) },
-					{ Arrays.asList(Hero.DIGGIE), Arrays.asList(Hero.HILDA, Hero.HANZO) },
-					// { Arrays.asList(Hero.BENEDETA), Arrays.asList(Hero.SILVANNA) },
+					{ Arrays.asList(Hero.DIGGIE), Arrays.asList(Hero.HILDA) },
+					{ Arrays.asList(Hero.HARLEY), Arrays.asList(Hero.SILVANNA) },
+					{ Arrays.asList(Hero.CHANGE), Arrays.asList(Hero.LOLITA) },
+					{ Arrays.asList(Hero.MATHILDA), Arrays.asList(Hero.LAYLA) },
+					{ Arrays.asList(Hero.DIGGIE), Arrays.asList(Hero.FRANCO) },
+					{ Arrays.asList(Hero.SILVANNA), Arrays.asList(Hero.KADITA) },
+					{ Arrays.asList(Hero.AURORA, Hero.EUDORA), Arrays.asList(Hero.HELCURT) },
 					{ Arrays.asList(Hero.IRITHEL, Hero.MOSKOV, Hero.BRUNO), Arrays.asList(Hero.BELERICK) } });
 
 	}
@@ -130,12 +125,16 @@ public class JUnitTest {
 
 			for (Entry<Role, List<Hero>> entry : result.entrySet())
 				//				if (entry.getKey() != hero.getRole())
-				if (entry.getValue().isEmpty())
-					throw new Exception(hero + " does not have sufficient counters " + result);
-
+				if (entry.getValue().isEmpty()) {
+					
+					throw new Exception(hero + " does not have sufficient counters " + result + "\nweak againts: " + hero.getWeaknesses() 
+					+"\nstrong against :" + BehaviourFacade.strongAgainst(hero));
+				}
 		}
 
 	}
+
+
 
 	@ParameterizedTest
 	@MethodSource("heroData")
@@ -149,7 +148,7 @@ public class JUnitTest {
 
 		for (Hero counterHero : expectedCounterHeroes) {
 			if(!counters.get(counterHero.getRole()).contains(counterHero)) {
-				throw new Exception(counterHero + " doesnt exists in counter list");
+				throw new Exception(counterHero + " doesnt exists in counter list \nweaknesses :" + counterHero.getWeaknesses() +"\nstrong against :" + BehaviourFacade.strongAgainst(counterHero));
 			}
 		}
 

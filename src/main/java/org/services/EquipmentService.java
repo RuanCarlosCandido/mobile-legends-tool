@@ -7,6 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -47,9 +48,9 @@ public class EquipmentService {
 
 	private boolean canCounter(Equipment equip, Hero hero) {
 		List<Behaviour> equipStrengths = equip.getStrengths();
-		List<Behaviour> equipWeaknesses = buildWeaknesses(equip.getStrengths());
+		Set<Behaviour> equipWeaknesses = buildWeaknesses(equip.getStrengths());
 
-		List<Behaviour> heroWeaknesses = buildWeaknesses(hero.getStrengths());
+		Set<Behaviour> heroWeaknesses = buildWeaknesses(hero.getStrengths());
 		hero.getWeaknesses().addAll(heroWeaknesses);
 
 		boolean canCounter = false;
