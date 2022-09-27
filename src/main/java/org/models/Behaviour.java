@@ -23,7 +23,7 @@ public enum Behaviour {
 	INVULNERABILITY			    (Arrays.asList("STUN","ENCAGE")),
 	INVISIBILITY		        (Arrays.asList("SPLASH_DAMAGE","ENCAGE")),
 	KNOCK_BACK   			    (Arrays.asList("CONTROL_IMMUNITY","DASH")),
-	LONG_RANGE				    (Arrays.asList("EXPLOSION","INVISIBILITY","DASH")),
+	LONG_RANGE				    (Arrays.asList("EXPLOSION","INVISIBILITY")),
 	MAGIC_DAMAGE			    (Arrays.asList("MAGIC_DEFENSE")),
 	MAGIC_DEFENSE			    (Arrays.asList("ARMOR_BREAKER_REAL_DAMAGE")),
 	MANA_POOL				    (Arrays.asList("SKILL_SUPPRESSION")), //temp

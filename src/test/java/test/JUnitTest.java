@@ -43,7 +43,6 @@ public class JUnitTest {
 					{ Arrays.asList(Hero.ALUCARD), Arrays.asList(Hero.SUN) },
 					{ Arrays.asList(Hero.BARATS), Arrays.asList(Hero.XBORG,Hero.THAMUZ, Hero.KARRIE, Hero.CLINT) },
 					{ Arrays.asList(Hero.CLINT), Arrays.asList(Hero.BELERICK) },
-					{ Arrays.asList(Hero.LAYLA), Arrays.asList(Hero.ALUCARD) },
 					{ Arrays.asList(Hero.BAXIA), Arrays.asList(Hero.FLORYN) },
 					{ Arrays.asList(Hero.BELERICK), Arrays.asList(Hero.LESLEY) },
 					{ Arrays.asList(Hero.MOSKOV), Arrays.asList(Hero.BELERICK) },
