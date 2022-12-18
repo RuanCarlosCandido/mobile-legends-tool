@@ -30,8 +30,7 @@ public class App {
 		
 				heroController.addPickedHero(in.next().toUpperCase());
 				
-				// LOGGER.info("Sugestões: " + countersHeroes);
-				heroController.getCounterHeroes().entrySet().forEach(System.out::println);
+				heroController.printCounters();
 				i++;
 				
 			} catch (Exception e) {// dont increment in case of error

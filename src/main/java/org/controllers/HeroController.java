@@ -32,4 +32,8 @@ public class HeroController {
 		
 		heroService.addPickedHero(pickedHero);
 	}
+	
+	public void printCounters() {
+		heroService.printCounters();
+	}
 }
