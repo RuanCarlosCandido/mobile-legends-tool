@@ -89,7 +89,7 @@ public class HeroService {
 
 			boolean canCounter = canCounter(iterationHero, hero);
 
-			if (canCounter 
+			if (canCounter
 //					&& !iterationHero.getRole().equals(hero.getRole()) // doesn't add counters from the same role of the picked hero
 					&& !pickedHeroes.contains(iterationHero))
 				result.get(iterationHero.getRole()).add(iterationHero);
@@ -116,7 +116,7 @@ public class HeroService {
 		List<Behaviour> strengths = firstHero.getStrengths();
 		Set<Behaviour> weaknesses = buildWeaknesses(firstHero.getStrengths());
 		firstHero.getWeaknesses().addAll(weaknesses);
-		
+
 		Set<Behaviour> secondHeroWeaknesses = buildWeaknesses(secondHero.getStrengths());
 		secondHero.getWeaknesses().addAll(secondHeroWeaknesses);
 
@@ -144,6 +144,10 @@ public class HeroService {
 		LOGGER.info("Heroi selecionado: " + hero);
 
 		pickedHeroes.add(hero);
+	}
+
+	public void printCounters() {
+		getCounterHeroes().entrySet().forEach(System.out::println);
 	}
 
 }
