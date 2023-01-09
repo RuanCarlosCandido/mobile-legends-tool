@@ -1,9 +1,8 @@
 package org.facade;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -19,34 +18,26 @@ public class BehaviourFacade {
 	 * @param hero
 	 * @return
 	 */
-	public static Set<Behaviour> buildWeaknesses(List<Behaviour> strenghts) {
-		Set<Behaviour> outWeaknesses = new HashSet<Behaviour>();
+    public static Set<Behaviour> buildWeaknesses(List<Behaviour> strengths) {
 
-		for (Behaviour outStrenght : strenghts) {
-
-			List<Behaviour> innerWeakness = outStrenght.getWeaknesses();
-
-			for (Behaviour innerStrenght : strenghts)
-				innerWeakness.removeIf(weakness -> weakness.getWeaknesses().contains(innerStrenght));
-
-			outWeaknesses.addAll(innerWeakness);
-
-		}
-		return outWeaknesses;
-	}
+        return strengths.stream()
+                .map(Behaviour::getWeaknesses) //maps it to a stream of Behaviour objects representing the weaknesses of each strength
+                .flatMap(List::stream) //flattens the streams of weaknesses into a single stream
+                .filter(weakness -> strengths.stream().noneMatch(weakness::hasWeakness)) //filters out any weaknesses that are also strengths
+                .collect(Collectors.toSet());
+    }
 	
 	
-	/**
-	 * @param hero
-	 * @param weaknesses
-	 * @return
-	 */
+    /**
+     * Returns a list of behaviours that are strong against the strengths of the given hero.
+     *
+     * @param hero the hero whose strengths to consider
+     * @return a list of behaviours that are strong against the strengths of the given hero
+     */
 	public static List<Behaviour> strongAgainst(Hero hero) {
-		Set<Behaviour> result = new HashSet<Behaviour>();
-		for(Behaviour str : hero.getStrengths()) {
-			result.addAll(Stream.of(Behaviour.values()).filter(behaviour -> behaviour.getWeaknesses().contains(str)).collect(Collectors.toList()));
-			
-		}
-		return new ArrayList<Behaviour>(result);
+        return hero.getStrengths().stream()
+                .map(str -> Stream.of(Behaviour.values()).filter(behaviour -> behaviour.getWeaknesses().contains(str)))
+                .flatMap(Function.identity()) // This effectively concatenates all the streams in the stream of streams into a single stream.
+                .collect(Collectors.toList());
 	}
 }

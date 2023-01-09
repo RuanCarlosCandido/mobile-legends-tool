@@ -1,7 +1,9 @@
 package test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
@@ -126,13 +128,10 @@ public class JUnitTest {
             heroService.addPickedHero(hero.name());
             Map<Role, List<Hero>> result = heroService.getCounterHeroes();
 
-            for (Entry<Role, List<Hero>> entry : result.entrySet())
-                // if (entry.getKey() != hero.getRole())
-                if (entry.getValue().isEmpty()) {
-
-                    throw new Exception(hero + " does not have sufficient counters " + result + "\nweak againts: "
-                            + hero.getWeaknesses() + "\nstrong against :" + BehaviourFacade.strongAgainst(hero));
-                }
+            if (result.values().stream().anyMatch(list -> list.isEmpty())) 
+                throw new Exception(hero + " does not have sufficient counters " + result + "\nweak againts: "
+                        + hero.getWeaknesses() + "\nstrong against :" + BehaviourFacade.strongAgainst(hero));
+            
         }
 
     }
@@ -150,13 +149,9 @@ public class JUnitTest {
             counters = heroService.getCounterHeroes();
 
             for (Entry<Role, List<Hero>> calculatedEntry : counters.entrySet()) {
-                for (Hero expectedCounter : expectedCounterHeroes) {
-
-                    if (isExpectedCounterPresentInCountersList(calculatedEntry, expectedCounter)) {
-                        isCounter = true;
-                    }
+                if (expectedCounterHeroes.stream().anyMatch(calculatedEntry.getValue()::contains)) {
+                    isCounter = true;
                 }
-
             }
             if (!isCounter) {
                 throw new Exception(descreverMotivo(expectedCounterHeroes, hero));
@@ -164,15 +159,6 @@ public class JUnitTest {
         }
     }
 
-    /**
-     * @param calculatedEntry
-     * @param expectedCounter
-     * @return
-     */
-    private boolean isExpectedCounterPresentInCountersList(Entry<Role, List<Hero>> calculatedEntry,
-            Hero expectedCounter) {
-        return calculatedEntry.getValue().contains(expectedCounter);
-    }
 
     /**
      * @param expectedCounterHeroes
@@ -221,4 +207,19 @@ public class JUnitTest {
     private boolean canHeroCounterTheExpectedCounter(Behaviour counterHeroWeakness, Behaviour heroStrength) {
         return counterHeroWeakness.equals(heroStrength);
     }
+    
+    
+    @Test
+    public void testBuildWeaknesses() {
+    
+        List<Behaviour> strengths = new ArrayList<>();
+        strengths.add(Behaviour.SHIELD);
+        
+        Set<Behaviour> weaknesses = BehaviourFacade.buildWeaknesses(strengths);
+
+        Behaviour expectedWeakness = Behaviour.SHIELD_STEALING;
+        
+        assertTrue(weaknesses.contains(expectedWeakness));
+    }
+    
 }

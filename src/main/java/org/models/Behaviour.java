@@ -67,6 +67,10 @@ public enum Behaviour {
 
 		return result;
 	}
+	
+	public boolean hasWeakness(Behaviour other) {
+	    return this.weaknesses.contains(other.name());
+	}
 
 
 
