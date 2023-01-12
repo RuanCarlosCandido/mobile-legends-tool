@@ -184,10 +184,6 @@ public enum Hero {
 
 	}
 
-	public static Map<String, Hero> getHeroesNameMap() {
-		return heroesNameMap;
-	}
-
 	public Role getRole() {
 		return role;
 	}

@@ -1,0 +1,248 @@
+{
+  "armor_breaker_real_damage": {
+    "strong_against": [],
+    "weak_against": [
+      "hp_pool",
+      "ressurrection",
+      "summon"
+    ]
+  },
+  "control_immunity": {
+    "strong_against": [],
+    "weak_against": [
+      "explosion",
+      "high_mobility",
+      "long_range"
+    ]
+  },
+  "dash": {
+    "strong_against": [],
+    "weak_against": [
+      "dash_suppression",
+      "encage",
+      "skill_suppression"
+    ]
+  },
+  "dash_suppression": {
+    "strong_against": [],
+    "weak_against": [
+      "high_mobility",
+      "knock_back",
+      "reflection"
+    ]
+  },
+  "encage": {
+    "strong_against": [],
+    "weak_against": [
+      "control_immunity",
+      "reflection"
+    ]
+  },
+  "endurance": {
+    "strong_against": [],
+    "weak_against": [
+      "armor_breaker_real_damage",
+      "reap",
+      "slow"
+    ]
+  },
+  "explosion": {
+    "strong_against": [],
+    "weak_against": [
+      "endurance",
+      "hp_pool",
+      "ressurrection",
+      "shield"
+    ]
+  },
+  "high_mobility": {
+    "strong_against": [],
+    "weak_against": [
+      "encage",
+      "invulnerability",
+      "slow"
+    ]
+  },
+  "hp_based_damage": {
+    "strong_against": [],
+    "weak_against": [
+      "pull",
+      "shield",
+      "stun"
+    ]
+  },
+  "hp_pool": {
+    "strong_against": [],
+    "weak_against": [
+      "endurance",
+      "hp_based_damage"
+    ]
+  },
+  "invisibility": {
+    "strong_against": [],
+    "weak_against": [
+      "encage",
+      "high_mobility",
+      "hp_pool"
+    ]
+  },
+  "invulnerability": {
+    "strong_against": [],
+    "weak_against": [
+      "encage",
+      "high_mobility",
+      "stun"
+    ]
+  },
+  "knock_back": {
+    "strong_against": [],
+    "weak_against": [
+      "control_immunity",
+      "dash",
+      "skill_suppression"
+    ]
+  },
+  "long_range": {
+    "strong_against": [],
+    "weak_against": [
+      "explosion",
+      "invisibility"
+    ]
+  },
+  "magic_damage": {
+    "strong_against": [],
+    "weak_against": [
+      "magic_defense"
+    ]
+  },
+  "magic_defense": {
+    "strong_against": [],
+    "weak_against": [
+      "armor_breaker_real_damage"
+    ]
+  },
+  "mana_pool": {
+    "strong_against": [],
+    "weak_against": [
+      "skill_suppression"
+    ]
+  },
+  "mana_regeneration": {
+    "strong_against": [],
+    "weak_against": [
+      "skill_suppression"
+    ]
+  },
+  "physical_defense": {
+    "strong_against": [],
+    "weak_against": [
+      "armor_breaker_real_damage"
+    ]
+  },
+  "pull": {
+    "strong_against": [],
+    "weak_against": [
+      "endurance",
+      "hp_pool",
+      "summon"
+    ]
+  },
+  "reap": {
+    "strong_against": [],
+    "weak_against": [
+      "invulnerability",
+      "reflection",
+      "shield"
+    ]
+  },
+  "reflection": {
+    "strong_against": [],
+    "weak_against": [
+      "explosion",
+      "long_range",
+      "summon"
+    ]
+  },
+  "regeneration": {
+    "strong_against": [],
+    "weak_against": [
+      "regeneration_reduction",
+      "summon"
+    ]
+  },
+  "regeneration_reduction": {
+    "strong_against": [],
+    "weak_against": [
+      "knock_back",
+      "summon"
+    ]
+  },
+  "ressurrection": {
+    "strong_against": [],
+    "weak_against": [
+      "high_mobility",
+      "long_range"
+    ]
+  },
+  "shield": {
+    "strong_against": [],
+    "weak_against": [
+      "reap",
+      "regeneration_reduction",
+      "shield_stealing"
+    ]
+  },
+  "shield_stealing": {
+    "strong_against": [],
+    "weak_against": [
+      "armor_breaker_real_damage",
+      "hp_pool",
+      "regeneration_reduction"
+    ]
+  },
+  "skill_suppression": {
+    "strong_against": [],
+    "weak_against": [
+      "control_immunity",
+      "reap",
+      "ressurrection"
+    ]
+  },
+  "slow": {
+    "strong_against": [],
+    "weak_against": [
+      "control_immunity",
+      "pull",
+      "slow_immunity"
+    ]
+  },
+  "slow_immunity": {
+    "strong_against": [],
+    "weak_against": [
+      "explosion",
+      "stun"
+    ]
+  },
+  "splash_damage": {
+    "strong_against": [],
+    "weak_against": [
+      "invulnerability",
+      "reflection"
+    ]
+  },
+  "stun": {
+    "strong_against": [],
+    "weak_against": [
+      "endurance",
+      "knock_back",
+      "skill_suppression"
+    ]
+  },
+  "summon": {
+    "strong_against": [],
+    "weak_against": [
+      "invisibility",
+      "splash_damage"
+    ]
+  }
+}

@@ -1,0 +1,963 @@
+{
+  "aamon": {
+    "behaviours": [
+      "explosion",
+      "invisibility",
+      "regeneration"
+    ],
+    "role": "jungle"
+  },
+  "akai": {
+    "behaviours": [
+      "dash",
+      "shield",
+      "skill_suppression",
+      "splash_damage"
+    ],
+    "role": "tank"
+  },
+  "aldous": {
+    "behaviours": [
+      "control_immunity",
+      "explosion",
+      "high_mobility",
+      "shield"
+    ],
+    "role": "soldier"
+  },
+  "alice": {
+    "behaviours": [
+      "dash",
+      "high_mobility",
+      "long_range",
+      "regeneration"
+    ],
+    "role": "mage"
+  },
+  "alpha": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "skill_suppression",
+      "splash_damage"
+    ],
+    "role": "soldier"
+  },
+  "alucard": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "dash",
+      "regeneration"
+    ],
+    "role": "damage"
+  },
+  "angela": {
+    "behaviours": [
+      "high_mobility",
+      "regeneration",
+      "shield",
+      "slow",
+      "stun"
+    ],
+    "role": "support"
+  },
+  "argus": {
+    "behaviours": [
+      "dash",
+      "invulnerability"
+    ],
+    "role": "soldier"
+  },
+  "atlas": {
+    "behaviours": [
+      "control_immunity",
+      "endurance",
+      "high_mobility",
+      "skill_suppression"
+    ],
+    "role": "tank"
+  },
+  "aulus": {
+    "behaviours": [
+      "high_mobility",
+      "regeneration",
+      "splash_damage"
+    ],
+    "role": "soldier"
+  },
+  "aurora": {
+    "behaviours": [
+      "explosion",
+      "slow",
+      "splash_damage",
+      "stun"
+    ],
+    "role": "mage"
+  },
+  "badang": {
+    "behaviours": [
+      "encage",
+      "skill_suppression",
+      "splash_damage"
+    ],
+    "role": "soldier"
+  },
+  "balmond": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "dash",
+      "regeneration",
+      "splash_damage"
+    ],
+    "role": "soldier"
+  },
+  "bane": {
+    "behaviours": [
+      "knock_back",
+      "regeneration",
+      "slow",
+      "splash_damage"
+    ],
+    "role": "jungle"
+  },
+  "barats": {
+    "behaviours": [
+      "encage",
+      "endurance",
+      "skill_suppression",
+      "slow",
+      "splash_damage"
+    ],
+    "role": "tank"
+  },
+  "baxia": {
+    "behaviours": [
+      "dash",
+      "regeneration_reduction",
+      "slow",
+      "splash_damage"
+    ],
+    "role": "soldier"
+  },
+  "beatrix": {
+    "behaviours": [
+      "dash",
+      "long_range",
+      "splash_damage"
+    ],
+    "role": "damage"
+  },
+  "belerick": {
+    "behaviours": [
+      "hp_pool",
+      "reflection",
+      "regeneration",
+      "skill_suppression"
+    ],
+    "role": "tank"
+  },
+  "benedeta": {
+    "behaviours": [
+      "control_immunity",
+      "dash",
+      "invulnerability",
+      "slow",
+      "splash_damage"
+    ],
+    "role": "jungle"
+  },
+  "brody": {
+    "behaviours": [
+      "high_mobility",
+      "long_range",
+      "skill_suppression",
+      "slow"
+    ],
+    "role": "damage"
+  },
+  "bruno": {
+    "behaviours": [
+      "knock_back",
+      "reap"
+    ],
+    "role": "damage"
+  },
+  "carmilla": {
+    "behaviours": [
+      "endurance",
+      "slow"
+    ],
+    "role": "tank"
+  },
+  "cecilion": {
+    "behaviours": [
+      "slow"
+    ],
+    "role": "mage"
+  },
+  "change": {
+    "behaviours": [
+      "high_mobility",
+      "long_range",
+      "slow",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "chou": {
+    "behaviours": [
+      "control_immunity",
+      "dash",
+      "shield",
+      "slow"
+    ],
+    "role": ""
+  },
+  "claude": {
+    "behaviours": [
+      "high_mobility",
+      "reap"
+    ],
+    "role": ""
+  },
+  "clint": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "dash",
+      "stun"
+    ],
+    "role": ""
+  },
+  "cyclops": {
+    "behaviours": [
+      "encage",
+      "high_mobility",
+      "slow"
+    ],
+    "role": ""
+  },
+  "diggie": {
+    "behaviours": [
+      "control_immunity",
+      "encage",
+      "long_range"
+    ],
+    "role": ""
+  },
+  "dyrroth": {
+    "behaviours": [
+      "explosion",
+      "regeneration"
+    ],
+    "role": ""
+  },
+  "edith": {
+    "behaviours": [
+      "endurance",
+      "slow"
+    ],
+    "role": ""
+  },
+  "esmeralda": {
+    "behaviours": [
+      "regeneration",
+      "shield_stealing",
+      "slow",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "estes": {
+    "behaviours": [
+      "regeneration",
+      "slow"
+    ],
+    "role": ""
+  },
+  "eudora": {
+    "behaviours": [
+      "explosion",
+      "splash_damage",
+      "stun"
+    ],
+    "role": ""
+  },
+  "fanny": {
+    "behaviours": [
+      "high_mobility",
+      "regeneration"
+    ],
+    "role": ""
+  },
+  "faramis": {
+    "behaviours": [
+      "high_mobility",
+      "ressurrection",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "floryn": {
+    "behaviours": [
+      "shield",
+      "skill_suppression",
+      "slow"
+    ],
+    "role": ""
+  },
+  "franco": {
+    "behaviours": [
+      "pull",
+      "regeneration",
+      "stun"
+    ],
+    "role": ""
+  },
+  "frederin": {
+    "behaviours": [
+      "endurance",
+      "reflection",
+      "regeneration",
+      "slow"
+    ],
+    "role": ""
+  },
+  "freya": {
+    "behaviours": [
+      "endurance",
+      "reap",
+      "shield"
+    ],
+    "role": ""
+  },
+  "gatotkaca": {
+    "behaviours": [
+      "endurance",
+      "long_range",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "gloo": {
+    "behaviours": [
+      "regeneration",
+      "skill_suppression",
+      "slow",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "gord": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "stun"
+    ],
+    "role": ""
+  },
+  "granger": {
+    "behaviours": [
+      "high_mobility"
+    ],
+    "role": ""
+  },
+  "grock": {
+    "behaviours": [
+      "control_immunity",
+      "encage",
+      "endurance"
+    ],
+    "role": ""
+  },
+  "guinevere": {
+    "behaviours": [
+      "dash",
+      "regeneration",
+      "skill_suppression"
+    ],
+    "role": ""
+  },
+  "gusion": {
+    "behaviours": [
+      "explosion",
+      "high_mobility"
+    ],
+    "role": ""
+  },
+  "hanabi": {
+    "behaviours": [
+      "control_immunity",
+      "shield",
+      "skill_suppression",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "hanzo": {
+    "behaviours": [
+      "high_mobility",
+      "invulnerability",
+      "invulnerability"
+    ],
+    "role": ""
+  },
+  "harith": {
+    "behaviours": [
+      "high_mobility",
+      "slow"
+    ],
+    "role": ""
+  },
+  "harley": {
+    "behaviours": [
+      "dash",
+      "explosion",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "hayabusa": {
+    "behaviours": [
+      "dash",
+      "invulnerability",
+      "regeneration",
+      "slow",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "helcurt": {
+    "behaviours": [
+      "dash",
+      "explosion",
+      "invisibility",
+      "skill_suppression"
+    ],
+    "role": ""
+  },
+  "hilda": {
+    "behaviours": [
+      "explosion",
+      "high_mobility",
+      "regeneration",
+      "shield"
+    ],
+    "role": ""
+  },
+  "hylos": {
+    "behaviours": [
+      "hp_pool",
+      "regeneration",
+      "slow"
+    ],
+    "role": ""
+  },
+  "irithel": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "reap",
+      "slow",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "jawhead": {
+    "behaviours": [
+      "endurance",
+      "high_mobility",
+      "shield"
+    ],
+    "role": ""
+  },
+  "johnson": {
+    "behaviours": [
+      "high_mobility",
+      "slow",
+      "splash_damage",
+      "stun"
+    ],
+    "role": ""
+  },
+  "julian": {
+    "behaviours": [
+      "explosion",
+      "regeneration"
+    ],
+    "role": ""
+  },
+  "kadita": {
+    "behaviours": [
+      "control_immunity",
+      "regeneration",
+      "stun"
+    ],
+    "role": ""
+  },
+  "kagura": {
+    "behaviours": [
+      "control_immunity",
+      "shield",
+      "slow",
+      "splash_damage",
+      "stun"
+    ],
+    "role": ""
+  },
+  "kaja": {
+    "behaviours": [
+      "dash",
+      "regeneration",
+      "skill_suppression",
+      "slow",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "karina": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "dash",
+      "explosion",
+      "invulnerability",
+      "reflection"
+    ],
+    "role": ""
+  },
+  "karrie": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "hp_based_damage",
+      "reap",
+      "slow"
+    ],
+    "role": ""
+  },
+  "khaleed": {
+    "behaviours": [
+      "endurance",
+      "regeneration"
+    ],
+    "role": ""
+  },
+  "khufra": {
+    "behaviours": [
+      "dash",
+      "dash_suppression",
+      "knock_back",
+      "regeneration"
+    ],
+    "role": ""
+  },
+  "kimmy": {
+    "behaviours": [
+      "long_range",
+      "reap",
+      "slow"
+    ],
+    "role": ""
+  },
+  "lancelot": {
+    "behaviours": [
+      "dash",
+      "invulnerability",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "lapulapu": {
+    "behaviours": [
+      "control_immunity",
+      "dash",
+      "endurance",
+      "regeneration",
+      "shield",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "layla": {
+    "behaviours": [
+      "long_range",
+      "slow",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "leomord": {
+    "behaviours": [
+      "endurance",
+      "regeneration"
+    ],
+    "role": ""
+  },
+  "lesley": {
+    "behaviours": [
+      "explosion",
+      "invisibility",
+      "knock_back",
+      "long_range"
+    ],
+    "role": ""
+  },
+  "ling": {
+    "behaviours": [
+      "high_mobility",
+      "invisibility"
+    ],
+    "role": ""
+  },
+  "lolita": {
+    "behaviours": [
+      "dash",
+      "shield",
+      "slow"
+    ],
+    "role": ""
+  },
+  "louyi": {
+    "behaviours": [
+      "high_mobility",
+      "knock_back",
+      "shield",
+      "slow",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "lunox": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "control_immunity",
+      "invulnerability",
+      "reap",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "lylia": {
+    "behaviours": [
+      "regeneration",
+      "slow"
+    ],
+    "role": ""
+  },
+  "martis": {
+    "behaviours": [
+      "control_immunity",
+      "regeneration"
+    ],
+    "role": ""
+  },
+  "masha": {
+    "behaviours": [
+      "high_mobility",
+      "shield"
+    ],
+    "role": ""
+  },
+  "mathilda": {
+    "behaviours": [
+      "dash",
+      "high_mobility",
+      "knock_back",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "melissa": {
+    "behaviours": [
+      "control_immunity",
+      "slow"
+    ],
+    "role": ""
+  },
+  "minotaur": {
+    "behaviours": [
+      "regeneration",
+      "slow",
+      "stun"
+    ],
+    "role": ""
+  },
+  "minsitthar": {
+    "behaviours": [
+      "dash_suppression",
+      "pull",
+      "shield",
+      "stun"
+    ],
+    "role": ""
+  },
+  "moskov": {
+    "behaviours": [
+      "reap",
+      "slow"
+    ],
+    "role": ""
+  },
+  "mya": {
+    "behaviours": [
+      "control_immunity",
+      "reap",
+      "stun"
+    ],
+    "role": ""
+  },
+  "nana": {
+    "behaviours": [
+      "ressurrection",
+      "skill_suppression",
+      "slow",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "natalia": {
+    "behaviours": [
+      "high_mobility",
+      "invisibility",
+      "skill_suppression"
+    ],
+    "role": ""
+  },
+  "natan": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "knock_back",
+      "knock_back",
+      "long_range",
+      "splash_damage",
+      "summon"
+    ],
+    "role": ""
+  },
+  "odette": {
+    "behaviours": [
+      "slow",
+      "splash_damage",
+      "stun"
+    ],
+    "role": ""
+  },
+  "paquito": {
+    "behaviours": [
+      "control_immunity",
+      "dash",
+      "knock_back",
+      "shield",
+      "skill_suppression"
+    ],
+    "role": ""
+  },
+  "pharsa": {
+    "behaviours": [
+      "high_mobility",
+      "long_range",
+      "splash_damage",
+      "stun"
+    ],
+    "role": ""
+  },
+  "phoveus": {
+    "behaviours": [
+      "dash",
+      "skill_suppression",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "popol": {
+    "behaviours": [
+      "reap",
+      "skill_suppression",
+      "summon"
+    ],
+    "role": ""
+  },
+  "rafaela": {
+    "behaviours": [
+      "regeneration",
+      "slow"
+    ],
+    "role": ""
+  },
+  "roger": {
+    "behaviours": [
+      "high_mobility",
+      "reap",
+      "regeneration"
+    ],
+    "role": ""
+  },
+  "ruby": {
+    "behaviours": [
+      "regeneration",
+      "slow",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "saber": {
+    "behaviours": [
+      "dash",
+      "explosion",
+      "skill_suppression",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "selena": {
+    "behaviours": [
+      "long_range",
+      "slow",
+      "stun"
+    ],
+    "role": ""
+  },
+  "silvanna": {
+    "behaviours": [
+      "dash",
+      "encage",
+      "shield",
+      "slow",
+      "stun"
+    ],
+    "role": ""
+  },
+  "sun": {
+    "behaviours": [
+      "reap",
+      "summon"
+    ],
+    "role": ""
+  },
+  "terizla": {
+    "behaviours": [
+      "encage",
+      "endurance",
+      "regeneration"
+    ],
+    "role": ""
+  },
+  "thamuz": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "regeneration",
+      "slow"
+    ],
+    "role": ""
+  },
+  "tigreal": {
+    "behaviours": [
+      "dash",
+      "endurance",
+      "knock_back",
+      "skill_suppression",
+      "slow",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "uranus": {
+    "behaviours": [
+      "control_immunity",
+      "dash",
+      "regeneration",
+      "shield"
+    ],
+    "role": ""
+  },
+  "vale": {
+    "behaviours": [
+      "high_mobility",
+      "slow",
+      "splash_damage",
+      "stun"
+    ],
+    "role": ""
+  },
+  "valentina": {
+    "behaviours": [
+      "long_range",
+      "slow"
+    ],
+    "role": ""
+  },
+  "valir": {
+    "behaviours": [
+      "knock_back",
+      "skill_suppression",
+      "slow"
+    ],
+    "role": ""
+  },
+  "vexana": {
+    "behaviours": [
+      "skill_suppression",
+      "slow",
+      "splash_damage",
+      "summon"
+    ],
+    "role": ""
+  },
+  "wanwan": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "control_immunity",
+      "invulnerability",
+      "reap"
+    ],
+    "role": ""
+  },
+  "xavier": {
+    "behaviours": [
+      "long_range",
+      "splash_damage",
+      "stun"
+    ],
+    "role": ""
+  },
+  "xborg": {
+    "behaviours": [
+      "armor_breaker_real_damage",
+      "shield",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "yisunshin": {
+    "behaviours": [
+      "invulnerability",
+      "long_range"
+    ],
+    "role": ""
+  },
+  "yuzhong": {
+    "behaviours": [
+      "high_mobility",
+      "regeneration"
+    ],
+    "role": ""
+  },
+  "yve": {
+    "behaviours": [
+      "control_immunity",
+      "high_mobility",
+      "splash_damage"
+    ],
+    "role": ""
+  },
+  "zhask": {
+    "behaviours": [
+      "slow",
+      "summon"
+    ],
+    "role": ""
+  },
+  "zilong": {
+    "behaviours": [
+      "high_mobility",
+      "reap",
+      "slow_immunity"
+    ],
+    "role": ""
+  }
+}

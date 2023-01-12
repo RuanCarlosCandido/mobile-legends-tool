@@ -28,7 +28,7 @@ public class App {
 			try {
 				System.out.println("Entre com o Nome do " + (i + 1) + "º Hero : ");
 		
-				heroController.addPickedHero(in.next().toUpperCase());
+				heroController.addPickedHero(in.next().toLowerCase());
 				
 				heroController.printCounters();
 				i++;
@@ -38,9 +38,9 @@ public class App {
 			}
 		}
 		in.close();
-		System.out.println("\n---------------------EQUIPS-----------------------------------");
-		EquipmentController equipController = new EquipmentController();
-		equipController.setPickedHeroes(heroController.getPickedHeroes());
-		equipController.getCounterEquipments().entrySet().forEach(System.out::println);;
+//		System.out.println("\n---------------------EQUIPS-----------------------------------");
+//		EquipmentController equipController = new EquipmentController();
+//		equipController.setPickedHeroes(heroController.getPickedHeroes());
+//		equipController.getCounterEquipments().entrySet().forEach(System.out::println);;
 	}
 }

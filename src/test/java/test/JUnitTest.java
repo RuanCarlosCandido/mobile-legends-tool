@@ -72,14 +72,14 @@ public class JUnitTest {
     @Test
     public void all_heroes_must_have_counters_sucess_expected() throws Exception {
 
-        Map<Role, List<Hero>> result = null;
+        Map<String, List<String>> result = null;
         boolean isEmpty = true;
         Hero[] heroes = Hero.values();
         for (Hero hero : heroes) {
             heroService.addPickedHero(hero.name());
             result = heroService.getCounterHeroes();
             isEmpty = true;
-            for (Role role : result.keySet()) {
+            for (String role : result.keySet()) {
                 if (!result.get(role).isEmpty())
                     isEmpty = false;
             }
@@ -94,7 +94,7 @@ public class JUnitTest {
     public void get_counters_from_two_heroes_sucess_expected() {
         heroService.addPickedHero("akai");
         heroService.addPickedHero("alpha");
-        Map<Role, List<Hero>> result = heroService.getCounterHeroes();
+        Map<String, List<String>> result = heroService.getCounterHeroes();
 
         assertEquals(false, result.get(Role.TANK).isEmpty());
         assertEquals(false, result.get(Role.MAGE).isEmpty());
@@ -112,7 +112,7 @@ public class JUnitTest {
     @Test
     public void picking_a_hero_that_counters_one_in_counterList_must_remove_it() {
         heroService.addPickedHero("lolita");
-        Map<Role, List<Hero>> result = heroService.getCounterHeroes();
+        Map<String, List<String>> result = heroService.getCounterHeroes();
         assertEquals(true, result.get(Hero.ESMERALDA.getRole()).contains(Hero.ESMERALDA));
         heroService.addPickedHero("karina");
         result = heroService.getCounterHeroes();
@@ -126,7 +126,7 @@ public class JUnitTest {
             heroService.clearPickedHeroes();
             heroService.clearResult();
             heroService.addPickedHero(hero.name());
-            Map<Role, List<Hero>> result = heroService.getCounterHeroes();
+            Map<String, List<String>> result = heroService.getCounterHeroes();
 
             if (result.values().stream().anyMatch(list -> list.isEmpty())) 
                 throw new Exception(hero + " does not have sufficient counters " + result + "\nweak againts: "
@@ -139,7 +139,7 @@ public class JUnitTest {
     @ParameterizedTest
     @MethodSource("heroData")
     public void general(List<Hero> heroList, List<Hero> expectedCounterHeroes) throws Exception {
-        Map<Role, List<Hero>> counters = new HashMap<Role, List<Hero>>();
+        Map<String, List<String>> counters = new HashMap<>();
 
         for (Hero hero : heroList) {
 
@@ -148,7 +148,7 @@ public class JUnitTest {
             heroService.addPickedHero(hero.name());
             counters = heroService.getCounterHeroes();
 
-            for (Entry<Role, List<Hero>> calculatedEntry : counters.entrySet()) {
+            for (Entry<String, List<String>> calculatedEntry : counters.entrySet()) {
                 if (expectedCounterHeroes.stream().anyMatch(calculatedEntry.getValue()::contains)) {
                     isCounter = true;
                 }
