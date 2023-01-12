@@ -183,6 +183,7 @@
   },
   "carmilla": {
     "behaviours": [
+      "shield_stealing",
       "endurance",
       "slow"
     ],
@@ -590,6 +591,7 @@
   },
   "lesley": {
     "behaviours": [
+      "armor_breaker_real_damage",
       "explosion",
       "invisibility",
       "knock_back",
@@ -708,7 +710,7 @@
       "slow",
       "splash_damage"
     ],
-    "role": ""
+    "role": "mage"
   },
   "natalia": {
     "behaviours": [

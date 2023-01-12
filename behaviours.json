@@ -1,11 +1,7 @@
 {
   "armor_breaker_real_damage": {
-    "strong_against": [],
-    "weak_against": [
-      "hp_pool",
-      "ressurrection",
-      "summon"
-    ]
+    "strong_against": ["endurance", "physical_defense", "magic_damage", "shield_stealing", "encage"],
+    "weak_against": ["hp_pool", "dash", "high_mobility", "long_range", "reflection"]
   },
   "control_immunity": {
     "strong_against": [],
@@ -19,7 +15,6 @@
     "strong_against": [],
     "weak_against": [
       "dash_suppression",
-      "encage",
       "skill_suppression"
     ]
   },

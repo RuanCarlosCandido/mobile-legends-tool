@@ -92,7 +92,7 @@ public class HeroService {
 			if (canCounter
 //					&& !iterationHero.getRole().equals(hero.getRole()) // doesn't add counters from the same role of the picked hero
 					&& !pickedHeroes.contains(entry.getKey()))
-				countersMapResult.get(getHeroes().get(heroName).getRole()).add(iterationHero);
+				countersMapResult.computeIfAbsent(getHeroes().get(iterationHero).getRole(), k -> new ArrayList<>()).add(iterationHero);
 		}
 	}
 

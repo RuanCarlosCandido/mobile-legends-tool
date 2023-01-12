@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Optional;
 import java.util.Set;
 
 import org.facade.BehaviourFacade;
@@ -19,13 +20,14 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.models.Behaviour;
 import org.models.Hero;
+import org.models.HeroesResponse;
 import org.models.Role;
 import org.services.HeroService;
 
 public class JUnitTest {
 
     HeroService heroService = new HeroService();
-
+    
     @BeforeEach
     void cleanResult() {
         heroService.clearResult();
@@ -91,13 +93,21 @@ public class JUnitTest {
     }
 
     @Test
+    public void get_counters_from_one_hero_sucess_expected() {
+        heroService.addPickedHero("akai");
+        Map<String, List<String>> result = heroService.getCounterHeroes();
+
+        assertEquals(false, result.get("soldier").isEmpty());
+    }
+    
+    @Test
     public void get_counters_from_two_heroes_sucess_expected() {
         heroService.addPickedHero("akai");
         heroService.addPickedHero("alpha");
         Map<String, List<String>> result = heroService.getCounterHeroes();
 
-        assertEquals(false, result.get(Role.TANK).isEmpty());
-        assertEquals(false, result.get(Role.MAGE).isEmpty());
+        assertEquals(true, Optional.ofNullable(result.get("tank")).isPresent());
+        assertEquals(true, Optional.ofNullable(result.get("mage")).isPresent());
     }
 
     @Test
@@ -221,5 +231,6 @@ public class JUnitTest {
         
         assertTrue(weaknesses.contains(expectedWeakness));
     }
+    
     
 }
