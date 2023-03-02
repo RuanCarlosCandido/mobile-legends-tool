@@ -3,6 +3,7 @@ package org.services;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -50,14 +51,14 @@ public class HeroService {
 
 	 Adjust the counter heroes list by removing heroes that either can counter the picked hero, or has been picked by the player.
 	 Also remove the picked hero from the counter heroes list.
-	 @param heroName - the picked hero for which the counter heroes list is being adjusted
+	 @param lastHeroSelectedName - the picked hero for which the counter heroes list is being adjusted
 	 */
-	private void adjust(String heroName) {
-		countersMapResult.values().forEach(list -> list.removeIf(
-				insideHeroList -> pickedHeroes.stream()
-						.anyMatch(pickedHero -> canCounter(getHeroes().get(heroName).getBehaviours(), getHeroes().get(insideHeroList).getBehaviours())
-								|| canCounter(getHeroes().get(pickedHero).getBehaviours(), getHeroes().get(insideHeroList).getBehaviours())
-								|| insideHeroList.equals(heroName))));
+	private void adjust(String lastHeroSelectedName) {
+		countersMapResult.values().forEach(countersListForRole -> countersListForRole.removeIf(
+				heroAlreadyInCountersList -> pickedHeroes.stream()
+						.anyMatch(previousPickedHero -> canCounter(getHeroes().get(lastHeroSelectedName).getBehaviours(), getHeroes().get(heroAlreadyInCountersList).getBehaviours())
+								|| canCounter(getHeroes().get(previousPickedHero).getBehaviours(), getHeroes().get(heroAlreadyInCountersList).getBehaviours())
+								|| heroAlreadyInCountersList.equals(lastHeroSelectedName))));
 	}
 
 	/**
@@ -142,14 +143,20 @@ public class HeroService {
 	 @param heroBehaviours - a list of hero behaviours that should be checked for strength
 	 @return a set of heroes that the given behaviours are strong against
 	 */
-	private Set<String> buildStrengths(List<String> heroBehaviours) {
-		return heroBehaviours.stream()
-				.map(behaviour -> getBehaviours().get(behaviour).getStrongAgainst())
-				.flatMap(List::stream)
-				.collect(Collectors.toSet());
+	public Set<String> buildStrengths(List<String> heroBehaviours) {
+	    // create a new set to store the behaviours
+        Set<String> strengths = new HashSet<>();
+        // iterate over the input list and add the behaviours to the set
+        heroBehaviours.forEach(behaviour -> {
+            strengths.add(behaviour);
+            // also add the strong against behaviours 
+            strengths.addAll(getBehaviours().get(behaviour).getStrongAgainst());
+        });
+        // return the set
+        return strengths;
 	}
 
-	private Set<String> buildWeaknesses(List<String> heroBehaviours) {
+	public Set<String> buildWeaknesses(List<String> heroBehaviours) {
 		return heroBehaviours.stream()
 				.map(behaviour -> getBehaviours().get(behaviour).getWeakAgainst())
 				.flatMap(List::stream)

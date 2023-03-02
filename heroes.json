@@ -202,7 +202,7 @@
       "slow",
       "splash_damage"
     ],
-    "role": ""
+    "role": "mage"
   },
   "chou": {
     "behaviours": [
@@ -211,14 +211,14 @@
       "shield",
       "slow"
     ],
-    "role": ""
+    "role": "damage"
   },
   "claude": {
     "behaviours": [
       "high_mobility",
       "reap"
     ],
-    "role": ""
+    "role": "damage"
   },
   "clint": {
     "behaviours": [
@@ -226,7 +226,7 @@
       "dash",
       "stun"
     ],
-    "role": ""
+    "role": "damage"
   },
   "cyclops": {
     "behaviours": [
@@ -234,7 +234,7 @@
       "high_mobility",
       "slow"
     ],
-    "role": ""
+    "role": "mage"
   },
   "diggie": {
     "behaviours": [
@@ -242,21 +242,21 @@
       "encage",
       "long_range"
     ],
-    "role": ""
+    "role": "support"
   },
   "dyrroth": {
     "behaviours": [
       "explosion",
       "regeneration"
     ],
-    "role": ""
+    "role": "damage"
   },
   "edith": {
     "behaviours": [
       "endurance",
       "slow"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "esmeralda": {
     "behaviours": [
@@ -265,14 +265,14 @@
       "slow",
       "splash_damage"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "estes": {
     "behaviours": [
       "regeneration",
       "slow"
     ],
-    "role": ""
+    "role": "support"
   },
   "eudora": {
     "behaviours": [
@@ -280,30 +280,31 @@
       "splash_damage",
       "stun"
     ],
-    "role": ""
+    "role": "mage"
   },
   "fanny": {
     "behaviours": [
       "high_mobility",
       "regeneration"
     ],
-    "role": ""
+    "role": "damage"
   },
   "faramis": {
     "behaviours": [
       "high_mobility",
-      "ressurrection",
+      "resurrection",
       "splash_damage"
     ],
-    "role": ""
+    "role": "support"
   },
   "floryn": {
     "behaviours": [
       "shield",
       "skill_suppression",
-      "slow"
+      "slow",
+      "regeneration"
     ],
-    "role": ""
+    "role": "support"
   },
   "franco": {
     "behaviours": [
@@ -311,7 +312,7 @@
       "regeneration",
       "stun"
     ],
-    "role": ""
+    "role": "tank"
   },
   "frederin": {
     "behaviours": [
@@ -320,7 +321,7 @@
       "regeneration",
       "slow"
     ],
-    "role": ""
+    "role": "tank"
   },
   "freya": {
     "behaviours": [
@@ -328,7 +329,7 @@
       "reap",
       "shield"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "gatotkaca": {
     "behaviours": [
@@ -336,7 +337,7 @@
       "long_range",
       "splash_damage"
     ],
-    "role": ""
+    "role": "tank"
   },
   "gloo": {
     "behaviours": [
@@ -345,20 +346,20 @@
       "slow",
       "splash_damage"
     ],
-    "role": ""
+    "role": "tank"
   },
   "gord": {
     "behaviours": [
       "armor_breaker_real_damage",
       "stun"
     ],
-    "role": ""
+    "role": "mage"
   },
   "granger": {
     "behaviours": [
       "high_mobility"
     ],
-    "role": ""
+    "role": "damage"
   },
   "grock": {
     "behaviours": [
@@ -366,7 +367,7 @@
       "encage",
       "endurance"
     ],
-    "role": ""
+    "role": "tank"
   },
   "guinevere": {
     "behaviours": [
@@ -374,14 +375,14 @@
       "regeneration",
       "skill_suppression"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "gusion": {
     "behaviours": [
       "explosion",
       "high_mobility"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "hanabi": {
     "behaviours": [
@@ -390,7 +391,7 @@
       "skill_suppression",
       "splash_damage"
     ],
-    "role": ""
+    "role": "damage"
   },
   "hanzo": {
     "behaviours": [
@@ -398,14 +399,14 @@
       "invulnerability",
       "invulnerability"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "harith": {
     "behaviours": [
       "high_mobility",
       "slow"
     ],
-    "role": ""
+    "role": "mage"
   },
   "harley": {
     "behaviours": [
@@ -413,7 +414,7 @@
       "explosion",
       "splash_damage"
     ],
-    "role": ""
+    "role": "mage"
   },
   "hayabusa": {
     "behaviours": [
@@ -423,7 +424,7 @@
       "slow",
       "splash_damage"
     ],
-    "role": ""
+    "role": "damage"
   },
   "helcurt": {
     "behaviours": [
@@ -432,7 +433,7 @@
       "invisibility",
       "skill_suppression"
     ],
-    "role": ""
+    "role": "damage"
   },
   "hilda": {
     "behaviours": [
@@ -441,7 +442,7 @@
       "regeneration",
       "shield"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "hylos": {
     "behaviours": [
@@ -449,7 +450,7 @@
       "regeneration",
       "slow"
     ],
-    "role": ""
+    "role": "tank"
   },
   "irithel": {
     "behaviours": [
@@ -458,7 +459,7 @@
       "slow",
       "splash_damage"
     ],
-    "role": ""
+    "role": "damage"
   },
   "jawhead": {
     "behaviours": [
@@ -466,7 +467,7 @@
       "high_mobility",
       "shield"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "johnson": {
     "behaviours": [
@@ -475,14 +476,14 @@
       "splash_damage",
       "stun"
     ],
-    "role": ""
+    "role": "tank"
   },
   "julian": {
     "behaviours": [
       "explosion",
       "regeneration"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "kadita": {
     "behaviours": [
@@ -490,7 +491,7 @@
       "regeneration",
       "stun"
     ],
-    "role": ""
+    "role": "mage"
   },
   "kagura": {
     "behaviours": [
@@ -500,7 +501,7 @@
       "splash_damage",
       "stun"
     ],
-    "role": ""
+    "role": "mage"
   },
   "kaja": {
     "behaviours": [
@@ -510,7 +511,7 @@
       "slow",
       "splash_damage"
     ],
-    "role": ""
+    "role": "mage"
   },
   "karina": {
     "behaviours": [
@@ -520,7 +521,7 @@
       "invulnerability",
       "reflection"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "karrie": {
     "behaviours": [
@@ -529,14 +530,14 @@
       "reap",
       "slow"
     ],
-    "role": ""
+    "role": "damage"
   },
   "khaleed": {
     "behaviours": [
       "endurance",
       "regeneration"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "khufra": {
     "behaviours": [
@@ -545,7 +546,7 @@
       "knock_back",
       "regeneration"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "kimmy": {
     "behaviours": [
@@ -553,7 +554,7 @@
       "reap",
       "slow"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "lancelot": {
     "behaviours": [
@@ -561,18 +562,17 @@
       "invulnerability",
       "splash_damage"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "lapulapu": {
     "behaviours": [
-      "control_immunity",
       "dash",
       "endurance",
       "regeneration",
       "shield",
       "splash_damage"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "layla": {
     "behaviours": [
@@ -580,14 +580,14 @@
       "slow",
       "splash_damage"
     ],
-    "role": ""
+    "role": "damage"
   },
   "leomord": {
     "behaviours": [
       "endurance",
       "regeneration"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "lesley": {
     "behaviours": [
@@ -597,14 +597,14 @@
       "knock_back",
       "long_range"
     ],
-    "role": ""
+    "role": "damage"
   },
   "ling": {
     "behaviours": [
       "high_mobility",
       "invisibility"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "lolita": {
     "behaviours": [
@@ -612,7 +612,7 @@
       "shield",
       "slow"
     ],
-    "role": ""
+    "role": "support"
   },
   "louyi": {
     "behaviours": [
@@ -622,7 +622,7 @@
       "slow",
       "splash_damage"
     ],
-    "role": ""
+    "role": "mage"
   },
   "lunox": {
     "behaviours": [
@@ -632,28 +632,29 @@
       "reap",
       "splash_damage"
     ],
-    "role": ""
+    "role": "mage"
   },
   "lylia": {
     "behaviours": [
+      "resurrection",
       "regeneration",
       "slow"
     ],
-    "role": ""
+    "role": "mage"
   },
   "martis": {
     "behaviours": [
       "control_immunity",
       "regeneration"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "masha": {
     "behaviours": [
       "high_mobility",
       "shield"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "mathilda": {
     "behaviours": [
@@ -662,14 +663,15 @@
       "knock_back",
       "splash_damage"
     ],
-    "role": ""
+    "role": "support"
   },
   "melissa": {
     "behaviours": [
       "control_immunity",
-      "slow"
+      "slow",
+      "reap"
     ],
-    "role": ""
+    "role": "damage"
   },
   "minotaur": {
     "behaviours": [
@@ -677,7 +679,7 @@
       "slow",
       "stun"
     ],
-    "role": ""
+    "role": "support"
   },
   "minsitthar": {
     "behaviours": [
@@ -686,14 +688,14 @@
       "shield",
       "stun"
     ],
-    "role": ""
+    "role": "support"
   },
   "moskov": {
     "behaviours": [
       "reap",
       "slow"
     ],
-    "role": ""
+    "role": "damage"
   },
   "mya": {
     "behaviours": [
@@ -701,11 +703,11 @@
       "reap",
       "stun"
     ],
-    "role": ""
+    "role": "damage"
   },
   "nana": {
     "behaviours": [
-      "ressurrection",
+      "resurrection",
       "skill_suppression",
       "slow",
       "splash_damage"
@@ -718,7 +720,7 @@
       "invisibility",
       "skill_suppression"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "natan": {
     "behaviours": [
@@ -729,7 +731,7 @@
       "splash_damage",
       "summon"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "odette": {
     "behaviours": [
@@ -737,7 +739,7 @@
       "splash_damage",
       "stun"
     ],
-    "role": ""
+    "role": "mage"
   },
   "paquito": {
     "behaviours": [
@@ -747,7 +749,7 @@
       "shield",
       "skill_suppression"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "pharsa": {
     "behaviours": [
@@ -756,7 +758,7 @@
       "splash_damage",
       "stun"
     ],
-    "role": ""
+    "role": "mage"
   },
   "phoveus": {
     "behaviours": [
@@ -764,7 +766,7 @@
       "skill_suppression",
       "splash_damage"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "popol": {
     "behaviours": [
@@ -772,14 +774,14 @@
       "skill_suppression",
       "summon"
     ],
-    "role": ""
+    "role": "damage"
   },
   "rafaela": {
     "behaviours": [
       "regeneration",
       "slow"
     ],
-    "role": ""
+    "role": "support"
   },
   "roger": {
     "behaviours": [
@@ -787,7 +789,7 @@
       "reap",
       "regeneration"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "ruby": {
     "behaviours": [
@@ -795,7 +797,7 @@
       "slow",
       "splash_damage"
     ],
-    "role": ""
+    "role": "tank"
   },
   "saber": {
     "behaviours": [
@@ -804,7 +806,7 @@
       "skill_suppression",
       "splash_damage"
     ],
-    "role": ""
+    "role": "damage"
   },
   "selena": {
     "behaviours": [
@@ -812,7 +814,7 @@
       "slow",
       "stun"
     ],
-    "role": ""
+    "role": "mage"
   },
   "silvanna": {
     "behaviours": [
@@ -822,14 +824,16 @@
       "slow",
       "stun"
     ],
-    "role": ""
+    "role": "jungle"
   },
   "sun": {
     "behaviours": [
       "reap",
-      "summon"
+      "summon",
+      "invulnerability",
+      "dash"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "terizla": {
     "behaviours": [
@@ -837,7 +841,7 @@
       "endurance",
       "regeneration"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "thamuz": {
     "behaviours": [
@@ -845,7 +849,7 @@
       "regeneration",
       "slow"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "tigreal": {
     "behaviours": [
@@ -856,7 +860,7 @@
       "slow",
       "splash_damage"
     ],
-    "role": ""
+    "role": "tank"
   },
   "uranus": {
     "behaviours": [
@@ -865,7 +869,7 @@
       "regeneration",
       "shield"
     ],
-    "role": ""
+    "role": "tank"
   },
   "vale": {
     "behaviours": [
@@ -874,22 +878,24 @@
       "splash_damage",
       "stun"
     ],
-    "role": ""
+    "role": "mage"
   },
   "valentina": {
     "behaviours": [
       "long_range",
-      "slow"
+      "slow",
+      "dash"
     ],
-    "role": ""
+    "role": "mage"
   },
   "valir": {
     "behaviours": [
       "knock_back",
       "skill_suppression",
-      "slow"
+      "slow",
+      "long_range"
     ],
-    "role": ""
+    "role": "mage"
   },
   "vexana": {
     "behaviours": [
@@ -898,7 +904,7 @@
       "splash_damage",
       "summon"
     ],
-    "role": ""
+    "role": "mage"
   },
   "wanwan": {
     "behaviours": [
@@ -907,7 +913,7 @@
       "invulnerability",
       "reap"
     ],
-    "role": ""
+    "role": "damage"
   },
   "xavier": {
     "behaviours": [
@@ -915,7 +921,7 @@
       "splash_damage",
       "stun"
     ],
-    "role": ""
+    "role": "mage"
   },
   "xborg": {
     "behaviours": [
@@ -923,21 +929,21 @@
       "shield",
       "splash_damage"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "yisunshin": {
     "behaviours": [
       "invulnerability",
       "long_range"
     ],
-    "role": ""
+    "role": "damage"
   },
   "yuzhong": {
     "behaviours": [
       "high_mobility",
       "regeneration"
     ],
-    "role": ""
+    "role": "soldier"
   },
   "yve": {
     "behaviours": [
@@ -945,14 +951,16 @@
       "high_mobility",
       "splash_damage"
     ],
-    "role": ""
+    "role": "mage"
   },
   "zhask": {
     "behaviours": [
       "slow",
-      "summon"
+      "summon",
+      "stun",
+      "endurance"
     ],
-    "role": ""
+    "role": "mage"
   },
   "zilong": {
     "behaviours": [
@@ -960,6 +968,6 @@
       "reap",
       "slow_immunity"
     ],
-    "role": ""
+    "role": "jungle"
   }
 }

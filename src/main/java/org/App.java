@@ -5,7 +5,6 @@ import static org.utils.Util.printWelcomeMesage;
 import java.util.Scanner;
 
 import org.apache.log4j.LogManager;
-import org.controllers.EquipmentController;
 import org.controllers.HeroController;
 
 
@@ -38,9 +37,5 @@ public class App {
 			}
 		}
 		in.close();
-//		System.out.println("\n---------------------EQUIPS-----------------------------------");
-//		EquipmentController equipController = new EquipmentController();
-//		equipController.setPickedHeroes(heroController.getPickedHeroes());
-//		equipController.getCounterEquipments().entrySet().forEach(System.out::println);;
 	}
 }

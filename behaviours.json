@@ -1,18 +1,14 @@
 {
   "armor_breaker_real_damage": {
-    "strong_against": ["endurance", "physical_defense", "magic_damage", "shield_stealing", "encage"],
+    "strong_against": ["endurance", "physical_defense", "magic_defense", "shield_stealing", "encage"],
     "weak_against": ["hp_pool", "dash", "high_mobility", "long_range", "reflection"]
   },
   "control_immunity": {
-    "strong_against": [],
-    "weak_against": [
-      "explosion",
-      "high_mobility",
-      "long_range"
-    ]
+    "strong_against": ["knock_back", "slow", "long_range", "resurrection"],
+    "weak_against": ["explosion", "high_mobility", "pull"]
   },
   "dash": {
-    "strong_against": [],
+    "strong_against": ["armor_breaker_real_damage"],
     "weak_against": [
       "dash_suppression",
       "skill_suppression"
@@ -29,8 +25,8 @@
   "encage": {
     "strong_against": [],
     "weak_against": [
-      "control_immunity",
-      "reflection"
+      "reflection",
+      "armor_breaker_real_damage"
     ]
   },
   "endurance": {
@@ -46,12 +42,12 @@
     "weak_against": [
       "endurance",
       "hp_pool",
-      "ressurrection",
+      "resurrection",
       "shield"
     ]
   },
   "high_mobility": {
-    "strong_against": [],
+    "strong_against": ["armor_breaker_real_damage"],
     "weak_against": [
       "encage",
       "invulnerability",
@@ -67,9 +63,8 @@
     ]
   },
   "hp_pool": {
-    "strong_against": [],
+    "strong_against": ["armor_breaker_real_damage"],
     "weak_against": [
-      "endurance",
       "hp_based_damage"
     ]
   },
@@ -98,8 +93,9 @@
     ]
   },
   "long_range": {
-    "strong_against": [],
+    "strong_against": ["armor_breaker_real_damage"],
     "weak_against": [
+      "control_immunity",
       "explosion",
       "invisibility"
     ]
@@ -135,7 +131,7 @@
     ]
   },
   "pull": {
-    "strong_against": [],
+    "strong_against": ["control_immunity"],
     "weak_against": [
       "endurance",
       "hp_pool",
@@ -151,7 +147,7 @@
     ]
   },
   "reflection": {
-    "strong_against": [],
+    "strong_against": ["armor_breaker_real_damage"],
     "weak_against": [
       "explosion",
       "long_range",
@@ -172,9 +168,10 @@
       "summon"
     ]
   },
-  "ressurrection": {
+  "resurrection": {
     "strong_against": [],
     "weak_against": [
+      "control_immunity",
       "high_mobility",
       "long_range"
     ]
@@ -198,9 +195,8 @@
   "skill_suppression": {
     "strong_against": [],
     "weak_against": [
-      "control_immunity",
       "reap",
-      "ressurrection"
+      "resurrection"
     ]
   },
   "slow": {
