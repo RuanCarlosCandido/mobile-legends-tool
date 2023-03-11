@@ -19,7 +19,7 @@ public class HeroController {
 	}
 
 	public void addPickedHero(String pickedHero) {
-		if (!heroService.getHeroes().containsKey(pickedHero))
+		if (!heroService.getHeroesData().containsKey(pickedHero))
 			throw new UnknownHeroException(pickedHero);
 		
 		heroService.addPickedHero(pickedHero);

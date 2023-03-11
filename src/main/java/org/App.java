@@ -33,7 +33,7 @@ public class App {
 				i++;
 				
 			} catch (Exception e) {// dont increment in case of error
-				LOGGER.error("[ATENCAO]	HERO INVALIDO, DIGITE NOVAMENTE\n");
+				LOGGER.error("[ATENCAO]	HERO INVALIDO, DIGITE NOVAMENTE\n", e);
 			}
 		}
 		in.close();

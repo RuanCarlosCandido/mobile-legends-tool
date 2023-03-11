@@ -1,0 +1,1685 @@
+[
+    {
+        "Name": "Miya",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Damage",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Natalia",
+            "Alucard",
+            "Clint",
+            "Layla",
+            "Eudora",
+            "Zilong"
+        ]
+    },
+    {
+        "Name": "Balmond",
+        "Role(s)": "Fighter",
+        "Specialties": "Damage | Regen",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Zilong",
+            "Layla",
+            "YiSunShin",
+            "Franco",
+            "Cyclops",
+            "Tigreal",
+            "alpha",
+            "Bane"
+        ]
+    },
+    {
+        "Name": "Saber",
+        "Role(s)": "Assassin",
+        "Specialties": "Charge | Reap",
+        "Laning": "Jungler",
+        "counters": [
+            "Khufra",
+            "minsitthar",
+            "Diggie",
+            "miya",
+            "Layla",
+            "Gord",
+            "Nana",
+            "Bruno"
+        ]
+    },
+    {
+        "Name": "Alice",
+        "Role(s)": "Mage |  Tank",
+        "Specialties": "Charge | Regen",
+        "Laning": "Mid Laner",
+        "counters": [
+            "karrie",
+            "Ruby",
+            "Harley",
+            "pharsa",
+            "valir",
+            "Baxia",
+            "Karina",
+            "Vexana"
+        ]
+    },
+    {
+        "Name": "Nana",
+        "Role(s)": "Mage |  Support",
+        "Specialties": "Poke | Burst",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Zilong",
+            "Layla",
+            "Gord",
+            "Natalia",
+            "miya",
+            "silvanna"
+        ]
+    },
+    {
+        "Name": "Tigreal",
+        "Role(s)": "Tank |  Support",
+        "Specialties": "Crowd Control",
+        "Laning": "Roamer",
+        "counters": [
+            "Akai",
+            "Aurora",
+            "Bruno",
+            "Chou",
+            "Diggie",
+            "Eudora",
+            "Freya",
+            "Gord"
+        ]
+    },
+    {
+        "Name": "Alucard",
+        "Role(s)": "Fighter |  Assassin",
+        "Specialties": "Chase | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Layla",
+            "Zilong",
+            "YiSunShin",
+            "Sun",
+            "Tigreal",
+            "hylos",
+            "Lancelot"
+        ]
+    },
+    {
+        "Name": "Karina",
+        "Role(s)": "Assassin",
+        "Specialties": "Reap | Magic Damage",
+        "Laning": "Jungler",
+        "counters": [
+            "Aurora",
+            "Alucard",
+            "Balmond",
+            "Eudora",
+            "Franco",
+            "Gatotkaca",
+            "Helcurt",
+            "Khufra",
+            "hylos"
+        ]
+    },
+    {
+        "Name": "Akai",
+        "Role(s)": "Tank |  Support",
+        "Specialties": "Guard | Crowd Control",
+        "Laning": "Roamer",
+        "counters": [
+            "Gord",
+            "Nana",
+            "Clint",
+            "Zilong",
+            "Alice"
+        ]
+    },
+    {
+        "Name": "Franco",
+        "Role(s)": "Tank |  Support",
+        "Specialties": "Initiator | Control",
+        "Laning": "Roamer",
+        "counters": [
+            "Eudora",
+            "Ruby",
+            "Clint",
+            "miya",
+            "Moskov",
+            "Tigreal"
+        ]
+    },
+    {
+        "Name": "Bane",
+        "Role(s)": "Fighter |  Mage",
+        "Specialties": "Push | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "miya",
+            "Layla",
+            "Nana",
+            "Rafaela",
+            "Sun"
+        ]
+    },
+    {
+        "Name": "Bruno",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Burst",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Layla",
+            "Zilong",
+            "YiSunShin",
+            "Diggie",
+            "kagura"
+        ]
+    },
+    {
+        "Name": "Clint",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Burst",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Aldous",
+            "Fanny",
+            "Karina",
+            "kagura"
+        ]
+    },
+    {
+        "Name": "Rafaela",
+        "Role(s)": "Support",
+        "Specialties": "Regen | Guard",
+        "Laning": "Roamer",
+        "counters": [
+            "Freya",
+            "Alucard",
+            "Natalia",
+            "Hayabusa",
+            "Akai"
+        ]
+    },
+    {
+        "Name": "Eudora",
+        "Role(s)": "Mage",
+        "Specialties": "Control | Burst",
+        "Laning": "Mid Laner",
+        "counters": [
+            "hilda",
+            "grock",
+            "Hayabusa",
+            "Hanabi",
+            "lesley",
+            "Moskov",
+            "Karina"
+        ]
+    },
+    {
+        "Name": "Zilong",
+        "Role(s)": "Assassin |  Fighter",
+        "Specialties": "Chase | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Natalia",
+            "Akai",
+            "Balmond",
+            "Freya"
+        ]
+    },
+    {
+        "Name": "Fanny",
+        "Role(s)": "Assassin",
+        "Specialties": "Chase | Reap",
+        "Laning": "Jungler",
+        "counters": [
+            "Khufra",
+            "Akai",
+            "silvanna",
+            "Moskov",
+            "Zilong",
+            "Franco",
+            "minsitthar"
+        ]
+    },
+    {
+        "Name": "Layla",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Damage",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Fanny",
+            "Gusion",
+            "Karina",
+            "Lancelot",
+            "Clint",
+            "miya"
+        ]
+    },
+    {
+        "Name": "Minotaur",
+        "Role(s)": "Tank |  Support",
+        "Specialties": "Crowd Control",
+        "Laning": "Roamer",
+        "counters": [
+            "grock",
+            "Gatotkaca",
+            "Alice",
+            "Diggie",
+            "Vexana"
+        ]
+    },
+    {
+        "Name": "Lolita",
+        "Role(s)": "Support |  Tank",
+        "Specialties": "Guard | Crowd Control",
+        "Laning": "Roamer",
+        "counters": [
+            "Saber",
+            "miya",
+            "Nana",
+            "Layla",
+            "Moskov"
+        ]
+    },
+    {
+        "Name": "Hayabusa",
+        "Role(s)": "Assassin",
+        "Specialties": "Chase | Burst",
+        "Laning": "Jungler",
+        "counters": [
+            "Cyclops",
+            "kaja",
+            "Sun",
+            "jawhead",
+            "Saber"
+        ]
+    },
+    {
+        "Name": "Freya",
+        "Role(s)": "Fighter",
+        "Specialties": "Chase | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Irithel",
+            "alpha",
+            "Sun",
+            "Zilong",
+            "Odette"
+        ]
+    },
+    {
+        "Name": "Gord",
+        "Role(s)": "Mage",
+        "Specialties": "Poke | Burst",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Saber",
+            "miya",
+            "johnson",
+            "Alucard",
+            "Chou",
+            "Eudora"
+        ]
+    },
+    {
+        "Name": "Natalia",
+        "Role(s)": "Assassin",
+        "Specialties": "Chase | Reap",
+        "Laning": "Jungler",
+        "counters": [
+            "Eudora",
+            "Layla",
+            "Gord",
+            "miya",
+            "YiSunShin",
+            "lesley",
+            "Alice",
+            "Saber",
+            "silvanna",
+            "minotaur"
+        ]
+    },
+    {
+        "Name": "Kagura",
+        "Role(s)": "Mage",
+        "Specialties": "Poke | Reap",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Karina",
+            "Hayabusa",
+            "Fanny",
+            "Zilong",
+            "Akai",
+            "Harley",
+            "Eudora"
+        ]
+    },
+    {
+        "Name": "Chou",
+        "Role(s)": "Fighter",
+        "Specialties": "Chase | Control",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Zilong",
+            "Nana",
+            "YiSunShin",
+            "Natalia",
+            "minsitthar",
+            "uranus",
+            "kaja"
+        ]
+    },
+    {
+        "Name": "Sun",
+        "Role(s)": "Fighter",
+        "Specialties": "Push | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Bruno",
+            "Hanabi",
+            "atlas",
+            "uranus",
+            "belerick"
+        ]
+    },
+    {
+        "Name": "Alpha",
+        "Role(s)": "Fighter",
+        "Specialties": "Charge | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Moskov",
+            "Sun",
+            "Chou",
+            "Layla",
+            "Zilong"
+        ]
+    },
+    {
+        "Name": "Ruby",
+        "Role(s)": "Fighter |  Tank",
+        "Specialties": "Crowd Control | Regen",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Baxia",
+            "x.borg",
+            "karrie",
+            "Karina",
+            "phoveus",
+            "Bane"
+        ]
+    },
+    {
+        "Name": "yisunshin",
+        "Role(s)": "Assassin |  Marksman",
+        "Specialties": "Reap | Chase",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Nana",
+            "Chou",
+            "Zilong",
+            "Rafaela",
+            "Sun"
+        ]
+    },
+    {
+        "Name": "Moskov",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Chase",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Akai",
+            "Chou",
+            "Zilong",
+            "Natalia",
+            "ling"
+        ]
+    },
+    {
+        "Name": "Johnson",
+        "Role(s)": "Tank",
+        "Specialties": "Support | Crowd Control",
+        "Laning": "Roamer",
+        "counters": [
+            "hylos",
+            "Diggie",
+            "Nana",
+            "grock"
+        ]
+    },
+    {
+        "Name": "Cyclops",
+        "Role(s)": "Mage",
+        "Specialties": "Poke | Control",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Helcurt",
+            "Hayabusa",
+            "roger",
+            "Harley",
+            "YiSunShin",
+            "Lancelot"
+        ]
+    },
+    {
+        "Name": "Estes",
+        "Role(s)": "Support",
+        "Specialties": "Regen | Guard",
+        "Laning": "Roamer",
+        "counters": [
+            "Baxia",
+            "Saber",
+            "atlas",
+            "luoyi"
+        ]
+    },
+    {
+        "Name": "Hilda",
+        "Role(s)": "Fighter |  Tank",
+        "Specialties": "Damage | Regen",
+        "Laning": "EXP Laner",
+        "counters": [
+            "barats",
+            "Gatotkaca",
+            "jawhead",
+            "thamuz",
+            "Chou",
+            "Karina"
+        ]
+    },
+    {
+        "Name": "Aurora",
+        "Role(s)": "Mage",
+        "Specialties": "Crowd Control | Poke",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Moskov",
+            "miya",
+            "Layla",
+            "YiSunShin",
+            "Tigreal",
+            "Helcurt"
+        ]
+    },
+    {
+        "Name": "LapuLapu",
+        "Role(s)": "Fighter",
+        "Specialties": "Chase | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Franco",
+            "harith",
+            "carmilla",
+            "Chou",
+            "Diggie",
+            "Tigreal",
+            "kaja",
+            "Nana",
+            "argus"
+        ]
+    },
+    {
+        "Name": "Vexana",
+        "Role(s)": "Mage",
+        "Specialties": "Poke | Control",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Layla",
+            "Clint",
+            "johnson",
+            "Sun",
+            "miya"
+        ]
+    },
+    {
+        "Name": "Roger",
+        "Role(s)": "Fighter |  Marksman",
+        "Specialties": "Reap | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Layla",
+            "LapuLapu",
+            "Sun",
+            "Zilong",
+            "YiSunShin",
+            "silvanna",
+            "jawhead",
+            "hilda",
+            "alpha"
+        ]
+    },
+    {
+        "Name": "Karrie",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Damage",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Saber",
+            "lolita",
+            "Chou",
+            "Lancelot",
+            "uranus",
+            "Natalia",
+            "Franco",
+            "Claude",
+            "jawhead",
+            "kaja"
+        ]
+    },
+    {
+        "Name": "Gatotkaca",
+        "Role(s)": "Tank |  Fighter",
+        "Specialties": "Crowd Control | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "miya",
+            "Sun",
+            "Balmond",
+            "Bruno",
+            "Layla",
+            "karrie"
+        ]
+    },
+    {
+        "Name": "Harley",
+        "Role(s)": "Mage |  Assassin",
+        "Specialties": "Burst | Poke",
+        "Laning": "Jungler",
+        "counters": [
+            "Layla",
+            "Nana",
+            "Alice",
+            "johnson",
+            "Gatotkaca",
+            "Sun",
+            "Zilong"
+        ]
+    },
+    {
+        "Name": "Irithel",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Burst",
+        "Laning": "Gold Laner",
+        "counters": [
+            "miya",
+            "Moskov",
+            "Layla",
+            "Alucard",
+            "Gord",
+            "Chou",
+            "Franco"
+        ]
+    },
+    {
+        "Name": "Grock",
+        "Role(s)": "Tank",
+        "Specialties": "Crowd Control | Initiator",
+        "Laning": "Roamer",
+        "counters": [
+            "karrie",
+            "valir",
+            "hylos",
+            "Lylia",
+            "minsitthar",
+            "Irithel",
+            "Masha",
+            "carmilla",
+            "Franco"
+        ]
+    },
+    {
+        "Name": "Argus",
+        "Role(s)": "Fighter",
+        "Specialties": "Charge | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Zilong",
+            "Saber",
+            "Balmond",
+            "Hanabi",
+            "Sun",
+            "Akai",
+            "valir",
+            "Nana",
+            "lunox",
+            "Franco"
+        ]
+    },
+    {
+        "Name": "Odette",
+        "Role(s)": "Mage",
+        "Specialties": "Burst | Poke",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Franco",
+            "Natalia",
+            "Zilong",
+            "guinevere",
+            "Tigreal"
+        ]
+    },
+    {
+        "Name": "Lancelot",
+        "Role(s)": "Assassin",
+        "Specialties": "Chase | Burst",
+        "Laning": "Jungler",
+        "counters": [
+            "Odette",
+            "Cyclops",
+            "Natalia",
+            "Eudora",
+            "Freya"
+        ]
+    },
+    {
+        "Name": "Diggie",
+        "Role(s)": "Support",
+        "Specialties": "Guard | Poke",
+        "Laning": "Roamer",
+        "counters": [
+            "Saber",
+            "Aurora",
+            "Chou",
+            "Franco",
+            "Eudora",
+            "Aldous",
+            "Zilong"
+        ]
+    },
+    {
+        "Name": "Hylos",
+        "Role(s)": "Tank",
+        "Specialties": "Guard | Initiator",
+        "Laning": "Roamer",
+        "counters": [
+            "Fanny",
+            "Natalia",
+            "Eudora",
+            "Sun",
+            "Odette"
+        ]
+    },
+    {
+        "Name": "Zhask",
+        "Role(s)": "Mage",
+        "Specialties": "Chase | Damage",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Vexana",
+            "odette",
+            "Nana",
+            "Gord",
+            "Natalia",
+            "granger",
+            "jawhead",
+            "Lancelot"
+        ]
+    },
+    {
+        "Name": "Helcurt",
+        "Role(s)": "Assassin",
+        "Specialties": "Push | Burst",
+        "Laning": "Jungler",
+        "counters": [
+            "Chou",
+            "guinevere",
+            "Eudora"
+        ]
+    },
+    {
+        "Name": "Pharsa",
+        "Role(s)": "Mage",
+        "Specialties": "Burst | Poke",
+        "Laning": "Mid Laner",
+        "counters": [
+            "yuzhong",
+            "Tigreal",
+            "Natalia",
+            "Chou",
+            "Saber",
+            "Harley",
+            "jawhead"
+        ]
+    },
+    {
+        "Name": "Lesley",
+        "Role(s)": "Marksman |  Assassin",
+        "Specialties": "Reap | Burst",
+        "Laning": "Gold Laner",
+        "counters": [
+            "karrie",
+            "Cyclops",
+            "Gord",
+            "Moskov",
+            "Natalia",
+            "Alucard",
+            "Lancelot",
+            "Clint"
+        ]
+    },
+    {
+        "Name": "Jawhead",
+        "Role(s)": "Fighter",
+        "Specialties": "Charge | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Baxia",
+            "zhask",
+            "roger",
+            "Natalia",
+            "Aurora",
+            "Chou",
+            "Nana",
+            "benedetta",
+            "Odette"
+        ]
+    },
+    {
+        "Name": "Angela",
+        "Role(s)": "Support",
+        "Specialties": "Guard | Support",
+        "Laning": "Roamer",
+        "counters": [
+            "Natalia",
+            "Karina",
+            "Saber",
+            "Chou"
+        ]
+    },
+    {
+        "Name": "Gusion",
+        "Role(s)": "Assassin",
+        "Specialties": "Burst | Magic Damage",
+        "Laning": "Jungler",
+        "counters": [
+            "Sun",
+            "zhask",
+            "Lancelot",
+            "benedetta",
+            "kadita",
+            "Hayabusa",
+            "ling"
+        ]
+    },
+    {
+        "Name": "Valir",
+        "Role(s)": "Mage",
+        "Specialties": "Damage | Guard",
+        "Laning": "Mid Laner",
+        "counters": [
+            "kaja",
+            "Franco",
+            "barats"
+        ]
+    },
+    {
+        "Name": "Martis",
+        "Role(s)": "Fighter",
+        "Specialties": "Reap | Charge",
+        "Laning": "EXP Laner",
+        "counters": [
+            "zhask",
+            "pharsa",
+            "Natalia",
+            "miya",
+            "Helcurt"
+        ]
+    },
+    {
+        "Name": "Uranus",
+        "Role(s)": "Tank",
+        "Specialties": "Regen",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Natalia",
+            "odette",
+            "Irithel",
+            "Sun",
+            "Vexana",
+            "esmeralda",
+            "karrie"
+        ]
+    },
+    {
+        "Name": "Hanabi",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Damage",
+        "Laning": "Gold Laner",
+        "counters": [
+            "kaja",
+            "Natalia",
+            "Franco",
+            "Gusion",
+            "Hayabusa"
+        ]
+    },
+    {
+        "Name": "Chang'e",
+        "Role(s)": "Mage",
+        "Specialties": "Poke | Burst",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Nana",
+            "benedetta",
+            "Baxia",
+            "Saber",
+            "Aurora",
+            "jawhead"
+        ]
+    },
+    {
+        "Name": "Kaja",
+        "Role(s)": "Fighter |  Support",
+        "Specialties": "Control | Charge",
+        "Laning": "EXP Laner",
+        "counters": [
+            "valir",
+            "grock",
+            "Akai",
+            "jawhead",
+            "Franco",
+            "Lancelot",
+            "benedetta",
+            "Hayabusa",
+            "Aurora",
+            "Baxia"
+        ]
+    },
+    {
+        "Name": "Selena",
+        "Role(s)": "Assassin |  Mage",
+        "Specialties": "Initiator | Reap",
+        "Laning": "Jungler",
+        "counters": [
+            "Lancelot",
+            "Khufra",
+            "Saber",
+            "benedetta",
+            "Wanwan"
+        ]
+    },
+    {
+        "Name": "Aldous",
+        "Role(s)": "Fighter",
+        "Specialties": "Burst | Support",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Natalia",
+            "Fanny",
+            "Layla",
+            "pharsa",
+            "Gord"
+        ]
+    },
+    {
+        "Name": "Claude",
+        "Role(s)": "Marksman",
+        "Specialties": "Burst | Chase",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Natalia",
+            "Alucard",
+            "Layla",
+            "Hayabusa",
+            "johnson",
+            "odette",
+            "Zilong"
+        ]
+    },
+    {
+        "Name": "Vale",
+        "Role(s)": "Mage",
+        "Specialties": "Burst | Crowd Control",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Chou",
+            "Fanny",
+            "Lancelot",
+            "Zilong"
+        ]
+    },
+    {
+        "Name": "Leomord",
+        "Role(s)": "Fighter",
+        "Specialties": "Chase | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "thamuz",
+            "Hanabi",
+            "martis",
+            "jawhead",
+            "pharsa",
+            "argus",
+            "kaja",
+            "Chou",
+            "Franco",
+            "Diggie",
+            "Vexana"
+        ]
+    },
+    {
+        "Name": "Lunox",
+        "Role(s)": "Mage",
+        "Specialties": "Burst | Damage",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Layla",
+            "miya",
+            "Moskov",
+            "Eudora",
+            "Nana",
+            "Natalia",
+            "Vexana",
+            "johnson"
+        ]
+    },
+    {
+        "Name": "Hanzo",
+        "Role(s)": "Assassin",
+        "Specialties": "Poke | Burst",
+        "Laning": "Jungler",
+        "counters": [
+            "Gord",
+            "pharsa",
+            "Hanabi",
+            "Layla",
+            "karrie"
+        ]
+    },
+    {
+        "Name": "Belerick",
+        "Role(s)": "Tank",
+        "Specialties": "Crowd Control | Regen",
+        "Laning": "Roamer",
+        "counters": [
+            "Gusion",
+            "Helcurt",
+            "karrie",
+            "Irithel",
+            "Eudora",
+            "lunox",
+            "Nana",
+            "kaja",
+            "Franco",
+            "Chou"
+        ]
+    },
+    {
+        "Name": "Kimmy",
+        "Role(s)": "Marksman |  Mage",
+        "Specialties": "Damage | Magic Damage",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Masha",
+            "Hayabusa",
+            "Natalia",
+            "Aldous",
+            "Belerick"
+        ]
+    },
+    {
+        "Name": "Thamuz",
+        "Role(s)": "Fighter",
+        "Specialties": "Chase | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "odette",
+            "Natalia",
+            "Moskov",
+            "johnson"
+        ]
+    },
+    {
+        "Name": "Harith",
+        "Role(s)": "Mage",
+        "Specialties": "Chase | Damage",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Kimmy",
+            "thamuz",
+            "selena",
+            "Moskov",
+            "martis"
+        ]
+    },
+    {
+        "Name": "Minsitthar",
+        "Role(s)": "Fighter |  Support",
+        "Specialties": "Initiator | Crowd Control",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Helcurt",
+            "Chou",
+            "Irithel",
+            "Akai",
+            "Diggie"
+        ]
+    },
+    {
+        "Name": "Kadita",
+        "Role(s)": "Mage |  Assassin",
+        "Specialties": "Burst | Charge",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Cyclops",
+            "miya",
+            "Gord",
+            "Balmond",
+            "Kimmy",
+            "minsitthar",
+            "Baxia"
+        ]
+    },
+    {
+        "Name": "Faramis",
+        "Role(s)": "Support |  Mage",
+        "Specialties": "Guard | Charge",
+        "Laning": "Roamer",
+        "counters": [
+            "Eudora",
+            "Saber",
+            "Franco",
+            "Chou",
+            "kaja",
+            "Kimmy",
+            "guinevere",
+            "Harley",
+            "Odette"
+        ]
+    },
+    {
+        "Name": "Badang",
+        "Role(s)": "Fighter",
+        "Specialties": "Charge | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Kimmy",
+            "hanzo",
+            "Hanabi",
+            "Helcurt",
+            "Odette"
+        ]
+    },
+    {
+        "Name": "khufra",
+        "Role(s)": "Tank |  Support",
+        "Specialties": "Initiator | Crowd Control",
+        "Laning": "Roamer"
+    },
+    {
+        "Name": "Granger",
+        "Role(s)": "Marksman",
+        "Specialties": "Burst | Reap",
+        "Laning": "Gold Laner",
+        "counters": [
+            "esmeralda",
+            "Khufra",
+            "Kimmy",
+            "Claude",
+            "Hanabi"
+        ]
+    },
+    {
+        "Name": "Guinevere",
+        "Role(s)": "Fighter",
+        "Specialties": "Burst | Magic Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Ruby",
+            "Wanwan",
+            "Franco"
+        ]
+    },
+    {
+        "Name": "Esmeralda",
+        "Role(s)": "Mage |  Tank",
+        "Specialties": "Regen | Mixed Damage",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Diggie",
+            "Leomord",
+            "johnson",
+            "lesley",
+            "Aldous"
+        ]
+    },
+    {
+        "Name": "Terizla",
+        "Role(s)": "Fighter",
+        "Specialties": "Burst | Crowd Control",
+        "Laning": "EXP Laner",
+        "counters": [
+            "granger",
+            "karrie",
+            "Hanabi",
+            "Freya",
+            "Natalia"
+        ]
+    },
+    {
+        "Name": "X.Borg",
+        "Role(s)": "Fighter",
+        "Specialties": "Regen | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "granger",
+            "Khufra",
+            "Kimmy",
+            "lesley",
+            "alpha",
+            "Gusion",
+            "pharsa",
+            "guinevere"
+        ]
+    },
+    {
+        "Name": "Ling",
+        "Role(s)": "Assassin",
+        "Specialties": "Chase | Burst",
+        "Laning": "Jungler",
+        "counters": [
+            "Wanwan",
+            "granger",
+            "kagura",
+            "Layla",
+            "Hayabusa",
+            "Ruby"
+        ]
+    },
+    {
+        "Name": "Dyrroth",
+        "Role(s)": "Fighter",
+        "Specialties": "Charge | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "granger",
+            "Kimmy",
+            "Leomord",
+            "hanzo",
+            "kagura"
+        ]
+    },
+    {
+        "Name": "Lylia",
+        "Role(s)": "Mage",
+        "Specialties": "Push | Damage",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Franco",
+            "minsitthar",
+            "kaja"
+        ]
+    },
+    {
+        "Name": "Baxia",
+        "Role(s)": "Tank",
+        "Specialties": "Support | Damage",
+        "Laning": "Roamer",
+        "counters": [
+            "Sun",
+            "x.borg",
+            "karrie",
+            "terizla",
+            "Nana"
+        ]
+    },
+    {
+        "Name": "Masha",
+        "Role(s)": "Fighter |  Tank",
+        "Specialties": "Push | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Irithel",
+            "Zilong",
+            "Eudora",
+            "harith",
+            "Layla"
+        ]
+    },
+    {
+        "Name": "Wanwan",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Burst",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Franco",
+            "kaja",
+            "Khufra",
+            "phoveus"
+        ]
+    },
+    {
+        "Name": "Silvanna",
+        "Role(s)": "Fighter",
+        "Specialties": "Initiator | Magic Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Wanwan",
+            "minsitthar",
+            "Franco",
+            "Chou",
+            "Baxia"
+        ]
+    },
+    {
+        "Name": "Carmilla",
+        "Role(s)": "Support",
+        "Specialties": "Crowd Control | Damage",
+        "Laning": "Roamer",
+        "counters": [
+            "karrie",
+            "Aurora",
+            "pharsa",
+            "Layla",
+            "miya",
+            "Baxia"
+        ]
+    },
+    {
+        "Name": "Cecilion",
+        "Role(s)": "Mage",
+        "Specialties": "Poke | Burst",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Masha",
+            "Kimmy",
+            "carmilla",
+            "valir",
+            "lunox",
+            "benedetta",
+            "Natalia"
+        ]
+    },
+    {
+        "Name": "Atlas",
+        "Role(s)": "Tank |  Support",
+        "Specialties": "Crowd Control | Initiator",
+        "Laning": "Roamer",
+        "counters": [
+            "silvanna",
+            "ling",
+            "Kimmy",
+            "Masha",
+            "Hanabi",
+            "valir",
+            "Nana",
+            "Chou"
+        ]
+    },
+    {
+        "Name": "Popol",
+        "Role(s)": "Marksman",
+        "Specialties": "Push | Burst",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Kimmy",
+            "Wanwan",
+            "silvanna",
+            "esmeralda",
+            "zhask",
+            "ling",
+            "Saber"
+        ]
+    },
+    {
+        "Name": "YuZhong",
+        "Role(s)": "Fighter",
+        "Specialties": "Regen | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Kimmy",
+            "Diggie",
+            "Natalia",
+            "Wanwan",
+            "Baxia",
+            "atlas"
+        ]
+    },
+    {
+        "Name": "luo-yi",
+        "Role(s)": "Mage",
+        "Specialties": "Support | Crowd Control",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Gusion",
+            "Hayabusa",
+            "Lancelot",
+            "Helcurt",
+            "Eudora",
+            "Aurora",
+            "Fanny",
+            "Wanwan",
+            "harith"
+        ]
+    },
+    {
+        "Name": "Benedetta",
+        "Role(s)": "Assassin",
+        "Specialties": "Chase | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "ling",
+            "minsitthar",
+            "Wanwan"
+        ]
+    },
+    {
+        "Name": "Khaleed",
+        "Role(s)": "Fighter",
+        "Specialties": "Damage | Regen",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Chou",
+            "popol",
+            "silvanna",
+            "ling",
+            "hanzo",
+            "luoyi"
+        ]
+    },
+    {
+        "Name": "Barats",
+        "Role(s)": "Tank |  Fighter",
+        "Specialties": "Damage | Crowd Control",
+        "Laning": "EXP Laner",
+        "counters": [
+            "x.borg",
+            "karrie",
+            "angela"
+        ]
+    },
+    {
+        "Name": "Brody",
+        "Role(s)": "Marksman",
+        "Specialties": "Burst | Reap",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Natalia",
+            "Saber",
+            "Hayabusa",
+            "johnson",
+            "Chou",
+            "Eudora",
+            "ling",
+            "Lancelot"
+        ]
+    },
+    {
+        "Name": "Yve",
+        "Role(s)": "Mage",
+        "Specialties": "Poke | Burst",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Natalia",
+            "kaja",
+            "Franco",
+            "Helcurt",
+            "Nana"
+        ]
+    },
+    {
+        "Name": "Mathilda",
+        "Role(s)": "Support |  Assassin",
+        "Specialties": "Initiator | Guard",
+        "Laning": "Roamer",
+        "counters": [
+            "esmeralda",
+            "minsitthar",
+            "Baxia",
+            "Franco"
+        ]
+    },
+    {
+        "Name": "Paquito",
+        "Role(s)": "Fighter",
+        "Specialties": "Chase | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Chou",
+            "Nana",
+            "kaja",
+            "Lancelot",
+            "Tigreal",
+            "Helcurt",
+            "kagura",
+            "x.borg",
+            "alpha",
+            "harith",
+            "Wanwan"
+        ]
+    },
+    {
+        "Name": "Gloo",
+        "Role(s)": "Tank",
+        "Specialties": "Regen | Control",
+        "Laning": "EXP Laner",
+        "counters": [
+            "barats",
+            "khaleed",
+            "popol",
+            "yve",
+            "benedetta"
+        ]
+    },
+    {
+        "Name": "Beatrix",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Damage",
+        "Laning": "Gold Laner",
+        "counters": [
+            "mathilda",
+            "brody",
+            "luoyi",
+            "Clint",
+            "popol"
+        ]
+    },
+    {
+        "Name": "Phoveus",
+        "Role(s)": "Fighter",
+        "Specialties": "Chase | Control",
+        "Laning": "EXP Laner",
+        "counters": [
+            "esmeralda",
+            "yve",
+            "Baxia"
+        ]
+    },
+    {
+        "Name": "Natan",
+        "Role(s)": "Marksman",
+        "Specialties": "Burst | Magic Damage",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Chou",
+            "ling",
+            "Saber",
+            "benedetta",
+            "Eudora"
+        ]
+    },
+    {
+        "Name": "Aulus",
+        "Role(s)": "Fighter",
+        "Specialties": "Damage | Crowd Control",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Nana",
+            "lunox",
+            "karrie",
+            "Saber",
+            "change"
+        ]
+    },
+    {
+        "Name": "Aamon",
+        "Role(s)": "Assassin",
+        "Specialties": "Burst | Magic Damage",
+        "Laning": "Mid Laner",
+        "counters": [
+            "beatrix",
+            "aulus",
+            "phoveus",
+            "gloo",
+            "yve"
+        ]
+    },
+    {
+        "Name": "Floryn",
+        "Role(s)": "Support",
+        "Specialties": "Poke | Guard",
+        "Laning": "Roamer",
+        "counters": [
+            "Chou",
+            "Baxia",
+            "benedetta",
+            "Natalia",
+            "Lancelot"
+        ]
+    },
+    {
+        "Name": "Valentina",
+        "Role(s)": "Mage",
+        "Specialties": "Burst | Reap",
+        "Laning": "Mid Laner",
+        "counters": [
+            "dyrroth",
+            "esmeralda",
+            "phoveus",
+            "aulus",
+            "Floryn"
+        ]
+    },
+    {
+        "Name": "Edith",
+        "Role(s)": "Tank |  Marksman",
+        "Specialties": "Control | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "valir",
+            "roger",
+            "karrie",
+            "Valentina",
+            "alpha",
+            "yuzhong",
+            "Chou",
+            "Nana",
+            "lesley",
+            "beatrix",
+            "natan"
+        ]
+    },
+    {
+        "Name": "Yin",
+        "Role(s)": "Fighter",
+        "Specialties": "Burst | Control",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Aamon",
+            "beatrix",
+            "argus",
+            "yuzhong",
+            "natan",
+            "Valentina",
+            "vale",
+            "brody"
+        ]
+    },
+    {
+        "Name": "Melissa",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Damage",
+        "Laning": "Gold Laner",
+        "counters": [
+            "Saber",
+            "Lancelot",
+            "yuzhong",
+            "yve",
+            "Eudora",
+            "Aurora",
+            "Chou"
+        ]
+    },
+    {
+        "Name": "Xavier",
+        "Role(s)": "Mage",
+        "Specialties": "Damage | Guard",
+        "Laning": "Mid Laner",
+        "counters": [
+            "Saber",
+            "Fanny",
+            "Gusion",
+            "Lancelot",
+            "kagura"
+        ]
+    },
+    {
+        "Name": "Julian",
+        "Role(s)": "Fighter |  Mage",
+        "Specialties": "Chase | Magic Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Saber",
+            "valir",
+            "Helcurt",
+            "argus",
+            "Eudora",
+            "benedetta",
+            "Chou",
+            "Gusion"
+        ]
+    },
+    {
+        "Name": "Fredrinn",
+        "Role(s)": "Tank |  Fighter",
+        "Specialties": "Damage | Chase",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Melissa",
+            "Xavier",
+            "Clint",
+            "Julian",
+            "thamuz"
+        ]
+    },
+    {
+        "Name": "Joy",
+        "Role(s)": "Assassin",
+        "Specialties": "Chase | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Zilong",
+            "Hanabi",
+            "atlas",
+            "gloo",
+            "phoveus"
+        ]
+    },
+    {
+        "Name": "Novaria",
+        "Role(s)": "Mage",
+        "Specialties": "Burst | Poke",
+        "Laning": "Mid Laner",
+        "counters": [
+            "lolita",
+            "yuzhong",
+            "Natalia",
+            "Harley"
+        ]
+    },
+    {
+        "Name": "Arlott",
+        "Role(s)": "Fighter |  Assassin",
+        "Specialties": "Charge | Burst",
+        "Laning": "EXP Laner",
+        "counters": [
+            "Zilong",
+            "esmeralda",
+            "badang",
+            "Alucard",
+            "odette"
+        ]
+    }
+]
