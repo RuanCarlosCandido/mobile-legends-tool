@@ -219,4 +219,6 @@ buildNumber.properties
 ## Sensitive content
 properties.yaml
 
+*.attach_pid
+
 # End of https://www.toptal.com/developers/gitignore/api/java,java-web,code-java,intellij+all,eclipse,vscode,maven
