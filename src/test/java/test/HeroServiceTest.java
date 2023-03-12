@@ -1,5 +1,5 @@
 package test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
@@ -82,6 +82,25 @@ public class HeroServiceTest {
 
         // Verify that getHeroesData was not called
         verify(mockHeroesData, never()).get(anyString());
+    }
+    
+    @Test
+    public void testGetCounterHeroes2() {
+        HeroService heroService = new HeroService();
+        heroService.addPickedHero("gord");
+        heroService.addPickedHero("alice");                    
+        Map<String, List<String>> counterHeroes = heroService.getCounterHeroes();
+        assertNotNull(counterHeroes);
+        assertEquals(5, counterHeroes.size());
+        assertTrue(counterHeroes.containsKey("Fighter"));
+        assertTrue(counterHeroes.containsKey("Tank"));
+        assertTrue(counterHeroes.containsKey("Assassin"));
+        assertTrue(counterHeroes.containsKey("Marksman"));
+        assertTrue(counterHeroes.containsKey("Mage"));
+        List<String> fighterCounters = counterHeroes.get("Fighter");
+        assertNotNull(fighterCounters);
+        assertEquals(4, fighterCounters.size());
+        assertTrue(fighterCounters.containsAll(Arrays.asList("Ruby", "Gusion", "Helcurt", "Fanny")));
     }
 
 }
