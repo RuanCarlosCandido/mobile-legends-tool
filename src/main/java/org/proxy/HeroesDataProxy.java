@@ -39,8 +39,20 @@ public class HeroesDataProxy {
         try {
             String json = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
             List<HeroesResponse> heroesList = objectMapper.readValue(json, typeReference);
+            heroesList.forEach(hero -> hero.setName(hero.getName()
+                    .toLowerCase()
+                    .replace("_", "")
+                    .replace("-", "")
+                    .replace(".", "")));
             data = new HashMap<String, HeroesResponse>();
-            heroesList.forEach(hero -> data.put(hero.getName().toLowerCase(), hero));
+            heroesList.forEach(hero -> data.put(
+                    hero.getName()
+                            .toLowerCase()
+                            .replace("_", "")
+                            .replace("-", "")
+                            .replace(".", ""),
+                    hero));
+
             logger.info("Heroes data loaded successfully");
         } catch (IOException e) {
             logger.error("Failed to read heroes.json", e);
