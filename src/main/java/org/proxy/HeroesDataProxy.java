@@ -43,7 +43,8 @@ public class HeroesDataProxy {
                     .toLowerCase()
                     .replace("_", "")
                     .replace("-", "")
-                    .replace(".", "")));
+                    .replace(".", "")
+                    .replace("'", "")));
             data = new HashMap<String, HeroesResponse>();
             heroesList.forEach(hero -> data.put(
                     hero.getName()

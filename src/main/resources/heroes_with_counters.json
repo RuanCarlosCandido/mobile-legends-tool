@@ -10,7 +10,8 @@
             "Clint",
             "Layla",
             "Eudora",
-            "Zilong"
+            "Zilong",
+            "Belerick"
         ]
     },
     {
@@ -26,7 +27,9 @@
             "Cyclops",
             "Tigreal",
             "alpha",
-            "Bane"
+            "Bane",
+            "gusion",
+            "martis"
         ]
     },
     {
@@ -42,7 +45,9 @@
             "Layla",
             "Gord",
             "Nana",
-            "Bruno"
+            "Bruno",
+            "valir",
+            "argus"
         ]
     },
     {
@@ -69,7 +74,6 @@
         "counters": [
             "Zilong",
             "Layla",
-            "Gord",
             "Natalia",
             "miya",
             "silvanna"
@@ -120,7 +124,10 @@
             "Gatotkaca",
             "Helcurt",
             "Khufra",
-            "hylos"
+            "hylos",
+            "martis",
+            "gusion",
+            "baxia"
         ]
     },
     {
@@ -129,11 +136,12 @@
         "Specialties": "Guard | Crowd Control",
         "Laning": "Roamer",
         "counters": [
-            "Gord",
             "Nana",
             "Clint",
-            "Zilong",
-            "Alice"
+            "Alice",
+            "martis",
+            "lesley",
+            "baxia"
         ]
     },
     {
@@ -147,7 +155,8 @@
             "Clint",
             "miya",
             "Moskov",
-            "Tigreal"
+            "Tigreal",
+            "akai"
         ]
     },
     {
@@ -173,7 +182,8 @@
             "Zilong",
             "YiSunShin",
             "Diggie",
-            "kagura"
+            "kagura",
+            "belerick"
         ]
     },
     {
@@ -185,7 +195,9 @@
             "Aldous",
             "Fanny",
             "Karina",
-            "kagura"
+            "kagura",
+            "johnson",
+            "irithel"
         ]
     },
     {
@@ -213,7 +225,8 @@
             "Hanabi",
             "lesley",
             "Moskov",
-            "Karina"
+            "Karina",
+            "grock"
         ]
     },
     {
@@ -225,7 +238,9 @@
             "Natalia",
             "Akai",
             "Balmond",
-            "Freya"
+            "Freya",
+            "tigreal",
+            "belerick"
         ]
     },
     {
@@ -280,7 +295,8 @@
             "miya",
             "Nana",
             "Layla",
-            "Moskov"
+            "Moskov",
+            "Esmeralda"
         ]
     },
     {
@@ -293,7 +309,8 @@
             "kaja",
             "Sun",
             "jawhead",
-            "Saber"
+            "Saber",
+       		"nana"
         ]
     },
     {
@@ -390,11 +407,11 @@
         "Specialties": "Charge | Damage",
         "Laning": "EXP Laner",
         "counters": [
-            "Moskov",
-            "Sun",
             "Chou",
             "Layla",
-            "Zilong"
+            "khufra",
+            "hylos",
+            "gatotkaca"
         ]
     },
     {
@@ -434,7 +451,8 @@
             "Chou",
             "Zilong",
             "Natalia",
-            "ling"
+            "ling",
+            "Belerick"
         ]
     },
     {
@@ -460,7 +478,8 @@
             "roger",
             "Harley",
             "YiSunShin",
-            "Lancelot"
+            "Lancelot",
+            "guinevere"
         ]
     },
     {
@@ -472,7 +491,16 @@
             "Baxia",
             "Saber",
             "atlas",
-            "luoyi"
+            "luoyi",
+            "akai",
+            "vexana",
+            "vale",
+            "faramis",
+            "atlas",
+            "kagura",
+            "johnson",
+            "kadita",
+            "floryn"
         ]
     },
     {
@@ -486,7 +514,8 @@
             "jawhead",
             "thamuz",
             "Chou",
-            "Karina"
+            "Karina",
+            "badang"
         ]
     },
     {
@@ -698,7 +727,8 @@
             "Natalia",
             "Eudora",
             "Sun",
-            "Odette"
+            "Odette",
+            "karrie"
         ]
     },
     {
@@ -714,7 +744,9 @@
             "Natalia",
             "granger",
             "jawhead",
-            "Lancelot"
+            "Lancelot",
+            "guinevere",
+            "thamuz"
         ]
     },
     {
@@ -740,7 +772,10 @@
             "Chou",
             "Saber",
             "Harley",
-            "jawhead"
+            "jawhead",
+            "gusion",
+            "lolita",
+            "martis"
         ]
     },
     {
@@ -785,7 +820,8 @@
             "Natalia",
             "Karina",
             "Saber",
-            "Chou"
+            "Chou",
+            "Esmeralda"
         ]
     },
     {
@@ -821,7 +857,6 @@
         "Laning": "EXP Laner",
         "counters": [
             "zhask",
-            "pharsa",
             "Natalia",
             "miya",
             "Helcurt"
@@ -839,7 +874,8 @@
             "Sun",
             "Vexana",
             "esmeralda",
-            "karrie"
+            "karrie",
+            "paquito"
         ]
     },
     {
@@ -852,7 +888,20 @@
             "Natalia",
             "Franco",
             "Gusion",
-            "Hayabusa"
+            "Hayabusa",
+            "Belerick",
+            "karina",
+            "lolita",
+            "lancelot",
+            "diggie",
+            "hylos",
+            "lesley",
+            "valir",
+            "harley",
+            "hanzo",
+            "xavier",
+            "aamon"
+           
         ]
     },
     {
@@ -866,7 +915,8 @@
             "Baxia",
             "Saber",
             "Aurora",
-            "jawhead"
+            "jawhead",
+            "lolita"
         ]
     },
     {
@@ -925,7 +975,9 @@
             "Hayabusa",
             "johnson",
             "odette",
-            "Zilong"
+            "Zilong",
+            "mya",
+            "nana"
         ]
     },
     {
@@ -1003,7 +1055,8 @@
             "Nana",
             "kaja",
             "Franco",
-            "Chou"
+            "Chou",
+            "martis"
         ]
     },
     {
@@ -1016,7 +1069,9 @@
             "Hayabusa",
             "Natalia",
             "Aldous",
-            "Belerick"
+            "Belerick",
+            "martis",
+            "gusion"
         ]
     },
     {
@@ -1097,9 +1152,22 @@
         "counters": [
             "Kimmy",
             "hanzo",
-            "Hanabi",
             "Helcurt",
-            "Odette"
+            "Odette",
+            "karina",
+            "grock",
+            "belerick",
+            "minsitthar",
+            "faramis",
+            "valentina",
+            "kagura",
+            "gatotkaca",
+            "argus",
+            "lunox",
+            "harith",
+            "xborg",
+            "benedetta",
+            "khaleed"
         ]
     },
     {
@@ -1129,7 +1197,9 @@
         "counters": [
             "Ruby",
             "Wanwan",
-            "Franco"
+            "Franco",
+            "x.borg",
+            "khufra"
         ]
     },
     {
@@ -1170,8 +1240,7 @@
             "lesley",
             "alpha",
             "Gusion",
-            "pharsa",
-            "guinevere"
+            "pharsa"
         ]
     },
     {
@@ -1222,7 +1291,9 @@
             "x.borg",
             "karrie",
             "terizla",
-            "Nana"
+            "Nana",
+            "melissa",
+            "julian"
         ]
     },
     {
@@ -1247,7 +1318,8 @@
             "Franco",
             "kaja",
             "Khufra",
-            "phoveus"
+            "phoveus",
+            "karina"
         ]
     },
     {
@@ -1317,7 +1389,6 @@
             "Kimmy",
             "Wanwan",
             "silvanna",
-            "esmeralda",
             "zhask",
             "ling",
             "Saber"
@@ -1584,7 +1655,21 @@
             "natan",
             "Valentina",
             "vale",
-            "brody"
+            "brody",
+            "grock",
+            "zhask",
+            "belerick",
+            "minsitthar",
+            "faramis",
+            "kagura",
+            "gatotkaca",
+            "argus",
+            "valir",
+            "xborg",
+            "lylia",
+            "wanwan",
+            "khaleed"
+            
         ]
     },
     {
@@ -1597,8 +1682,6 @@
             "Lancelot",
             "yuzhong",
             "yve",
-            "Eudora",
-            "Aurora",
             "Chou"
         ]
     },

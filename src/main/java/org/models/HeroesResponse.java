@@ -25,7 +25,11 @@ public class HeroesResponse {
         this.roles = Optional.ofNullable(roles).orElse("").toLowerCase();
         this.specialties = Optional.ofNullable(specialties).orElse("").toLowerCase();
         this.laning = Optional.ofNullable(laning).orElse("").toLowerCase();
-        this.counters = Optional.ofNullable(counters).orElse(Collections.emptyList());
+        this.counters = Optional.ofNullable(counters).orElse(Collections.emptyList()).stream()
+                .map(String::toLowerCase)
+                .map(counter -> counter.replaceAll("\\s", ""))
+                .map(counter -> counter.replaceAll("[-_.']", ""))
+                .collect(Collectors.toList());
     }
 
     public String getName() {
@@ -61,11 +65,7 @@ public class HeroesResponse {
     }
 
     public List<String> getCounters() {
-        return counters.stream()
-                .map(String::toLowerCase)
-                .map(counter -> counter.replaceAll("\\s", ""))
-                .map(counter -> counter.replaceAll("[-_]", ""))
-                .collect(Collectors.toList());
+        return counters;
     }
 
     @Override
