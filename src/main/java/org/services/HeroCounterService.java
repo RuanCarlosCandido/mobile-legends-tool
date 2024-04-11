@@ -55,4 +55,4 @@ public class HeroCounterService {
                         .anyMatch(pickedHeroes::contains))
                 .collect(Collectors.toList()));
     }
-}
+  }

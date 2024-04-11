@@ -11,7 +11,9 @@
             "Layla",
             "Eudora",
             "Zilong",
-            "Belerick"
+            "Belerick",
+            "ixia",
+            "Hayabusa"
         ]
     },
     {
@@ -29,7 +31,8 @@
             "alpha",
             "Bane",
             "gusion",
-            "martis"
+            "martis",
+            "hanzo"
         ]
     },
     {
@@ -52,18 +55,18 @@
     },
     {
         "Name": "Alice",
-        "Role(s)": "Mage |  Tank",
+        "Role(s)": "Mage",
         "Specialties": "Charge | Regen",
         "Laning": "Mid Laner",
         "counters": [
             "karrie",
-            "Ruby",
             "Harley",
             "pharsa",
             "valir",
             "Baxia",
             "Karina",
-            "Vexana"
+            "Vexana",
+            "cici"
         ]
     },
     {
@@ -76,7 +79,24 @@
             "Layla",
             "Natalia",
             "miya",
-            "silvanna"
+            "silvanna",
+            "esmeralda",
+            "Fredrinn",
+            "gatotkaca",
+            "johnson",
+            "gloo",
+            "carmilla",
+            "grock",
+            "atlas",
+            "khufra",
+            "belerick",
+            "hilda",
+            "Alice",
+            "masha",
+            "barats",
+            "edith",
+            "mathilda",
+            "faramis"
         ]
     },
     {
@@ -92,7 +112,10 @@
             "Diggie",
             "Eudora",
             "Freya",
-            "Gord"
+            "Gord",
+            "Nana",
+            "Hylos",
+            "xborg"
         ]
     },
     {
@@ -127,7 +150,9 @@
             "hylos",
             "martis",
             "gusion",
-            "baxia"
+            "baxia",
+            "faramis",
+            "rafaela"
         ]
     },
     {
@@ -158,7 +183,12 @@
             "miya",
             "Moskov",
             "Tigreal",
-            "akai"
+            "akai",
+            "faramis",
+            "Aurora",
+            "xborg",
+            "zhask",
+            "ixia"
         ]
     },
     {
@@ -229,7 +259,9 @@
             "lesley",
             "Moskov",
             "Karina",
-            "grock"
+            "martis",
+            "Belerick",
+            "popol"
         ]
     },
     {
@@ -258,7 +290,10 @@
             "Moskov",
             "Zilong",
             "Franco",
-            "minsitthar"
+            "minsitthar",
+            "kaja",
+            "mathilda",
+            "Minotaur"
         ]
     },
     {
@@ -272,7 +307,9 @@
             "Karina",
             "Lancelot",
             "Clint",
-            "miya"
+            "miya",
+            "Ixia",
+            "Hayabusa"
         ]
     },
     {
@@ -286,7 +323,15 @@
             "Alice",
             "Diggie",
             "Vexana",
-            "baxia"
+            "baxia",
+            "franco",
+            "Aurora",
+            "Valir",
+            "Khufra",
+            "Nana",
+            "change",
+            "cici",
+            "barats"
         ]
     },
     {
@@ -300,7 +345,12 @@
             "Nana",
             "Layla",
             "Moskov",
-            "Esmeralda"
+            "Esmeralda",
+            "hanzo",
+            "baxia",
+            "xborg",
+            "cici",
+            "barats"
         ]
     },
     {
@@ -314,7 +364,17 @@
             "Sun",
             "jawhead",
             "Saber",
-       		"nana"
+       		"nana",
+            "faramis",
+            "mathilda",
+            "Aurora",
+            "eudora",
+            "lunox",
+            "belerick",
+            "johnson",
+            "Khufra",
+            "Franco",
+            "Chou"
         ]
     },
     {
@@ -341,7 +401,9 @@
             "johnson",
             "Alucard",
             "Chou",
-            "Eudora"
+            "Eudora",
+            "popol",
+            "Hayabusa"
         ]
     },
     {
@@ -359,7 +421,11 @@
             "Alice",
             "Saber",
             "silvanna",
-            "minotaur"
+            "minotaur",
+            "rafaela",
+            "kaja",
+            "mathilda",
+            "Hayabusa"
         ]
     },
     {
@@ -373,7 +439,8 @@
             "Fanny",
             "Zilong",
             "Harley",
-            "Eudora"
+            "Eudora",
+            "mathilda"
         ]
     },
     {
@@ -428,12 +495,14 @@
             "karrie",
             "Karina",
             "phoveus",
-            "Bane"
+            "Bane",
+            "natan",
+            "lolita"
         ]
     },
     {
         "Name": "yisunshin",
-        "Role(s)": "Assassin |  Marksman",
+        "Role(s)": "Assassin |  Marksman | Support",
         "Specialties": "Reap | Chase",
         "Laning": "Gold Laner",
         "counters": [
@@ -467,7 +536,10 @@
             "hylos",
             "Diggie",
             "Nana",
-            "grock"
+            "grock",
+            "xborg",
+            "cici",
+            "barats"
         ]
     },
     {
@@ -482,7 +554,8 @@
             "Harley",
             "YiSunShin",
             "Lancelot",
-            "guinevere"
+            "guinevere",
+            "popol"
         ]
     },
     {
@@ -492,18 +565,16 @@
         "Laning": "Roamer",
         "counters": [
             "Baxia",
-            "Saber",
             "atlas",
             "luoyi",
             "akai",
-            "vexana",
             "vale",
-            "faramis",
-            "atlas",
-            "kagura",
-            "johnson",
             "kadita",
-            "floryn"
+            "floryn",
+            "layla",
+            "Kaja",
+            "minotaur",
+            "gatotkaca"
         ]
     },
     {
@@ -518,7 +589,8 @@
             "thamuz",
             "Chou",
             "Karina",
-            "badang"
+            "badang",
+            "martis"
         ]
     },
     {
@@ -532,7 +604,9 @@
             "Layla",
             "YiSunShin",
             "Tigreal",
-            "Helcurt"
+            "Helcurt",
+            "popol",
+            "hylos"
         ]
     },
     {
@@ -579,7 +653,8 @@
             "silvanna",
             "jawhead",
             "hilda",
-            "alpha"
+            "alpha",
+            "khufra"
         ]
     },
     {
@@ -602,7 +677,7 @@
     },
     {
         "Name": "Gatotkaca",
-        "Role(s)": "Tank |  Fighter",
+        "Role(s)": "Fighter",
         "Specialties": "Crowd Control | Burst",
         "Laning": "EXP Laner",
         "counters": [
@@ -626,7 +701,11 @@
             "johnson",
             "Gatotkaca",
             "Sun",
-            "Zilong"
+            "Zilong",
+            "rafaela",
+            "Kaja",
+            "mathilda",
+            "minotaur"
         ]
     },
     {
@@ -641,7 +720,8 @@
             "Alucard",
             "Gord",
             "Chou",
-            "Franco"
+            "Franco",
+            "lesley"
         ]
     },
     {
@@ -658,7 +738,10 @@
             "Irithel",
             "Masha",
             "carmilla",
-            "Franco"
+            "Franco",
+            "Sun",
+            "xborg",
+            "cici"
         ]
     },
     {
@@ -676,7 +759,9 @@
             "valir",
             "Nana",
             "lunox",
-            "Franco"
+            "Franco",
+            "xborg",
+            "carmilla"
         ]
     },
     {
@@ -689,7 +774,8 @@
             "Natalia",
             "Zilong",
             "guinevere",
-            "Tigreal"
+            "Tigreal",
+            "popol"
         ]
     },
     {
@@ -702,7 +788,16 @@
             "Cyclops",
             "Natalia",
             "Eudora",
-            "Freya"
+            "Freya",
+            "popol",
+            "faramis",
+            "Kaja",
+            "mathilda",
+            "khufra",
+            "minotaur",
+            "tigreal",
+            "dyrroth",
+            "lylia"
         ]
     },
     {
@@ -717,7 +812,8 @@
             "Franco",
             "Eudora",
             "Aldous",
-            "Zilong"
+            "Zilong",
+            "hayabusa"
         ]
     },
     {
@@ -731,7 +827,8 @@
             "Eudora",
             "Sun",
             "Odette",
-            "karrie"
+            "karrie",
+            "xborg"
         ]
     },
     {
@@ -760,7 +857,12 @@
         "counters": [
             "Chou",
             "guinevere",
-            "Eudora"
+            "Eudora",
+            "faramis",
+            "rafaela",
+            "mathilda",
+            "khufra",
+            "minotaur"
         ]
     },
     {
@@ -778,7 +880,8 @@
             "jawhead",
             "gusion",
             "lolita",
-            "martis"
+            "martis",
+            "popol"
         ]
     },
     {
@@ -794,7 +897,13 @@
             "Natalia",
             "Alucard",
             "Lancelot",
-            "Clint"
+            "Clint",
+            "dyrroth",
+            "faramis",
+            "rafaela",
+            "mathilda",
+            "Hayabusa",
+            "baxia"
         ]
     },
     {
@@ -811,7 +920,9 @@
             "Chou",
             "Nana",
             "benedetta",
-            "Odette"
+            "Odette",
+            "eudora",
+            "layla"
         ]
     },
     {
@@ -824,7 +935,9 @@
             "Karina",
             "Saber",
             "Chou",
-            "Esmeralda"
+            "Esmeralda",
+            "popol",
+            "baxia"
         ]
     },
     {
@@ -839,7 +952,12 @@
             "benedetta",
             "kadita",
             "Hayabusa",
-            "ling"
+            "ling",
+            "faramis",
+            "kaja",
+            "mathilda",
+            "khufra",
+            "minotaur"
         ]
     },
     {
@@ -864,7 +982,8 @@
             "miya",
             "Helcurt",
             "kaja",
-            "franco"
+            "franco",
+            "lancelot"
         ]
     },
     {
@@ -905,7 +1024,8 @@
             "harley",
             "hanzo",
             "xavier",
-            "aamon"
+            "aamon",
+            "melissa"
            
         ]
     },
@@ -939,12 +1059,14 @@
             "benedetta",
             "Hayabusa",
             "Aurora",
-            "Baxia"
+            "Baxia",
+            "cici",
+            "barats"
         ]
     },
     {
         "Name": "Selena",
-        "Role(s)": "Assassin |  Mage",
+        "Role(s)": "Assassin |  Mage | Support",
         "Specialties": "Initiator | Reap",
         "Laning": "Jungler",
         "counters": [
@@ -952,12 +1074,13 @@
             "Khufra",
             "Saber",
             "benedetta",
-            "Wanwan"
+            "Wanwan",
+            "minotaur"
         ]
     },
     {
         "Name": "Aldous",
-        "Role(s)": "Fighter",
+        "Role(s)": "Fighter | Support",
         "Specialties": "Burst | Support",
         "Laning": "EXP Laner",
         "counters": [
@@ -965,7 +1088,8 @@
             "Fanny",
             "Layla",
             "pharsa",
-            "Gord"
+            "Gord",
+            "faramis"
         ]
     },
     {
@@ -1038,11 +1162,14 @@
         "Specialties": "Poke | Burst",
         "Laning": "Jungler",
         "counters": [
-            "Gord",
             "pharsa",
-            "Hanabi",
-            "Layla",
-            "karrie"
+            "Aldous",
+            "Natalia",
+            "ling",
+            "Leomord",
+            "Selena",
+            "Karina",
+            "Helcurt"
         ]
     },
     {
@@ -1052,18 +1179,22 @@
         "Laning": "Roamer",
         "counters": [
             "Gusion",
-            "Helcurt",
+            "lancelot",
             "karrie",
-            "Irithel",
-            "Eudora",
             "lunox",
             "Nana",
-            "kaja",
-            "Franco",
             "Chou",
             "martis",
             "xborg",
-            "alpha"
+            "alpha",
+            "diggie",
+            "akai",
+            "uranus",
+            "faramis",
+            "brody",
+            "clint",
+            "lesley",
+            "wanwan"
         ]
     },
     {
@@ -1090,7 +1221,8 @@
             "odette",
             "Natalia",
             "Moskov",
-            "johnson"
+            "johnson",
+            "hayabusa"
         ]
     },
     {
@@ -1104,7 +1236,8 @@
             "selena",
             "Moskov",
             "martis",
-            "kaja"
+            "kaja",
+            "khufra"
         ]
     },
     {
@@ -1117,7 +1250,8 @@
             "Chou",
             "Irithel",
             "Akai",
-            "Diggie"
+            "Diggie",
+            "hanabi"
         ]
     },
     {
@@ -1149,7 +1283,9 @@
             "Kimmy",
             "guinevere",
             "Harley",
-            "Odette"
+            "Odette",
+            "xavier",
+            "barats"
         ]
     },
     {
@@ -1182,7 +1318,17 @@
         "Name": "khufra",
         "Role(s)": "Tank |  Support",
         "Specialties": "Initiator | Crowd Control",
-        "Laning": "Roamer"
+        "Laning": "Roamer",
+        "counters": [
+            "valir",
+            "Diggie",
+            "kaja",
+            "Franco",
+            "Nana",
+            "Aurora",
+            "grock",
+            "Minsitthar"
+        ]
     },
     {
         "Name": "Granger",
@@ -1194,7 +1340,9 @@
             "Khufra",
             "Kimmy",
             "Claude",
-            "Hanabi"
+            "Hanabi",
+            "Ixia",
+            "faramis"
         ]
     },
     {
@@ -1212,7 +1360,7 @@
     },
     {
         "Name": "Esmeralda",
-        "Role(s)": "Mage |  Tank",
+        "Role(s)": "Mage",
         "Specialties": "Regen | Mixed Damage",
         "Laning": "Mid Laner",
         "counters": [
@@ -1220,7 +1368,8 @@
             "Leomord",
             "johnson",
             "lesley",
-            "Aldous"
+            "Aldous",
+            "baxia"
         ]
     },
     {
@@ -1243,12 +1392,20 @@
         "Laning": "EXP Laner",
         "counters": [
             "granger",
-            "Khufra",
+            "esmeralda",
             "Kimmy",
             "lesley",
             "alpha",
             "Gusion",
-            "pharsa"
+            "pharsa",
+            "uranus",
+            "akai",
+            "Hilda",
+            "Alice",
+            "masha",
+            "edith",
+            "mathilda",
+            "hayabusa"
         ]
     },
     {
@@ -1262,7 +1419,12 @@
             "kagura",
             "Layla",
             "Hayabusa",
-            "Ruby"
+            "Ruby",
+            "popol",
+            "faramis",
+            "kaja",
+            "mathilda",
+            "minotaur"
         ]
     },
     {
@@ -1296,7 +1458,7 @@
         "Laning": "Roamer",
         "counters": [
             "Sun",
-            "x.borg",
+            "xborg",
             "karrie",
             "terizla",
             "Nana",
@@ -1306,7 +1468,7 @@
     },
     {
         "Name": "Masha",
-        "Role(s)": "Fighter |  Tank",
+        "Role(s)": "Fighter",
         "Specialties": "Push | Damage",
         "Laning": "EXP Laner",
         "counters": [
@@ -1314,7 +1476,8 @@
             "Zilong",
             "Eudora",
             "harith",
-            "Layla"
+            "Layla",
+            "Ixia"
         ]
     },
     {
@@ -1385,12 +1548,16 @@
             "Hanabi",
             "valir",
             "Nana",
-            "Chou"
+            "Chou",
+            "xborg",
+            "cici",
+            "barats",
+            "Fredrinn"
         ]
     },
     {
         "Name": "Popol",
-        "Role(s)": "Marksman",
+        "Role(s)": "Support",
         "Specialties": "Push | Burst",
         "Laning": "Gold Laner",
         "counters": [
@@ -1430,7 +1597,9 @@
             "Aurora",
             "Fanny",
             "Wanwan",
-            "harith"
+            "harith",
+            "hanzo",
+            "lolita"
         ]
     },
     {
@@ -1466,7 +1635,18 @@
         "counters": [
             "x.borg",
             "karrie",
-            "angela"
+            "angela",
+            "cici",
+            "Hylos",
+            "esmeralda",
+            "gatotkaca",
+            "gloo",
+            "carmilla",
+            "uranus",
+            "akai",
+            "hilda",
+            "masha",
+            "edith"
         ]
     },
     {
@@ -1482,7 +1662,8 @@
             "Chou",
             "Eudora",
             "ling",
-            "Lancelot"
+            "Lancelot",
+            "Ixia"
         ]
     },
     {
@@ -1507,7 +1688,14 @@
             "esmeralda",
             "minsitthar",
             "Baxia",
-            "Franco"
+            "Franco",
+            "Khufra",
+            "Kaja",
+            "Chou",
+            "Minsitthar",
+            "Aurora",
+            "Eudora",
+            "barats"
         ]
     },
     {
@@ -1676,8 +1864,9 @@
             "xborg",
             "lylia",
             "wanwan",
-            "khaleed"
-            
+            "khaleed",
+            "clint",
+            "Aurora"
         ]
     },
     {
@@ -1732,7 +1921,26 @@
             "Xavier",
             "Clint",
             "Julian",
-            "thamuz"
+            "thamuz",
+            "layla",
+            "freya",
+            "xborg",
+            "baxia",
+            "esmeralda",
+            "gatotkaca",
+            "johnson",
+            "gloo",
+            "carmilla",
+            "uranus",
+            "grock",
+            "hylos",
+            "khufra",
+            "belerick",
+            "akai",
+            "hilda",
+            "masha",
+            "barats",
+            "edith"
         ]
     },
     {
@@ -1745,7 +1953,8 @@
             "Hanabi",
             "atlas",
             "gloo",
-            "phoveus"
+            "phoveus",
+            "minsitthar"
         ]
     },
     {
@@ -1771,6 +1980,35 @@
             "badang",
             "Alucard",
             "odette"
+        ]
+    },
+    {
+        "Name": "Ixia",
+        "Role(s)": "Marksman",
+        "Specialties": "Reap | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "moskov",
+            "karrie",
+            "wanwan",
+            "hanabi",
+            "claude"
+        ]
+    },
+    {
+        "Name": "Cici",
+        "Role(s)": "Fighter",
+        "Specialties": "Reap | Damage",
+        "Laning": "EXP Laner",
+        "counters": [
+            "esmeralda",
+            "gatotkaca",
+            "gloo",
+            "carmilla",
+            "uranus",
+            "akai",
+            "masha",
+            "edith"
         ]
     }
 ]

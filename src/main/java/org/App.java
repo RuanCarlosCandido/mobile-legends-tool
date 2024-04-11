@@ -5,7 +5,7 @@ import static org.utils.Util.printWelcomeMesage;
 import java.util.Scanner;
 
 import org.apache.log4j.LogManager;
-import org.controllers.HeroController;
+import org.services.HeroSelectionService;
 
 public class App {
 
@@ -17,24 +17,16 @@ public class App {
 
         printWelcomeMesage();
 
-        Scanner in = new Scanner(System.in);
+        runHeroSelectionProcess();
 
-        HeroController heroController = new HeroController();
-        int i = 0;
-        while (i < 5) {
-            try {
-                System.out.println("Entre com o Nome do " + (i + 1) + "º Hero : ");
+    }
 
-                heroController.addPickedHero(in.next().toLowerCase());
-
-                heroController.printCounters(heroController.getCounterHeroes());
-                i++;
-
-            } catch (Exception e) {// dont increment in case of error
-                LOGGER.error("[ATENCAO]	HERO INVALIDO, DIGITE NOVAMENTE\n", e);
-            }
+    private static void runHeroSelectionProcess() {
+        try (Scanner scanner = new Scanner(System.in)) {
+            HeroSelectionService heroSelection = new HeroSelectionService(scanner);
+            heroSelection.selectHeroes();
+        } catch (Exception e) {
+            LOGGER.error("An error occurred during the hero selection process.", e);
         }
-        in.close();
-        
     }
 }

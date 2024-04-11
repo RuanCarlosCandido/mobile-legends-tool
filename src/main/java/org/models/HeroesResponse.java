@@ -25,11 +25,12 @@ public class HeroesResponse {
         this.roles = Optional.ofNullable(roles).orElse("").toLowerCase();
         this.specialties = Optional.ofNullable(specialties).orElse("").toLowerCase();
         this.laning = Optional.ofNullable(laning).orElse("").toLowerCase();
-        this.counters = Optional.ofNullable(counters).orElse(Collections.emptyList()).stream()
-                .map(String::toLowerCase)
-                .map(counter -> counter.replaceAll("\\s", ""))
-                .map(counter -> counter.replaceAll("[-_.']", ""))
-                .collect(Collectors.toList());
+        this.counters = Optional.ofNullable(counters)
+                                .orElseGet(Collections::emptyList)
+                                .stream()
+                                .map(String::toLowerCase)
+                                .map(counter -> counter.replaceAll("\\s|[-_.']", ""))
+                                .collect(Collectors.toList());
     }
 
     public String getName() {
@@ -39,29 +40,23 @@ public class HeroesResponse {
     public void setName(String name) {
         this.name = name;
     }
-    
+
     public List<String> getRoles() {
-        return Optional.ofNullable(roles)
-            .map(r -> Arrays.asList(r.split("\\|")))
-            .orElseGet(() -> Arrays.asList())
-            .stream()
-            .map(String::trim)
-            .map(String::toLowerCase)
-            .collect(Collectors.toList());
+        return Arrays.stream(Optional.ofNullable(roles).orElse("").split("\\|"))
+                     .map(String::trim)
+                     .map(String::toLowerCase)
+                     .collect(Collectors.toList());
     }
 
     public List<String> getSpecialties() {
-        return Optional.ofNullable(specialties)
-            .map(s -> Arrays.asList(s.split("\\|")))
-            .orElseGet(() -> Arrays.asList())
-            .stream()
-            .map(String::trim)
-            .map(String::toLowerCase)
-            .collect(Collectors.toList());
+        return Arrays.stream(Optional.ofNullable(specialties).orElse("").split("\\|"))
+                     .map(String::trim)
+                     .map(String::toLowerCase)
+                     .collect(Collectors.toList());
     }
-    
+
     public String getLaning() {
-        return Optional.ofNullable(laning).orElse("").toLowerCase();
+        return laning;
     }
 
     public List<String> getCounters() {
@@ -70,8 +65,7 @@ public class HeroesResponse {
 
     @Override
     public String toString() {
-        return "HeroesResponse [name=" + name + ", roles=" + roles + ", specialties=" + specialties + ", laning="
-                + laning + ", counters=" + counters + "]";
+        return String.format("HeroesResponse [name=%s, roles=%s, specialties=%s, laning=%s, counters=%s]",
+                             name, roles, specialties, laning, counters);
     }
-
 }
