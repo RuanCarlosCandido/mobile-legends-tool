@@ -8,14 +8,14 @@ import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class HeroesResponse {
+public class Hero {
     private String name;
     private final String roles;
     private final String specialties;
     private final String laning;
     private final List<String> counters;
 
-    public HeroesResponse(
+    public Hero(
             @JsonProperty("Name") String name,
             @JsonProperty("Role(s)") String roles,
             @JsonProperty("Specialties") String specialties,

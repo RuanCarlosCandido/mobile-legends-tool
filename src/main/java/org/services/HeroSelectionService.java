@@ -23,7 +23,8 @@ public class HeroSelectionService {
                 String heroName = scanner.next().toLowerCase();
 
                 heroController.addPickedHero(heroName);
-                heroController.printCounters(heroController.getCounterHeroes());
+                heroController.calculateCounters();
+                heroController.printCounters();
                 i++;
             } catch (Exception e) {
                 LOGGER.error("Invalid hero, please try again.", e);

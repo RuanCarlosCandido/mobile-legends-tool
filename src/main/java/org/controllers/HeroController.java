@@ -1,41 +1,43 @@
 package org.controllers;
 
-import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 import org.models.exceptions.UnknownHeroException;
+import org.repository.CountersRepository;
+import org.repository.HeroRepository;
+import org.repository.SelectedHeroesRepository;
 import org.services.CounterPrintingService;
-import org.services.HeroPickingService;
 import org.services.HeroService;
+import org.services.IHeroService;
 
 public class HeroController {
 
-    private HeroService heroService;
-    private HeroPickingService heroPickingService;
+    private IHeroService heroService;
+    private SelectedHeroesRepository selectedHeroesRepository;
     private CounterPrintingService counterPrintingService;
+    private HeroRepository heroRepository;
+    private CountersRepository countersRepository;
 
     public HeroController() {
-        this.heroPickingService = new HeroPickingService();
+        this.selectedHeroesRepository = new SelectedHeroesRepository();
         this.counterPrintingService = new CounterPrintingService();
-        this.heroService = new HeroService(heroPickingService);
-    }
-
-    public Map<String, List<String>> getCounterHeroes() {
-        return heroService.getCounterHeroes();
-    }
-
-    public List<String> getPickedHeroes() {
-        return heroPickingService.getPickedHeroes();
+        this.countersRepository = new CountersRepository();
+        this.heroRepository = new HeroRepository();
+        this.heroService = new HeroService(selectedHeroesRepository, countersRepository);
     }
 
     public void addPickedHero(String pickedHero) {
-        Optional.ofNullable(heroService.getHeroesData().get(pickedHero))
+        Optional.ofNullable(heroRepository.getHeroesData().getHeroInfo(pickedHero))
                 .orElseThrow(() -> new UnknownHeroException(pickedHero));
-        heroPickingService.addPickedHero(pickedHero);
+        selectedHeroesRepository.addSelectedHero(pickedHero);
     }
 
-    public void printCounters(Map<String, List<String>> counters) {
-        counterPrintingService.printCounters(counters);
+    public void calculateCounters() {
+        heroService.calculateCounters();
     }
+
+    public void printCounters() {
+        counterPrintingService.printCounters(countersRepository.getCounters());
+    }
+
 }

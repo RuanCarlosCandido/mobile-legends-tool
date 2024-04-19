@@ -70,14 +70,14 @@
             "Harley",
             "pharsa",
             "valir",
-            "Baxia",
             "Karina",
             "Vexana",
             "cici",
             "mathilda",
             "yuzhong",
             "Cyclops",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -86,18 +86,25 @@
         "Specialties": "Poke | Burst",
         "Laning": "Mid Laner, ROAMER TESTED",
         "counters": [
+            "edith",
             "Zilong",
             "Layla",
             "Natalia",
             "miya",
             "silvanna",
-            "esmeralda",
             "gatotkaca",
-            "johnson",
             "masha",
             "barats",
-            "edith",
-            "brody"
+            "brody",
+            "hylos",
+            "baxia",
+            "franco",
+            "masha",
+            "mathilda",
+            "floryn",
+            "angela",
+            "estes",
+            "rafaela"
         ]
     },
     {
@@ -152,7 +159,6 @@
             "hylos",
             "martis",
             "gusion",
-            "baxia",
             "faramis",
             "rafaela",
             "barats",
@@ -172,7 +178,6 @@
             "Alice",
             "martis",
             "lesley",
-            "baxia",
             "diggie",
             "lunox",
             "melissa",
@@ -205,7 +210,8 @@
             "barats",
             "tigreal",
             "belerick",
-            "Cyclops"
+            "Cyclops",
+            "baxia"
         ]
     },
     {
@@ -263,6 +269,7 @@
             "Natalia",
             "Hayabusa",
             "Akai",
+            "hanabi",
             "baxia"
         ]
     },
@@ -334,7 +341,8 @@
             "Belerick",
             "moskov",
             "popol",
-            "akai"
+            "akai",
+            "baxia"
         ]
     },
     {
@@ -348,7 +356,6 @@
             "Alice",
             "Diggie",
             "Vexana",
-            "baxia",
             "franco",
             "Aurora",
             "Valir",
@@ -357,7 +364,8 @@
             "change",
             "cici",
             "barats",
-            "Cyclops"
+            "Cyclops",
+            "baxia"
         ]
     },
     {
@@ -373,7 +381,6 @@
             "Moskov",
             "Esmeralda",
             "hanzo",
-            "baxia",
             "xborg",
             "cici",
             "barats",
@@ -433,7 +440,8 @@
             "Eudora",
             "popol",
             "Hayabusa",
-            "harley"
+            "harley",
+            "baxia"
         ]
     },
     {
@@ -456,7 +464,8 @@
             "kaja",
             "mathilda",
             "Hayabusa",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -472,7 +481,8 @@
             "Harley",
             "Eudora",
             "mathilda",
-            "kaja"
+            "kaja",
+            "baxia"
         ]
     },
     {
@@ -500,7 +510,8 @@
             "Hanabi",
             "atlas",
             "uranus",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -522,14 +533,13 @@
         "Specialties": "Crowd Control | Regen",
         "Laning": "EXP Laner",
         "counters": [
-            "Baxia",
             "x.borg",
             "karrie",
             "Karina",
             "phoveus",
             "Bane",
             "natan",
-            "lolita"
+            "hylos"
         ]
     },
     {
@@ -583,7 +593,6 @@
         "counters": [
             "lolita",
             "johnson",
-            "baxia",
             "edith",
             "Helcurt",
             "Hayabusa",
@@ -592,7 +601,8 @@
             "YiSunShin",
             "Lancelot",
             "guinevere",
-            "popol"
+            "popol",
+            "baxia"
         ]
     },
     {
@@ -601,7 +611,6 @@
         "Specialties": "Regen | Guard",
         "Laning": "Roamer",
         "counters": [
-            "Baxia",
             "atlas",
             "luoyi",
             "akai",
@@ -611,6 +620,7 @@
             "layla",
             "Kaja",
             "minotaur",
+            "gatotkaca",
             "gatotkaca"
         ]
     },
@@ -646,7 +656,8 @@
             "Helcurt",
             "popol",
             "hylos",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -687,9 +698,9 @@
             "Fredrinn",
             "gatotkaca",
             "hylos",
-            "baxia",
             "Alice",
-            "edith"
+            "edith",
+            "baxia"
         ]
     },
     {
@@ -726,7 +737,8 @@
             "Franco",
             "Claude",
             "jawhead",
-            "kaja"
+            "kaja",
+            "baxia"
         ]
     },
     {
@@ -803,7 +815,8 @@
             "Sun",
             "xborg",
             "cici",
-            "Cyclops"
+            "Cyclops",
+            "baxia"
         ]
     },
     {
@@ -840,7 +853,8 @@
             "Zilong",
             "guinevere",
             "Tigreal",
-            "popol"
+            "popol",
+            "baxia"
         ]
     },
     {
@@ -898,7 +912,9 @@
             "Odette",
             "karrie",
             "xborg",
-            "Cyclops"
+            "Cyclops",
+            "rafaela",
+            "Kimmy"
         ]
     },
     {
@@ -955,7 +971,8 @@
             "lolita",
             "martis",
             "popol",
-            "lylia"
+            "lylia",
+            "baxia"
         ]
     },
     {
@@ -977,7 +994,6 @@
             "rafaela",
             "mathilda",
             "Hayabusa",
-            "baxia",
             "chip",
             "brody",
             "lolita"
@@ -989,7 +1005,6 @@
         "Specialties": "Charge | Burst",
         "Laning": "EXP Laner",
         "counters": [
-            "Baxia",
             "zhask",
             "roger",
             "Natalia",
@@ -1018,7 +1033,10 @@
             "popol",
             "barats",
             "lylia",
-            "akai"
+            "akai",
+            "rafaela",
+            "baxia",
+            "atlas"
         ]
     },
     {
@@ -1039,7 +1057,8 @@
             "mathilda",
             "khufra",
             "minotaur",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -1050,7 +1069,8 @@
         "counters": [
             "kaja",
             "Franco",
-            "barats"
+            "barats",
+            "baxia"
         ]
     },
     {
@@ -1066,7 +1086,8 @@
             "kaja",
             "franco",
             "lancelot",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -1112,7 +1133,8 @@
             "aamon",
             "melissa",
             "beatrix",
-            "ixia"
+            "ixia",
+            "baxia"
            
         ]
     },
@@ -1124,12 +1146,12 @@
         "counters": [
             "Nana",
             "benedetta",
-            "Baxia",
             "Saber",
             "Aurora",
             "jawhead",
             "lolita",
-            "vale"
+            "vale",
+            "baxia"
         ]
     },
     {
@@ -1147,10 +1169,10 @@
             "benedetta",
             "Hayabusa",
             "Aurora",
-            "Baxia",
             "cici",
             "barats",
-            "Cyclops"
+            "Cyclops",
+            "baxia"
         ]
     },
     {
@@ -1165,7 +1187,8 @@
             "benedetta",
             "Wanwan",
             "minotaur",
-            "uranus"
+            "uranus",
+            "baxia"
         ]
     },
     {
@@ -1196,7 +1219,8 @@
             "Zilong",
             "miya",
             "nana",
-            "hanabi"
+            "hanabi",
+            "baxia"
         ]
     },
     {
@@ -1243,7 +1267,8 @@
             "Nana",
             "Natalia",
             "Vexana",
-            "johnson"
+            "johnson",
+            "baxia"
         ]
     },
     {
@@ -1260,9 +1285,9 @@
             "Selena",
             "Karina",
             "Helcurt",
-            "baxia",
             "gatotkaca",
-            "martis"
+            "martis",
+            "baxia"
         ]
     },
     {
@@ -1319,7 +1344,8 @@
             "Aldous",
             "Belerick",
             "martis",
-            "gusion"
+            "gusion",
+            "baxia"
         ]
     },
     {
@@ -1380,8 +1406,7 @@
             "Gord",
             "Balmond",
             "Kimmy",
-            "minsitthar",
-            "Baxia"
+            "minsitthar"
         ]
     },
     {
@@ -1403,7 +1428,8 @@
             "barats",
             "Helcurt",
             "Cyclops",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -1446,7 +1472,8 @@
             "Aurora",
             "grock",
             "Minsitthar",
-            "Cyclops"
+            "Cyclops",
+            "nana"
         ]
     },
     {
@@ -1489,11 +1516,11 @@
             "johnson",
             "lesley",
             "Aldous",
-            "baxia",
             "paquito",
             "kaja",
             "Cyclops",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -1568,7 +1595,6 @@
             "Leomord",
             "hanzo",
             "kagura",
-            "baxia",
             "akai",
             "julian",
             "hylos",
@@ -1604,14 +1630,44 @@
         "Specialties": "Damage",
         "Laning": "Roamer",
         "counters": [
-            "Sun",
-            "xborg",
-            "karrie",
-            "terizla",
-            "Nana",
-            "melissa",
-            "julian",
-            "chip"
+            "granger",
+            "moskov",
+            "beatrix",
+            "roger",
+            "popol",
+            "Bruno",
+            "lesley",
+            "clint",
+            "miya",
+            "zhask",
+            "harith",
+            "vale",
+            "Bane",
+            "nana",
+            "Eudora",
+            "yve",
+            "yin",
+            "hayabusa",
+            "karina",
+            "Alucard",
+            "saber",
+            "Helcurt",
+            "aamon",
+            "carmilla",
+            "gatotkaca",
+            "khufra",
+            "akai",
+            "masha",
+            "barats",
+            "aulus",
+            "alpha",
+            "jawhead",
+            "badang",
+            "minsitthar",
+            "freya",
+            "silvanna",
+            "argus",
+            "cici"
         ]
     },
     {
@@ -1640,7 +1696,8 @@
             "Khufra",
             "phoveus",
             "karina",
-            "lolita"
+            "lolita",
+            "baxia"
         ]
     },
     {
@@ -1652,8 +1709,7 @@
             "Wanwan",
             "minsitthar",
             "Franco",
-            "Chou",
-            "Baxia"
+            "Chou"
         ]
     },
     {
@@ -1685,7 +1741,8 @@
             "valir",
             "lunox",
             "benedetta",
-            "Natalia"
+            "Natalia",
+            "baxia"
         ]
     },
     {
@@ -1736,10 +1793,10 @@
             "Kimmy",
             "Natalia",
             "Wanwan",
-            "Baxia",
             "atlas",
             "khaleed",
-            "angela"
+            "angela",
+            "baxia"
         ]
     },
     {
@@ -1758,7 +1815,8 @@
             "Wanwan",
             "harith",
             "hanzo",
-            "lolita"
+            "lolita",
+            "baxia"
         ]
     },
     {
@@ -1810,7 +1868,8 @@
             "masha",
             "edith",
             "Cyclops",
-            "Lylia"
+            "Lylia",
+            "baxia"
         ]
     },
     {
@@ -1852,7 +1911,6 @@
         "counters": [
             "esmeralda",
             "minsitthar",
-            "Baxia",
             "Franco",
             "Khufra",
             "Kaja",
@@ -1862,7 +1920,8 @@
             "Eudora",
             "barats",
             "ixia",
-            "Cyclops"
+            "Cyclops",
+            "baxia"
         ]
     },
     {
@@ -1896,7 +1955,8 @@
             "popol",
             "yve",
             "benedetta",
-            "Cyclops"
+            "Cyclops",
+            "baxia"
         ]
     },
     {
@@ -1920,9 +1980,9 @@
         "counters": [
             "esmeralda",
             "yve",
-            "Baxia",
             "harith",
-            "cici"
+            "cici",
+            "baxia"
         ]
     },
     {
@@ -1935,7 +1995,8 @@
             "ling",
             "Saber",
             "benedetta",
-            "Eudora"
+            "Eudora",
+            "baxia"
         ]
     },
     {
@@ -1972,11 +2033,11 @@
         "Laning": "Roamer",
         "counters": [
             "Chou",
-            "Baxia",
             "benedetta",
             "Natalia",
             "Lancelot",
-            "lolita"
+            "lolita",
+            "baxia"
         ]
     },
     {
@@ -1990,7 +2051,8 @@
             "phoveus",
             "aulus",
             "Floryn",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -2061,7 +2123,8 @@
             "belerick",
             "minotaur",
             "edith",
-            "rafaela"
+            "rafaela",
+            "baxia"
         ]
     },
     {
@@ -2075,7 +2138,8 @@
             "Gusion",
             "Lancelot",
             "kagura",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -2093,7 +2157,8 @@
             "Chou",
             "Gusion",
             "mathilda",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -2110,7 +2175,6 @@
             "layla",
             "freya",
             "xborg",
-            "baxia",
             "esmeralda",
             "gatotkaca",
             "johnson",
@@ -2140,7 +2204,9 @@
             "atlas",
             "gloo",
             "phoveus",
-            "minsitthar"
+            "minsitthar",
+            "baxia",
+            "floryn"
         ]
     },
     {
@@ -2155,7 +2221,8 @@
             "Harley",
             "gusion",
             "harley",
-            "mathilda"
+            "mathilda",
+            "baxia"
         ]
     },
     {
@@ -2169,7 +2236,8 @@
             "badang",
             "Alucard",
             "odette",
-            "belerick"
+            "belerick",
+            "baxia"
         ]
     },
     {
@@ -2183,8 +2251,8 @@
             "wanwan",
             "hanabi",
             "claude",
-            "baxia",
-            "lolita"
+            "lolita",
+            "baxia"
         ]
     },
     {
