@@ -5,11 +5,21 @@
         "Specialties": "Reap | Damage",
         "Laning": "Gold Laner",
         "counters": [
+            "Natalia",
+            "Alucard",
+            "Clint",
+            "Layla",
+            "Eudora",
+            "Zilong",
             "Belerick",
+            "ixia",
+            "Hayabusa",
             "hylos",
+            "rafaela",
             "kaja",
-            "zhask",
-            "franco"
+            "floryn",
+            "angela",
+            "kagura"
         ]
     },
     {
@@ -18,11 +28,20 @@
         "Specialties": "Damage | Regen",
         "Laning": "EXP Laner",
         "counters": [
-            "minotaur",
-            "mathilda",
-            "zhask",
-            "hylos",
-            "baxia"
+            "Zilong",
+            "Layla",
+            "YiSunShin",
+            "Franco",
+            "Cyclops",
+            "Tigreal",
+            "alpha",
+            "Bane",
+            "gusion",
+            "martis",
+            "hanzo",
+            "harley",
+            "belerick",
+            "roger"
         ]
     },
     {
@@ -32,11 +51,16 @@
         "Laning": "Jungler",
         "counters": [
             "Khufra",
-            "belerick",
-            "minotaur",
-            "tigreal",
-            "hylos"
-
+            "minsitthar",
+            "Diggie",
+            "miya",
+            "Layla",
+            "Gord",
+            "Nana",
+            "Bruno",
+            "valir",
+            "argus",
+            "belerick"
         ]
     },
     {
@@ -45,11 +69,18 @@
         "Specialties": "Charge | Regen",
         "Laning": "Mid Laner",
         "counters": [
+            "karrie",
+            "Harley",
+            "pharsa",
+            "valir",
+            "Karina",
+            "Vexana",
+            "cici",
             "mathilda",
+            "yuzhong",
+            "Cyclops",
             "belerick",
-            "baxia",
-            "floryn",
-            "hylos"
+            "baxia"
         ]
     },
     {
@@ -58,11 +89,26 @@
         "Specialties": "Poke | Burst",
         "Laning": "Mid Laner, ROAMER TESTED",
         "counters": [
+            "edith",
+            "Zilong",
+            "Layla",
+            "Natalia",
+            "miya",
+            "silvanna",
+            "gatotkaca",
+            "masha",
+            "barats",
+            "brody",
             "hylos",
+            "baxia",
+            "franco",
+            "masha",
+            "mathilda",
+            "floryn",
+            "angela",
+            "estes",
             "rafaela",
-            "johnson",
-            "zhask",
-            "popol"
+            "Aldous"
         ]
     },
     {
@@ -72,10 +118,21 @@
         "Laning": "Roamer",
         "counters": [
             "Akai",
+            "Aurora",
+            "Bruno",
+            "Chou",
             "Diggie",
+            "Eudora",
+            "Freya",
+            "Gord",
+            "Nana",
             "Hylos",
+            "xborg",
             "minotaur",
-            "belerick"
+            "uranus",
+            "angela",
+            "floryn",
+            "rafaela"
         ]
     },
     {
@@ -84,11 +141,15 @@
         "Specialties": "Chase | Damage",
         "Laning": "EXP Laner",
         "counters": [
+            "Layla",
+            "Zilong",
+            "YiSunShin",
+            "Sun",
+            "Tigreal",
+            "hylos",
+            "Lancelot",
             "belerick",
-            "minotaur",
-            "franco",
-            "khufra",
-            "baxia"
+            "mathilda"
         ]
     },
     {
@@ -97,11 +158,24 @@
         "Specialties": "Reap | Magic Damage",
         "Laning": "Jungler",
         "counters": [
+            "Aurora",
+            "Alucard",
+            "Balmond",
+            "Eudora",
             "Franco",
+            "Gatotkaca",
+            "Helcurt",
+            "Khufra",
             "hylos",
-            "minotaur",
-            "kaja",
-            "tigreal"
+            "martis",
+            "gusion",
+            "faramis",
+            "rafaela",
+            "barats",
+            "lylia",
+            "saber",
+            "valir",
+            "guinevere"
         ]
     },
     {
@@ -110,11 +184,19 @@
         "Specialties": "Guard | Crowd Control",
         "Laning": "Roamer",
         "counters": [
+            "Clint",
+            "Alice",
+            "martis",
+            "lesley",
             "diggie",
-            "minotaur",
-            "angela",
-            "hylos",
-            "belerick"
+            "lunox",
+            "melissa",
+            "kagura",
+            "selena",
+            "hanabi",
+            "khufra",
+            "Vexana",
+            "Cyclops"
         ]
     },
     {
@@ -123,11 +205,23 @@
         "Specialties": "Initiator | Control",
         "Laning": "Roamer",
         "counters": [
+            "Eudora",
+            "Ruby",
+            "Clint",
+            "miya",
+            "Moskov",
+            "Tigreal",
             "akai",
+            "Aurora",
+            "xborg",
+            "zhask",
+            "ixia",
             "hylos",
+            "barats",
             "tigreal",
             "belerick",
-            "johnson"
+            "Cyclops",
+            "baxia"
         ]
     },
     {
@@ -136,11 +230,11 @@
         "Specialties": "Push | Burst",
         "Laning": "EXP Laner",
         "counters": [
-            "lolita",
-            "baxia",
-            "zhask",
-            "floryn",
-            "angela"
+            "miya",
+            "Layla",
+            "Nana",
+            "Rafaela",
+            "Sun"
         ]
     },
     {
@@ -149,11 +243,12 @@
         "Specialties": "Reap | Burst",
         "Laning": "Gold Laner",
         "counters": [
-            "lolita",
-            "belerick",
-            "hylos",
-            "zhask",
-            "floryn"
+            "Layla",
+            "Zilong",
+            "YiSunShin",
+            "Diggie",
+            "kagura",
+            "belerick"
         ]
     },
     {
@@ -162,11 +257,16 @@
         "Specialties": "Reap | Burst",
         "Laning": "Gold Laner",
         "counters": [
-            "kaja",
-            "zhask",
-            "hylos",
-            "khufra",
-            "floryn"
+            "Aldous",
+            "Fanny",
+            "Karina",
+            "kagura",
+            "johnson",
+            "irithel",
+            "popol",
+            "ling",
+            "lolita",
+            "vale"
         ]
     },
     {
@@ -175,11 +275,13 @@
         "Specialties": "Regen | Guard",
         "Laning": "Roamer",
         "counters": [
+            "Freya",
+            "Alucard",
+            "Natalia",
+            "Hayabusa",
             "Akai",
-            "minotaur",
-            "baxia",
-            "floryn",
-            "carmilla"
+            "hanabi",
+            "baxia"
         ]
     },
     {
@@ -188,11 +290,17 @@
         "Specialties": "Control | Burst",
         "Laning": "Mid Laner",
         "counters": [
+            "hilda",
+            "grock",
+            "Hayabusa",
+            "Hanabi",
+            "lesley",
+            "Moskov",
+            "Karina",
+            "martis",
             "Belerick",
             "popol",
-            "diggie",
-            "johnson",
-            "hylos"
+            "diggie"
         ]
     },
     {
@@ -201,11 +309,13 @@
         "Specialties": "Chase | Damage",
         "Laning": "EXP Laner",
         "counters": [
+            "Natalia",
             "Akai",
+            "Balmond",
+            "Freya",
             "tigreal",
             "belerick",
-            "minotaur",
-            "kaja"
+            "clint"
         ]
     },
     {
@@ -216,9 +326,14 @@
         "counters": [
             "Khufra",
             "Akai",
+            "silvanna",
+            "Moskov",
+            "Zilong",
             "Franco",
+            "minsitthar",
             "kaja",
-            "mathilda"
+            "mathilda",
+            "Minotaur"
         ]
     },
     {
@@ -227,11 +342,21 @@
         "Specialties": "Reap | Damage",
         "Laning": "Gold Laner",
         "counters": [
-            "lolita",
-            "khufra",
+            "Fanny",
+            "Gusion",
+            "Karina",
+            "Lancelot",
+            "Clint",
+            "miya",
+            "Ixia",
+            "Hayabusa",
+            "Belerick",
+            "moskov",
+            "popol",
             "baxia",
-            "zhask",
-            "hylos"
+            "lolita",
+            "hylos",
+            "silvanna"
         ]
     },
     {
@@ -240,11 +365,21 @@
         "Specialties": "Crowd Control",
         "Laning": "Roamer",
         "counters": [
+            "grock",
+            "Gatotkaca",
+            "Alice",
             "Diggie",
-            "kaja",
-            "mathilda",
-            "baxia",
-            "zhask"
+            "Vexana",
+            "franco",
+            "Aurora",
+            "Valir",
+            "Khufra",
+            "Nana",
+            "change",
+            "cici",
+            "barats",
+            "Cyclops",
+            "baxia"
         ]
     },
     {
@@ -253,11 +388,19 @@
         "Specialties": "Guard | Crowd Control",
         "Laning": "Roamer",
         "counters": [
-            "minotaur",
-            "baxia",
-            "diggie",
-            "zhask",
-            "hylos"
+            "Saber",
+            "miya",
+            "Nana",
+            "Layla",
+            "Moskov",
+            "Esmeralda",
+            "hanzo",
+            "xborg",
+            "cici",
+            "barats",
+            "mathilda",
+            "arlott",
+            "rafaela"
         ]
     },
     {
@@ -266,11 +409,23 @@
         "Specialties": "Chase | Burst",
         "Laning": "Jungler",
         "counters": [
+            "Cyclops",
+            "kaja",
+            "Sun",
+            "jawhead",
+            "Saber",
+       		"nana",
+            "faramis",
+            "mathilda",
+            "Aurora",
+            "eudora",
+            "lunox",
             "belerick",
+            "johnson",
             "Khufra",
             "Franco",
-            "minotaur",
-            "kaja"
+            "Chou",
+            "floryn"
         ]
     },
     {
@@ -279,11 +434,12 @@
         "Specialties": "Chase | Damage",
         "Laning": "EXP Laner",
         "counters": [
-            "belerick",
-            "baxia",
-            "minotaur",
-            "zhask",
-            "franco"
+            "Irithel",
+            "alpha",
+            "Sun",
+            "Zilong",
+            "Odette",
+            "belerick"
         ]
     },
     {
@@ -292,11 +448,18 @@
         "Specialties": "Poke | Burst",
         "Laning": "Mid Laner",
         "counters": [
+            "Saber",
+            "miya",
+            "johnson",
+            "Alucard",
+            "Chou",
+            "Eudora",
             "popol",
-            "mathilda",
-            "zhask",
+            "Hayabusa",
+            "harley",
+            "baxia",
             "hylos",
-            "baxia"
+            "roger"
         ]
     },
     {
@@ -305,9 +468,20 @@
         "Specialties": "Chase | Reap",
         "Laning": "Jungler",
         "counters": [
+            "Eudora",
+            "Layla",
+            "Gord",
+            "miya",
+            "YiSunShin",
+            "lesley",
+            "Alice",
+            "Saber",
+            "silvanna",
             "minotaur",
             "rafaela",
-            "hylos",
+            "kaja",
+            "mathilda",
+            "Hayabusa",
             "belerick",
             "baxia"
         ]
@@ -318,11 +492,15 @@
         "Specialties": "Poke | Reap",
         "Laning": "Mid Laner",
         "counters": [
+            "Karina",
+            "Hayabusa",
+            "Fanny",
+            "Zilong",
+            "Harley",
+            "Eudora",
             "mathilda",
             "kaja",
-            "baxia",
-            "diggie",
-            "franco"
+            "baxia"
         ]
     },
     {
@@ -331,11 +509,13 @@
         "Specialties": "Chase | Control",
         "Laning": "EXP Laner",
         "counters": [
-            "kaja",
-            "franco",
-            "mathilda",
-            "hylos",
-            "khufra"
+            "Zilong",
+            "Nana",
+            "YiSunShin",
+            "Natalia",
+            "minsitthar",
+            "uranus",
+            "kaja"
         ]
     },
     {
@@ -344,10 +524,11 @@
         "Specialties": "Push | Damage",
         "Laning": "EXP Laner",
         "counters": [
+            "Bruno",
+            "Hanabi",
+            "atlas",
+            "uranus",
             "belerick",
-            "rafaela",
-            "tigreal",
-            "hylos",
             "baxia"
         ]
     },
@@ -357,11 +538,13 @@
         "Specialties": "Charge | Damage",
         "Laning": "EXP Laner",
         "counters": [
-            "minotaur",
-            "zhask",
-            "franco",
+            "Chou",
+            "Layla",
+            "khufra",
             "hylos",
-            "baxia"
+            "gatotkaca",
+            "mathilda",
+            "sun"
         ]
     },
     {
@@ -370,11 +553,13 @@
         "Specialties": "Crowd Control | Regen",
         "Laning": "EXP Laner",
         "counters": [
-            "baxia",
-            "khufra",
-            "minotaur",
-            "zhask",
-            "akai"
+            "x.borg",
+            "karrie",
+            "Karina",
+            "phoveus",
+            "Bane",
+            "natan",
+            "hylos"
         ]
     },
     {
@@ -383,11 +568,11 @@
         "Specialties": "Reap | Chase",
         "Laning": "Gold Laner",
         "counters": [
-            "belerick",
-            "kaja",
-            "franco",
-            "hylos",
-            "khufra"
+            "Nana",
+            "Chou",
+            "Zilong",
+            "Rafaela",
+            "Sun"
         ]
     },
     {
@@ -397,10 +582,12 @@
         "Laning": "Gold Laner",
         "counters": [
             "Akai",
+            "Chou",
+            "Zilong",
+            "Natalia",
+            "ling",
             "belerick",
-            "lolita",
-            "zhask",
-            "hylos"
+            "granger"
         ]
     },
     {
