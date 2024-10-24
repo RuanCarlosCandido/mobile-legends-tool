@@ -24,5 +24,8 @@ build:
 
 # Rodar a aplicação
 run: build
+	# Parar e remover qualquer contêiner existente com o mesmo nome
+	@echo "Parando e removendo o contêiner existente (se houver)..."
+	-@docker rm -f $(CONTAINER_NAME) 2>/dev/null || true
+	# Executar o novo contêiner
 	@docker run --rm -it --name $(CONTAINER_NAME) $(IMAGE_NAME)
-
