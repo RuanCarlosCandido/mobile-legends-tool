@@ -17,7 +17,9 @@
             "hylos",
             "rafaela",
             "kaja",
-            "floryn"
+            "floryn",
+            "angela",
+            "kagura"
         ]
     },
     {
@@ -38,7 +40,8 @@
             "martis",
             "hanzo",
             "harley",
-            "belerick"
+            "belerick",
+            "roger"
         ]
     },
     {
@@ -104,7 +107,8 @@
             "floryn",
             "angela",
             "estes",
-            "rafaela"
+            "rafaela",
+            "Aldous"
         ]
     },
     {
@@ -123,7 +127,12 @@
             "Gord",
             "Nana",
             "Hylos",
-            "xborg"
+            "xborg",
+            "minotaur",
+            "uranus",
+            "angela",
+            "floryn",
+            "rafaela"
         ]
     },
     {
@@ -139,7 +148,8 @@
             "Tigreal",
             "hylos",
             "Lancelot",
-            "belerick"
+            "belerick",
+            "mathilda"
         ]
     },
     {
@@ -255,7 +265,8 @@
             "irithel",
             "popol",
             "ling",
-            "lolita"
+            "lolita",
+            "vale"
         ]
     },
     {
@@ -288,7 +299,8 @@
             "Karina",
             "martis",
             "Belerick",
-            "popol"
+            "popol",
+            "diggie"
         ]
     },
     {
@@ -341,8 +353,10 @@
             "Belerick",
             "moskov",
             "popol",
-            "akai",
-            "baxia"
+            "baxia",
+            "lolita",
+            "hylos",
+            "silvanna"
         ]
     },
     {
@@ -385,7 +399,8 @@
             "cici",
             "barats",
             "mathilda",
-            "arlott"
+            "arlott",
+            "rafaela"
         ]
     },
     {
@@ -409,7 +424,8 @@
             "johnson",
             "Khufra",
             "Franco",
-            "Chou"
+            "Chou",
+            "floryn"
         ]
     },
     {
@@ -441,7 +457,9 @@
             "popol",
             "Hayabusa",
             "harley",
-            "baxia"
+            "baxia",
+            "hylos",
+            "roger"
         ]
     },
     {
@@ -524,7 +542,9 @@
             "Layla",
             "khufra",
             "hylos",
-            "gatotkaca"
+            "gatotkaca",
+            "mathilda",
+            "sun"
         ]
     },
     {
@@ -566,7 +586,8 @@
             "Zilong",
             "Natalia",
             "ling",
-            "belerick"
+            "belerick",
+            "granger"
         ]
     },
     {
@@ -602,7 +623,8 @@
             "Lancelot",
             "guinevere",
             "popol",
-            "baxia"
+            "baxia",
+            "pharsa"
         ]
     },
     {
@@ -621,7 +643,7 @@
             "Kaja",
             "minotaur",
             "gatotkaca",
-            "gatotkaca"
+            "rafaela"
         ]
     },
     {
@@ -719,7 +741,9 @@
             "hilda",
             "alpha",
             "khufra",
-            "belerick"
+            "belerick",
+            "akai",
+            "karina"
         ]
     },
     {
@@ -738,7 +762,8 @@
             "Claude",
             "jawhead",
             "kaja",
-            "baxia"
+            "baxia",
+            "atlas"
         ]
     },
     {
@@ -777,7 +802,8 @@
             "akai",
             "khufra",
             "lolita",
-            "belerick"
+            "belerick",
+            "angela"
         ]
     },
     {
@@ -839,7 +865,9 @@
             "carmilla",
             "mathilda",
             "phoveus",
-            "belerick"
+            "belerick",
+            "hylos",
+            "yuzhong"
         ]
     },
     {
@@ -996,7 +1024,8 @@
             "Hayabusa",
             "chip",
             "brody",
-            "lolita"
+            "lolita",
+            "diggie"
         ]
     },
     {
@@ -1036,7 +1065,10 @@
             "akai",
             "rafaela",
             "baxia",
-            "atlas"
+            "atlas",
+            "granger",
+            "mathilda",
+            "lolita" 
         ]
     },
     {
@@ -1070,7 +1102,8 @@
             "kaja",
             "Franco",
             "barats",
-            "baxia"
+            "baxia",
+            "cici"
         ]
     },
     {
@@ -1220,7 +1253,8 @@
             "miya",
             "nana",
             "hanabi",
-            "baxia"
+            "baxia",
+            "nana"
         ]
     },
     {
@@ -1345,7 +1379,9 @@
             "Belerick",
             "martis",
             "gusion",
-            "baxia"
+            "baxia",
+            "pharsa",
+            "moskov"
         ]
     },
     {
@@ -1359,7 +1395,8 @@
             "Moskov",
             "johnson",
             "hayabusa",
-            "baxia"
+            "baxia",
+            "Aurora"
         ]
     },
     {
@@ -1392,7 +1429,8 @@
             "Diggie",
             "hanabi",
             "barats",
-            "belerick"
+            "belerick",
+            "angela"
         ]
     },
     {
@@ -1455,7 +1493,9 @@
             "harith",
             "xborg",
             "benedetta",
-            "khaleed"
+            "khaleed",
+            "dyrroth",
+            "vale"
         ]
     },
     {
@@ -1473,7 +1513,8 @@
             "grock",
             "Minsitthar",
             "Cyclops",
-            "nana"
+            "nana",
+            "hylos"
         ]
     },
     {
@@ -1489,7 +1530,8 @@
             "Hanabi",
             "Ixia",
             "faramis",
-            "lolita"
+            "lolita",
+            "Helcurt"
         ]
     },
     {
@@ -1503,7 +1545,8 @@
             "Franco",
             "x.borg",
             "khufra",
-            "belerick"
+            "belerick",
+            "nana"
         ]
     },
     {
@@ -1537,7 +1580,8 @@
             "dyrroth",
             "Cyclops",
             "ixia",
-            "hanzo"
+            "hanzo",
+            "saber"
         ]
     },
     {
@@ -1554,14 +1598,15 @@
             "Gusion",
             "pharsa",
             "uranus",
-            "akai",
             "Hilda",
             "Alice",
             "masha",
             "edith",
             "mathilda",
             "hayabusa",
-            "terizla"
+            "terizla",
+            "kagura",
+            "melissa"
         ]
     },
     {
@@ -1667,7 +1712,8 @@
             "freya",
             "silvanna",
             "argus",
-            "cici"
+            "cici",
+            "melissa"
         ]
     },
     {
@@ -1726,7 +1772,8 @@
             "Leomord",
             "melissa",
             "Chou",
-            "Cyclops"
+            "Cyclops",
+            "Cecilion"
         ]
     },
     {
@@ -1737,7 +1784,6 @@
         "counters": [
             "Masha",
             "Kimmy",
-            "carmilla",
             "valir",
             "lunox",
             "benedetta",
@@ -1763,7 +1809,8 @@
             "cici",
             "barats",
             "Fredrinn",
-            "Cyclops"
+            "Cyclops",
+            "xavier"
         ]
     },
     {
@@ -1781,7 +1828,8 @@
             "hanabi",
             "melissa",
             "atlas",
-            "belerick"
+            "belerick",
+            "Cecilion"
         ]
     },
     {
@@ -1816,7 +1864,9 @@
             "harith",
             "hanzo",
             "lolita",
-            "baxia"
+            "baxia",
+            "martis",
+            "masha"
         ]
     },
     {
@@ -1829,7 +1879,8 @@
             "minsitthar",
             "Wanwan",
             "Chou",
-            "belerick"
+            "belerick",
+            "angela"
         ]
     },
     {
@@ -1921,7 +1972,8 @@
             "barats",
             "ixia",
             "Cyclops",
-            "baxia"
+            "baxia",
+            "popol"
         ]
     },
     {
@@ -2105,7 +2157,8 @@
             "clint",
             "Aurora",
             "akai",
-            "belerick"
+            "belerick",
+            "dyrroth"
         ]
     },
     {
@@ -2158,7 +2211,8 @@
             "Gusion",
             "mathilda",
             "belerick",
-            "baxia"
+            "baxia",
+            "floryn"
         ]
     },
     {
